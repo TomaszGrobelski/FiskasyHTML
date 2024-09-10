@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../fonts/custom-font.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "MyCustomFont", sans-serif;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: #c4ecfc;
+  font-family: "MyCustomFont", sans-serif;
+}
+
+.main-container {
+  position: relative;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-x: clip;
+}
+@media (min-width: 640px) {
+  .main-container {
+    max-width: 1920px;
+  }
+}
+@media (min-width: 1280px) {
+  .main-container {
+    padding-left: 143px;
+    padding-right: 143px;
+  }
+}
+.main-container .hero-section {
+  min-height: 755px;
+}/*# sourceMappingURL=styles.css.map */

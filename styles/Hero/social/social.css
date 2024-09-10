@@ -1,0 +1,38 @@
+.social-buttons-container {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  z-index: 40;
+}
+@media (min-width: 768px) {
+  .social-buttons-container {
+    display: flex;
+    top: 434px;
+  }
+}
+@media (min-width: 1280px) {
+  .social-buttons-container {
+    left: 30px;
+  }
+}
+@media (min-width: 1536px) {
+  .social-buttons-container {
+    left: 142px;
+  }
+}
+
+.social-button {
+  display: flex;
+  height: 45px;
+  width: 45px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 0;
+  background-color: transparent;
+}
+.social-button .social-icon {
+  color: lightblue;
+}/*# sourceMappingURL=social.css.map */

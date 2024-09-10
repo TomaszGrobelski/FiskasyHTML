@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hero Section</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles/NavBar/navBar.css" />
+    <link rel="stylesheet" href="/styles/Hero/flags/flags.css" />
+    <link rel="stylesheet" href="/styles/Hero/redView/redView.css" />
+    <link rel="stylesheet" href="/styles/Hero/blueView/blueView.css" />
+    <link rel="stylesheet" href="/styles/Hero/social/social.css" />
+    <link rel="stylesheet" href="/styles/Hero/background/background.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="hero-section">
+        <!-- NavBar: -->
+        <div class="navbar">
+          <div class="nav-links">
+            <button class="nav-button">
+              <p>Sklep</p>
+            </button>
+            <button class="nav-button">
+              <p>Promocje</p>
+            </button>
+            <button class="nav-button dropdown">
+              <p class="dropdown-title">Poradnik Fiskalny</p>
+              <div class="dropdown-menu">
+                <div class="dropdown-content">
+                  <p>Jak wybrać urządzenie fiskalne</p>
+                  <p>Oprogramowanie do zarządzania firmą</p>
+                  <p>Sklep (systemy sprzedaży)</p>
+                  <p>Restauracja</p>
+                </div>
+                <div class="dropdown-arrow"></div>
+              </div>
+            </button>
+          </div>
+
+          <img src="/images/navbar/aji.png" width="100" height="43" alt="Logo fiskasy.pl" class="logo-mobile" />
+          <img src="/images/navbar/aji@2x.png" width="172" height="73" alt="Logo fiskasy.pl" class="logo-desktop" />
+
+          <div class="search-container">
+            <input type="text" placeholder="Wyszukaj..." class="search-input" />
+            <i class="search-icon"></i>
+          </div>
+
+          <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="menu-icon"></i>
+            <p class="menu-text">Menu</p>
+          </button>
+
+          <div id="menu" class="menu hidden">
+            <!-- Menu content here -->
+          </div>
+        </div>
+
+        <!-- Social media: -->
+        <div class="social-buttons-container">
+          <button class="social-button facebook">
+            <img src="/icons/social/mdi--facebook.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+          </button>
+
+          <button class="social-button instagram">
+            <img src="/icons/social/bi--instagram.svg" width="40" height="40" alt="facebook-icon" class="social-icon" />
+          </button>
+
+          <button class="social-button youtube">
+            <img src="/icons/social/iconoir--youtube.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+          </button>
+
+          <button class="social-button linkedin">
+            <img src="/icons/social/mdi--linkedin.svg" alt="facebook-icon" width="45" height="45" class="social-icon" />
+          </button>
+        </div>
+
+        <!-- Flagi języK: -->
+        <div class="language-select">
+          <p class="language-title">JĘZYK</p>
+          <button class="flag-button">
+            <img src="/icons/hero/flags/ua.svg" alt="Ukraine Flag" class="flag-img" />
+          </button>
+          <button class="flag-button">
+            <img src="/icons/hero/flags/gb.svg" alt="Great Britain Flag" class="flag-img" />
+          </button>
+          <button class="flag-button selected-flag">
+            <img src="/icons/hero/flags/pl.svg" alt="Poland Flag" class="flag-img" />
+          </button>
+        </div>
+
+        <!-- Blue View -->
+        <div id="blue-view" class="blue-view">
+          <!-- Małe zdjęcie kalkulatorów -->
+          <img
+            src="/images/hero/ajt.png"
+            width="404"
+            height="404"
+            alt="hero image"
+            class="customHeroImage left-[-90px]"
+            style="transform: rotate(30deg)"
+          />
+
+          <!-- Duże zdjęcie kalkulatorów -->
+          <div class="hero-image-large-container">
+            <img src="/images/hero/ajt@2x.png" width="1300" height="1300" alt="hero image" class="hero-image-large" />
+          </div>
+
+          <!-- Duży telefon: czarny dashed do okola kalkulatorów  -->
+          <svg class="animated-circle" width="640" height="640">
+            <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5 10" />
+          </svg>
+
+          <!-- Maly telefon: czarny dashed do okola kalkulatorów -->
+          <div class="dashed-circle-container"></div>
+
+          <!-- Hero Title -->
+          <h1 class="hero-title">
+            <span class="hero-title-item">DATECS WP-50</span>
+            <span class="hero-title-item">Wi-FI Online</span>
+          </h1>
+
+          <!-- Product Button -->
+          <button>
+            <p class="custom-button">
+              <span class="custom-span">ZOBACZ PRODUKT</span>
+              <span class="custom-span custom-span-hover">W SKLEPIE</span>
+            </p>
+          </button>
+
+          <!-- Porównaj -->
+          <button>
+            <p class="compare-button">
+              <span class="custom-span"> PORÓWNAJ </span>
+            </p>
+          </button>
+
+          <!-- Cenna netto 1429 zł -->
+          <p class="price-container">
+            <span class="price-text animate">cena netto</span>
+            <span class="price-text animate">1429,00 zł</span>
+          </p>
+
+          <!-- Mały telefon, do okoła ceny -->
+          <svg class="price-circle" width="245" height="245">
+            <circle cx="122.5" cy="122.5" r="120" stroke="#FFFFFF" stroke-width="1" fill="none" stroke-dasharray="3 3" />
+          </svg>
+
+          <!-- Duży telefon, do okola ceny -->
+          <svg class="large-price-circle" width="376" height="376">
+            <circle cx="188" cy="188" r="180" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" />
+          </svg>
+
+          <!-- Masz pytanie? wyślij wiadomość -->
+          <div class="question-info">
+            <p class="question-info__title">MASZ PYTANIE?</p>
+            <p class="question-info__message">WYŚLIJ WIADOMOŚĆ</p>
+          </div>
+
+          <!-- Przycisk w prawo/lewo -->
+          <button class="arrowRightSmall switch-button">
+            <img src="/icons/hero/alj.png" width="28" height="28" alt="right arrow" />
+          </button>
+          <button class="arrowRightLarge switch-button">
+            <img src="/icons/hero/alj@2x.png" width="70" height="70" alt="right arrow" />
+          </button>
+          <button class="arrowLeftLarge switch-button">
+            <img src="/icons/hero/alo@2x.png" width="70" height="70" alt="left arrow" />
+          </button>
+
+          <!-- Niebieski środek -->
+          <div class="blue-circle">1</div>
+
+          <!-- Numer 9 -->
+          <p class="background-number-nine">
+            <span>9</span>
+          </p>
+
+          <div class="animatedContainerOne">
+            <div class="iconBoxOne">
+              <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+              <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+              <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+              <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerTwo">
+            <div class="iconBoxTwo">
+              <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerThree">
+            <div class="iconBoxTwo">
+              <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Red View -->
+        <div id="red-view" class="red-view">
+          <!-- Małe zdjęcie urządzenia -->
+          <img src="/images/hero/agu@2x.png" width="404" height="404" alt="hero image" class="hero-image-small" />
+
+          <!-- Duże zdjęcie urządrzenia -->
+          <div class="hero-image-large-container">
+            <img src="/images/hero/agu@2x.png" width="800" height="600" alt="hero image" class="hero-image-large" />
+          </div>
+
+          <!-- H1 ELZAB Zeta Online -->
+          <h1 class="heading">
+            <span class="heading-text"> ELZAB Zeta Online </span>
+          </h1>
+
+          <!-- Zobacz produkt -->
+          <p class="product-text">
+            <span class="product-text-item"> ZOBACZ PRODUKT </span>
+            <span class="product-text-item"> W SKLEPIE </span>
+          </p>
+
+          <!-- Porównaj -->
+          <button class="compare-button">
+            <p class="compare-text">
+              <span class="compare-text-item"> PORÓWNAJ </span>
+            </p>
+          </button>
+
+          <!-- Strzałka w lewo mała -->
+          <button class="left-arrow-small switch-button">
+            <img src="/icons/hero/alo@2x.png" width="28" height="28" alt="right arrow" class="icon" />
+          </button>
+
+          <!-- Strzałka w lewo Duża -->
+          <button class="left-arrow-large switch-button">
+            <img src="/icons/hero/alo@2x.png" width="70" height="70" alt="right arrow" class="icon" />
+          </button>
+
+          <!-- Strzałka w prawo duża -->
+          <button class="right-arrow-large switch-button">
+            <img src="/icons/hero/alj@2x.png" width="70" height="70" alt="right arrow" class="icon" />
+          </button>
+
+          <!-- Describe Section -->
+          <div class="describe-section"></div>
+
+          <!-- Cena netto 1990,00 -->
+          <p class="price-section">
+            <span class="price-item">cena netto</span>
+            <span class="price-item">1990,00 zł</span>
+          </p>
+
+          <!-- Do ceny kola dashed -->
+          <svg width="245" height="245" class="price-animated-circle">
+            <circle cx="188" cy="188" r="180" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" />
+          </svg>
+
+          <svg width="225" height="225" class="price-animated-circle-two">
+            <circle cx="112.5" cy="112.5" r="105" stroke="#000000" stroke-width="1" fill="none" stroke-dasharray="3 3" />
+          </svg>
+
+          <!-- Question Box -->
+          <div class="question-box">
+            <p class="question">MASZ PYTANIE?</p>
+            <p class="send-message">WYŚLIJ WIADOMOŚĆ</p>
+          </div>
+
+          <!-- BG: -->
+          <!-- Czerwibe kółko w srodku -->
+          <div class="red-circle"></div>
+
+          <p class="animated-text-nine">
+            <span class="opacity-22">9</span>
+          </p>
+
+          <!-- Animated Circle -->
+          <svg width="658" height="658" class="animated-circle-image">
+            <circle cx="329" cy="329" r="320" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

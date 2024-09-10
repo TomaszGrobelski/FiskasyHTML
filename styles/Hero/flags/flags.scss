@@ -1,0 +1,40 @@
+.language-select {
+    position: absolute;
+    top: 364px;
+    right: 30px;
+    z-index: 20;
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+
+    @media (min-width: 1280px) {
+        display: flex;
+    }
+
+    @media (min-width: 1536px) {
+        right: 142px;
+    }
+
+    .language-title {
+        padding-bottom: 52px;
+        font-size: 45px;
+        font-weight: 800;
+    }
+
+    .flag-button {
+        border: none;
+        background: none;
+
+        &.selected-flag {
+            border-bottom: 2px solid black;
+            padding-bottom: 1px;
+        }
+    }
+
+    .flag-img {
+        width: 45px;
+        height: 30px;
+        object-fit: contain;
+    }
+}
