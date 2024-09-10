@@ -44,6 +44,7 @@
       @media (min-width: 768px) {
         // md breakpoint
         display: block;
+        animation: growMoveUpLeft 0.8s;
       }
     }
   }
@@ -94,11 +95,9 @@
     }
   }
 
-  // Style for the motion span
   .heading-text {
     white-space: nowrap;
 
-    // Initial animation styles
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -113,7 +112,6 @@
     animation: fadeIn 0.5s ease-in-out;
   }
 
-  // Base styles for the paragraph
   .product-text {
     position: absolute;
     right: 203px;
@@ -243,8 +241,8 @@
 
   .left-arrow-small {
     position: absolute;
-    right: 425px;
-    top: 465px;
+    right: 325px;
+    top: 505px;
     z-index: 40;
 
     @media (min-width: 768px) {
@@ -369,9 +367,18 @@
       height: 1084px;
       width: 1084px;
       transform: translateX(-50%);
+      animation: growMoveUpLeft 0.6s;
+    }
+    @keyframes growMoveUpLeft {
+      from {
+        scale: 0.6;
+        transform: translateX(500px) translateY(800px);
+      }
+      to {
+        scale: 1;
+      }
     }
   }
-  // Styles for the price section
   .price-section {
     position: absolute;
     right: 257px;
@@ -383,11 +390,11 @@
     height: 48px;
     width: 100px;
     text-align: center;
-    font-size: 20px;
-    font-weight: 800; // Equivalent to font-extrabold
+    font-size: 22px;
+    font-weight: 800; 
     line-height: 24px;
     letter-spacing: 0px;
-    z-index: 50;
+    z-index: 100;
 
     @media (min-width: 640px) {
       font-size: 22px;
@@ -410,43 +417,61 @@
     .price-item {
       white-space: nowrap;
 
-      /* Animation for price items */
-      @keyframes fadeIn {
+      @keyframes fadeInPrice {
         from {
           opacity: 0;
-          transform: translateY(50px) translateX(-50px);
+          transform: translateY(200px) translateX(-200px);
         }
         to {
           opacity: 1;
-          transform: translateY(0) translateX(0);
+          // transform: translateY(0) translateX(0);
         }
       }
 
-      animation: fadeIn 0.5s ease-in-out;
+      animation: fadeInPrice 1s ease-in-out;
     }
   }
 
-  // Styles for the animated SVG circle
   .price-animated-circle {
-    z-index: 100;
-    display: none; // Hidden by default
+    position: absolute;
+    left: 50%;
+    top: 723px;
+    height: 376px;
+    width: 376px;
+    z-index: 10;
+    display: none;
 
     @media (min-width: 768px) {
-      position: absolute;
-      left: 50%;
-      top: 723px;
       display: block;
-      height: 376px;
-      width: 376px;
       transform: translateX(-103%);
+      animation: moveDownMedium 1s;
     }
 
     @media (min-width: 1280px) {
       transform: translateX(-130%);
+      animation: move 1s;
     }
 
-    circle {
-      transition: all 0.8s ease-in-out;
+    @keyframes moveDownMedium {
+      from {
+        transform: translateY(-200px) translateX(-103%);
+        scale: 1.4;
+      }
+      to {
+        transform: translateY(0) translateX(-103%);
+        scale: 1;
+      }
+    }
+
+    @keyframes move {
+      from {
+        transform: translateY(-200px) translateX(-90%);
+        scale: 1.8;
+      }
+      to {
+        transform: translateY(0) translateX(-130%);
+        scale: 1;
+      }
     }
   }
 
@@ -472,24 +497,22 @@
   }
   @keyframes fadeIn {
     from {
-
       transform: translateY(50px) translateX(50px); /* Zaczyna od przesunięcia w prawo i w dół */
     }
     to {
-
       transform: translateY(0) translateX(0); /* Przemieszcza się do docelowej pozycji */
     }
   }
 
   .price-animated-circle-two {
     position: absolute;
-    right: 225px;
-    top: 590px;
+    right: 190px;
+    top: 595px;
     z-index: 100;
-    display: none; // Hidden by default
+    display: block;
 
     @media (min-width: 768px) {
-      display: none; // Hide on medium screens and up
+      display: none;
     }
 
     circle {

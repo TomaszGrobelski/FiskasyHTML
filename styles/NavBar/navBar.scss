@@ -27,6 +27,9 @@
     .nav-button {
       cursor: pointer;
       background: transparent;
+      @media (min-width: 1536px) {
+        font-size: 30px;
+      }
 
       &.dropdown {
         position: relative;
@@ -143,10 +146,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
     cursor: pointer;
 
     .menu-icon {
-      font-size: 21px;
+      scale: 1.6;
     }
 
     .menu-text {

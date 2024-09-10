@@ -30,6 +30,11 @@
   cursor: pointer;
   background: transparent;
 }
+@media (min-width: 1536px) {
+  .navbar .nav-links .nav-button {
+    font-size: 30px;
+  }
+}
 .navbar .nav-links .nav-button.dropdown {
   position: relative;
 }
@@ -140,10 +145,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 8px;
   cursor: pointer;
 }
 .navbar .menu-toggle .menu-icon {
-  font-size: 21px;
+  scale: 1.6;
 }
 .navbar .menu-toggle .menu-text {
   font-size: 14px;
