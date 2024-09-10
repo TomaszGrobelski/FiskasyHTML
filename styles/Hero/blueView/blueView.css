@@ -128,7 +128,7 @@
   color: #000;
   opacity: 1;
   transition: all 300ms ease-in-out;
-  animation: moveUpLeft 1s;
+  animation: moveUpLeftSmall 1s;
 }
 .blue-view .hero-title span {
   display: block;
@@ -148,6 +148,7 @@
     transform: translateX(-15%);
     font-size: 45px;
     line-height: 40px;
+    animation: moveUpLeft 1s;
   }
 }
 @media (min-width: 1024px) {
@@ -171,6 +172,14 @@
   }
   to {
     transform: translate(-15%, 0);
+  }
+}
+@keyframes moveUpLeftSmall {
+  from {
+    transform: translate(200px, 200px);
+  }
+  to {
+    transform: translate(0, 0);
   }
 }
 .blue-view .custom-button {
@@ -310,6 +319,7 @@
   letter-spacing: 0px;
   transition: all 0.3s ease-in-out;
   z-index: 100;
+  animation: upLeft 1s;
 }
 @media (min-width: 640px) {
   .blue-view .price-container {
@@ -353,12 +363,25 @@
     transform: translateX(350%) translateY(0);
   }
 }
+@keyframes upLeft {
+  from {
+    transform: translateX(300px) translateY(300px);
+  }
+  to {
+    transform: translateX(0) translateY(0);
+  }
+}
 .blue-view .price-circle {
   position: absolute;
   left: 207px;
-  top: 597px;
+  top: 567px;
   height: 245px;
   width: 245px;
+}
+@media (min-width: 640px) {
+  .blue-view .price-circle {
+    left: 300px;
+  }
 }
 @media (min-width: 768px) {
   .blue-view .price-circle {

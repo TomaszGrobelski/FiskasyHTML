@@ -27,6 +27,9 @@
     .nav-button {
       cursor: pointer;
       background: transparent;
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
       @media (min-width: 1536px) {
         font-size: 30px;
       }

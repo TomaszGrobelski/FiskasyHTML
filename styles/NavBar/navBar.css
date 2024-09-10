@@ -30,6 +30,11 @@
   cursor: pointer;
   background: transparent;
 }
+@media (min-width: 768px) {
+  .navbar .nav-links .nav-button {
+    font-size: 24px;
+  }
+}
 @media (min-width: 1536px) {
   .navbar .nav-links .nav-button {
     font-size: 30px;
