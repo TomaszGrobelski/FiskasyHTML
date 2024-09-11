@@ -1,0 +1,31 @@
+.about-section {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  margin-inline: 36px;
+}
+.about-section .about-header {
+  font-size: 13px;
+  font-family: "Gilroy-bold";
+  height: 16px;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.about-section .about-description {
+  font-size: 12px;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.about-section .about-description__bold {
+  font-weight: 800;
+}
+.about-section .about-description__underline {
+  text-decoration: underline;
+}/*# sourceMappingURL=about.css.map */

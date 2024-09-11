@@ -1,0 +1,91 @@
+.contact-section {
+  margin-top: 27px;
+  margin-inline: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact-header {
+    font-family: 'Gilroy-bold';
+    font-size: 13px;
+    align-self: flex-start;
+  }
+
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 10px;
+    margin-top: 27px;
+    .information-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &__icon {
+        width: 100%;
+        max-width: 26px;
+        max-height: 26px;
+      }
+
+      &__description {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        &__red {
+          color: red;
+          font-family: 'Gilroy-bold';
+        }
+      }
+    }
+  }
+
+  .map-container {
+    margin-top: 39px;
+    position: relative;
+    display: flex;
+    width: 100vw;
+
+    &__image {
+      position: relative;
+      width: 50%;
+      height: 78px;
+    }
+    .map-logo-background {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 54px;
+      height: 54px;
+      background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      opacity: 1;
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      border-radius: 100%;
+      &__image {
+        width: 25px;
+        height: 26px;
+        /* UI Properties */
+        opacity: 1;
+      }
+    }
+  }
+
+  .get-route {
+    font-size: 13px;
+    font-family: 'Gilroy-bold';
+    width: 90px;
+    height: 16px;
+    color: var(--unnamed-color-000000);
+    text-align: left;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+}
