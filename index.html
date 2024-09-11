@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiskasy</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles/NavBar/navBar.css" />
-    <link rel="stylesheet" href="styles/Hero/flags/flags.css" />
-    <link rel="stylesheet" href="styles/Hero/redView/redView.css" />
-    <link rel="stylesheet" href="styles/Hero/blueView/blueView.css" />
-    <link rel="stylesheet" href="styles/Hero/social/social.css" />
-    <link rel="stylesheet" href="styles/Hero/background/background.css" />
+    <link rel="stylesheet" href="styles/Home/NavBar/navBar.css" />
+    <link rel="stylesheet" href="styles/Home/Hero/flags/flags.css" />
+    <link rel="stylesheet" href="styles/Home/Hero/redView/redView.css" />
+    <link rel="stylesheet" href="styles/Home/Hero/blueView/blueView.css" />
+    <link rel="stylesheet" href="styles/Home/Hero/social/social.css" />
+    <link rel="stylesheet" href="styles/Home/Hero/background/background.css" />
+    <link rel="stylesheet" href="styles/Home/Discounts/discount.css" />
+    <link rel="stylesheet" href="styles/Home/Discounts/discountCard.css" />
+    <link rel="stylesheet" href="styles/Home/Discounts/productCard.css" />
   </head>
   <body>
     <div class="main-container">
@@ -124,7 +127,7 @@
           <button>
             <p class="custom-button">
               <span class="custom-span">ZOBACZ PRODUKT</span>
-              <span class="custom-span custom-span-hover">W SKLEPIE</span>
+              <span class="custom-span">W SKLEPIE</span>
             </p>
           </button>
 
@@ -171,13 +174,19 @@
           <!-- Niebieski środek -->
           <div class="blue-circle"></div>
 
-          <!-- Numer 9 -->
+          <!-- Numer: 9 -->
           <p class="background-number-nine">
             <span>9</span>
           </p>
 
+          <!-- Litera: X -->
+          <div class="background-letter-x">X</div>
+
+          <!-- Znak wyślnik: - -->
+          <div class="background-dash">-</div>
+
           <!-- Kwadraty do okoła -->
-          <div class="animatedContainerOne">
+          <div class="animatedBoxOne">
             <div class="iconBoxOne">
               <img src="icons/hero/aag.png" alt="slash icon" class="icon icon1" />
               <img src="icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
@@ -315,10 +324,84 @@
               <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
             </div>
           </div>
-          
+
           <div class="custom-border-background"></div>
           <div class="custom-border-background-two"></div>
         </div>
+
+        <!-- Discounts -->
+        <div class="discounts-view">
+          <h2 class="discounts-view__header">PROMOCJE</h2>
+
+          <div class="discount-moving-box">
+            <div class="discount-card">
+              <p class="discount-card__title">Drukarki paragonowe</p>
+              <img src="/images/discount/ako.png"  class="discount-card__image"></img>
+              <div class="discount-box">
+                <span class="discount-box__price">OD</span>
+                <span class="discount-box__price">3249 zł</span>
+                <img src="/images/discount/aky.png" class="discount-box__sign" alt="znak zniżki">
+              </div>
+            </div>
+            <div class="discount-card">
+              <p class="discount-card__title">Kasoterminal POSPAY2 Online</p>
+              <img src="/images/discount/akh.png"  class="discount-card__image"></img>
+              <div class="discount-box">
+                <span class="discount-box__price">OD</span>
+                <span class="discount-box__price">1799 zł</span>
+                <img src="/images/discount/aky.png" class="discount-box__sign" alt="znak zniżki">
+              </div>
+            </div>
+            <div class="discount-card">
+              <p class="discount-card__title">Novitus Nano Online</p>
+              <img src="/images/discount/ajt.png"  class="discount-card__image"></img>
+              <div class="discount-box">
+                <span class="discount-box__price">OD</span>
+                <span class="discount-box__price">1799 zł</span>
+                <img src="/images/discount/aky.png" class="discount-box__sign" alt="znak zniżki">
+              </div>
+            </div>
+          </div>
+
+          <div class="products-container">
+
+            <div class="product-card">
+              <p class="product-card__title">Metkownice</p>
+              <img src="/images/products/afr.png" class="product-card__image"></img>
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <p class="product-card__title">Metkownice</p>
+              <img src="/images/products/afv.png" class="product-card__image"></img>
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <p class="product-card__title">Metkownice</p>
+              <img src="/images/products/afw.png" class="product-card__image"></img>
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
+            </div>
+            <div class="product-card">
+              <p class="product-card__title">Metkownice</p>
+              <img src="/images/products/aga.png" class="product-card__image"></img>
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
       </div>
     </div>
 

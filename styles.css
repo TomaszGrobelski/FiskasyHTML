@@ -1,14 +1,21 @@
 @font-face {
-  font-family: "MyCustomFont";
-  src: url("../fonts/custom-font.ttf") format("truetype");
+  font-family: 'MyCustomFont';
+  src: url('../fonts/custom-font.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Gilroy-bold';
+  src: url('/fonts/Gilroy-ExtraBold.ttf') format('woff2'), url('./fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "MyCustomFont", sans-serif;
+  font-family: 'MyCustomFont', sans-serif;
 }
 
 button {
@@ -19,7 +26,7 @@ button {
 
 body {
   background-color: white;
-  font-family: "MyCustomFont", sans-serif;
+  font-family: 'MyCustomFont', sans-serif;
 }
 
 .main-container {
@@ -42,4 +49,4 @@ body {
 }
 .main-container .hero-section {
   min-height: 755px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

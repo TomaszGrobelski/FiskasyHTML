@@ -1,0 +1,25 @@
+.discounts-view {
+  position: relative;
+  left: 15px;
+  top: 726px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.discounts-view__header {
+  font-size: 24px;
+  width: 14px;
+  height: 17px;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font-family: "Gilroy-bold", sans-serif;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  align-self: flex-start;
+}
+.discounts-view .products-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 61px;
+}/*# sourceMappingURL=discount.css.map */
