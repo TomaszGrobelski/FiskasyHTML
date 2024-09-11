@@ -1,0 +1,86 @@
+.footer-section {
+  position: relative;
+  margin-top: 100px;
+  padding-bottom: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   overflow-x: hidden;
+
+  .footer-logo {
+    width: 57px;
+    height: 59px;
+    opacity: 1;
+  }
+
+  .information-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 27px;
+    .information-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      &__icon {
+        width: 100%;
+        max-width: 26px;
+        max-height: 26px;
+      }
+
+      &__description {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        .bold {
+          font-weight: 800;
+          font-family: 'Gilroy-bold';
+        }
+      }
+    }
+  }
+
+  //    BackGround:
+  .blue-circle {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 492px;
+    height: 492px;
+    background-color: #00a8f0;
+    border-radius: 50%;
+    transform: translate(-50%, 50%);
+    z-index: -20;
+  }
+  .azure-circle {
+    position: absolute;
+    left: -30px;
+    top: -250px;
+    width: 2199px;
+    height: 2237px;
+    background: #c4ecfc;
+    opacity: 1;
+    z-index: -50;
+    transform: matrix(1, 0.02, -0.02, 1, 0, 0);
+    border-radius: 78% 22% 40% 60% / 20% 11% 89% 80%;
+  }
+  .dashed-circle {
+    position: absolute;
+    top: -20px;
+    left: -62px;
+    z-index: -30;
+    width: 492px;
+    height: 492px;
+  }
+
+  .footer-animatedBox {
+    position: absolute;
+    left: -25px;
+    top: -80px;
+    width: 98px;
+    height: 98px;
+  }
+}

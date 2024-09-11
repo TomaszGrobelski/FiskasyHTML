@@ -29,11 +29,12 @@
       }
 
       &__description {
+        font-size: 10px;
         display: flex;
         flex-direction: column;
         gap: 4px;
 
-        &__red {
+        .red {
           color: red;
           font-family: 'Gilroy-bold';
         }

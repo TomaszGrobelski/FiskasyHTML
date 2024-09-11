@@ -7,6 +7,7 @@
   .about-header {
     font-size: 13px;
     font-family: 'Gilroy-bold';
+    font-weight: 800;
     height: 16px;
     color: var(--unnamed-color-000000);
     text-align: left;
@@ -22,10 +23,33 @@
     color: #000000;
     opacity: 1;
     &__bold {
-      font-weight: 800;
+      font-family: 'Gilroy-bold';
     }
     &__underline {
       text-decoration: underline;
+    }
+  }
+
+  .collaborate-box {
+    display: flex;
+    gap: 55px;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    margin-top: 80px;
+    animation: scroll-left 20s linear infinite;
+
+    &__image {
+      margin-right: 20px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-240%);
+      }
     }
   }
 }

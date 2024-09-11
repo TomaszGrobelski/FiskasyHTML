@@ -28,11 +28,12 @@
   max-height: 26px;
 }
 .contact-section .information-container .information-box__description {
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   gap: 4px;
 }
-.contact-section .information-container .information-box__description__red {
+.contact-section .information-container .information-box__description .red {
   color: red;
   font-family: "Gilroy-bold";
 }

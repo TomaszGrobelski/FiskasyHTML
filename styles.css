@@ -1,38 +1,26 @@
-:root {
-  /* Colors: */
-  --unnamed-color-df280b: #df280b;
-  --unnamed-color-ffffff: #ffffff;
-  --unnamed-color-0072bb: #0072bb;
-  --unnamed-color-df270a: #df270a;
-  --unnamed-color-707070: #707070;
-  --unnamed-color-00a8f0: #00a8f0;
-  --unnamed-color-000000: #000000;
-}
-
 @font-face {
-  font-family: 'Gilroy-light';
-  src: url('fonts/Gilroy-Light.ttf') format('woff2'), url('./fonts/Gilroy-Bold.woff') format('woff');
+  font-family: "Girloy-light";
+  src: url("/fonts/Gilroy-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy-normal';
-  src: url('fonts/Gilroy-Medium.ttf') format('woff2'), url('./fonts/Gilroy-Bold.woff') format('woff');
+  font-family: "Girloy-normal";
+  src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Gilroy-bold';
-  src: url('fonts/Gilroy-ExtraBold.ttf') format('woff2'), url('./fonts/Gilroy-Bold.woff') format('woff');
+  font-family: "Girloy-bold";
+  src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gilroy-normal', sans-serif;
+  font-family: "Girloy-normal", sans-serif;
 }
 
 button {
@@ -41,8 +29,14 @@ button {
   cursor: pointer;
 }
 
+h1, h2, h3 {
+  font-family: "Gilroy-bold";
+  font-weight: 800;
+}
+
 body {
   background-color: white;
+  font-family: "Girloy-normal", sans-serif;
 }
 
 .main-container {
@@ -51,6 +45,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow-x: clip;
+  overflow-y: hidden;
 }
 @media (min-width: 640px) {
   .main-container {
@@ -65,4 +60,4 @@ body {
 }
 .main-container .hero-section {
   min-height: 755px;
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

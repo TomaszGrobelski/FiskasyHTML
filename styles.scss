@@ -1,24 +1,42 @@
 @font-face {
-  font-family: 'MyCustomFont';
-  src: url('../fonts/custom-font.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Girloy-light';
+  src: url('/fonts/Gilroy-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Girloy-normal';
+  src: url('/fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Girloy-bold';
+  src: url('/fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: 'Girloy-normal', sans-serif;
 }
 button {
   border: 0;
   background: none;
   cursor: pointer;
 }
+h1,h2,h3{
+  font-family: 'Gilroy-bold';
+  font-weight: 800;
+}
 
 body {
   background-color: white;
-  font-family: 'MyCustomFont', sans-serif;
+  font-family: 'Girloy-normal', sans-serif;
 }
 
 .main-container {
@@ -27,6 +45,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   overflow-x: clip;
+  overflow-y: hidden;
 
   @media (min-width: 640px) {
     max-width: 1920px;
