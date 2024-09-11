@@ -1,17 +1,17 @@
 @font-face {
-  font-family: "Girloy-light";
+  font-family: "Gilroy-light";
   src: url("/fonts/Gilroy-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
-  font-family: "Girloy-normal";
+  font-family: "Gilroy-normal";
   src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: "Girloy-bold";
+  font-family: "Gilroy-bold";
   src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
@@ -20,7 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Girloy-normal", sans-serif;
+  font-family: "Gilroy-light", "Gilroy-normal", "Gilroy-bold", sans-serif;
 }
 
 button {
@@ -29,14 +29,16 @@ button {
   cursor: pointer;
 }
 
-h1, h2, h3 {
-  font-family: "Gilroy-bold";
+h1,
+h2,
+h3 {
+  font-family: "Gilroy-bold", sans-serif;
   font-weight: 800;
 }
 
 body {
   background-color: white;
-  font-family: "Girloy-normal", sans-serif;
+  font-family: "Gilroy-normal", sans-serif;
 }
 
 .main-container {

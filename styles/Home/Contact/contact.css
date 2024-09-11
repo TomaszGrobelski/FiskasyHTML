@@ -1,6 +1,7 @@
 .contact-section {
+  position: relative;
   margin-top: 27px;
-  margin-inline: 35px;
+  padding-inline: 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,6 +37,7 @@
 .contact-section .information-container .information-box__description .red {
   color: red;
   font-family: "Gilroy-bold";
+  font-weight: 800;
 }
 .contact-section .map-container {
   margin-top: 39px;
@@ -74,6 +76,7 @@
 .contact-section .get-route {
   font-size: 13px;
   font-family: "Gilroy-bold";
+  font-weight: 800;
   width: 90px;
   height: 16px;
   color: var(--unnamed-color-000000);
@@ -81,4 +84,54 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+}
+.contact-section .contact-nine {
+  position: absolute;
+  top: 110px;
+  left: 312px;
+  width: 24px;
+  height: 51px;
+  /* UI Properties */
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font-family: "Gilroy-bold";
+  font-size: 42px;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.22;
+  z-index: -10;
+}
+.contact-section .contact-dashed-circle {
+  position: absolute;
+  top: 220px;
+  left: 118px;
+  width: 171px;
+  height: 171px;
+  z-index: -10;
+  opacity: 1;
+}
+.contact-section .contact-blue-circle {
+  position: absolute;
+  top: 265px;
+  left: 180px;
+  width: 132px;
+  height: 131px;
+  border-radius: 100%;
+  z-index: -20;
+  background: var(--unnamed-color-00a8f0) 0% 0% no-repeat padding-box;
+  background: #00a8f0 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.contact-section .contact-azure-background-top {
+  position: absolute;
+  top: -20px;
+  left: -95.3524627686px;
+  width: 621px;
+  height: 646px;
+  transform: matrix(0.12, -0.99, 0.99, 0.12, 0, 0);
+  /* UI Properties */
+  background: #c4ecfc 0% 0% no-repeat padding-box;
+  opacity: 1;
+  z-index: -40;
+  border-radius: 37%;
 }/*# sourceMappingURL=contact.css.map */
