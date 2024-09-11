@@ -21,7 +21,9 @@
 .discounts-view .products-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 65px;
+  -moz-column-gap: 65px;
+       column-gap: 65px;
+  row-gap: 41px;
   margin-top: 35px;
 }
 .discounts-view .catalog-description {
@@ -49,7 +51,7 @@
 }
 .discounts-view .discount-dashed-circle {
   position: absolute;
-  top: 165px;
+  top: 195px;
   left: -167px;
   width: 291px;
   height: 291px;
@@ -84,8 +86,8 @@
 }
 .discounts-view .discount-dash {
   position: absolute;
-  top: 695px;
-  left: 15px;
+  top: 645px;
+  left: 25px;
   width: 21px;
   height: 51px;
   color: var(--unnamed-color-000000);
@@ -98,19 +100,19 @@
 }
 .discounts-view .discount-azure-bg {
   position: absolute;
-  top: 430px;
-  left: 115px;
+  top: 450px;
+  left: 120px;
   width: 995px;
-  height: 957px;
+  height: 840px;
   transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
   background: #c4ecfc 0% 0% no-repeat padding-box;
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 40%/25%;
   z-index: -60;
 }
 .discounts-view .discount-dashed-circle-two {
   position: absolute;
-  top: 820px;
+  top: 770px;
   left: 105px;
   width: 195px;
   height: 195px;
@@ -119,14 +121,104 @@
 }
 .discounts-view .dicount-seven {
   position: absolute;
-  top: 1150px;
+  top: 1060px;
   left: 351px;
   width: 10px;
   height: 24px;
   color: var(--unnamed-color-000000);
   text-align: left;
-  font: normal normal 800 20px/24px Gilroy;
+  font-family: "Gilroy-bold";
   letter-spacing: 0px;
   color: #000000;
   opacity: 0.22;
+}
+.discounts-view .discount-plus {
+  position: absolute;
+  top: 1320px;
+  left: 394px;
+  width: 24px;
+  height: 51px;
+  /* UI Properties */
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font: normal normal 800 42px/51px Gilroy;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.22;
+}
+.discounts-view .discount-Box-two {
+  position: absolute;
+  top: 1240px;
+  left: -11px;
+  width: 170px;
+  height: 170px;
+  opacity: 1;
+  z-index: -20;
+}
+.discounts-view .discount-azure-bg-two {
+  position: absolute;
+  top: 1390px;
+  left: -630px;
+  width: 943px;
+  height: 982px;
+  transform: matrix(0.12, -0.99, 0.99, 0.12, 0, 0);
+  background: #c4ecfc 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 100%;
+  z-index: -30;
+}
+.discounts-view .dicount-five {
+  position: absolute;
+  top: 1610px;
+  left: 26px;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font: normal normal 800 22px/24px Gilroy;
+  font-family: "Gilroy-bold";
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.22;
+}
+.discounts-view .discount-blue-circle-two {
+  position: absolute;
+  top: 1640px;
+  left: 370px;
+  width: 224px;
+  height: 224px;
+  /* UI Properties */
+  background: var(--unnamed-color-00a8f0) 0% 0% no-repeat padding-box;
+  background: #00a8f0 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 100%;
+  z-index: -40;
+}
+.discounts-view .discount-dashed-circle-three {
+  position: absolute;
+  top: 1550px;
+  left: 260px;
+  width: 291px;
+  height: 291px;
+  z-index: -30;
+  opacity: 1;
+}
+.discounts-view .discount-plus-two {
+  position: absolute;
+  top: 1900px;
+  left: 205px;
+  width: 24px;
+  height: 51px;
+  /* UI Properties */
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font: normal normal 800 42px/51px Gilroy;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 0.22;
+}
+.discounts-view .discount-Box-three {
+  position: absolute;
+  top: 2480px;
+  left: 140px;
+  width: 150px;
+  height: 150px;
 }/*# sourceMappingURL=discount.css.map */

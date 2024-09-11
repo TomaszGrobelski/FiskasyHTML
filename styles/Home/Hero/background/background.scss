@@ -241,12 +241,11 @@
   position: absolute;
   top: 73px;
   left: 166px;
-  width: 21px;
-  height: 49px;
-  /* UI Properties */
   color: var(--unnamed-color-000000);
   text-align: left;
   font: normal normal 800 40px/49px Gilroy;
+  font-family: 'Gilroy-bold', sans-serif;
+  font-weight: bolder;
   letter-spacing: 0px;
   color: #000000;
   opacity: 0.22;
@@ -265,5 +264,5 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 0.22;
-  scale: 2.0;
+  scale: 2;
 }

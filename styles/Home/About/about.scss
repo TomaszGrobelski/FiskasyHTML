@@ -16,6 +16,15 @@
     color: #000000;
     opacity: 1;
   }
+
+  .about-custom-border {
+    position: absolute;
+    left: -36px;
+    top: 28px;
+    width: 137px;
+    border: 1px solid black;
+  }
+
   .about-description {
     font-size: 12px;
     color: var(--unnamed-color-000000);
@@ -74,7 +83,7 @@
   }
   .about-one {
     position: absolute;
-    top: 750px;
+    top: 810px;
     left: 281px;
     width: 17px;
     height: 51px;
@@ -90,11 +99,25 @@
   }
   .dashed-circle {
     position: absolute;
-    top: 755px;
+    top: 800px;
     right: -100px;
     width: 171px;
     height: 171px;
     opacity: 1;
     z-index: -60;
+  }
+  .about-dash {
+    position: absolute;
+    top: -10px;
+    left: 400px;
+    width: 21px;
+    height: 51px;
+    color: var(--unnamed-color-000000);
+    text-align: left;
+    font: normal normal 800 42px/51px Gilroy;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.22;
+    scale: 2;
   }
 }

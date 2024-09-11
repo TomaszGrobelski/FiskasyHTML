@@ -11,6 +11,23 @@
     font-size: 13px;
     align-self: flex-start;
   }
+  .contact-custom-border {
+    position: absolute;
+    left: -36px;
+    top: 28px; 
+    width: 137px;
+    border: 1px solid black;
+  }
+
+  @media (min-width: 768px) {
+    /* odpowiada md: dla średnich ekranów */
+    .custom-div {
+      left: -178px;
+      top: 64px; /* odpowiada 'top-16' (16 * 4px = 64px) */
+      width: 1413px;
+      border-width: 3px;
+    }
+  }
 
   .information-container {
     display: flex;
