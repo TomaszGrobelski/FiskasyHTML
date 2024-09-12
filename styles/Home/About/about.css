@@ -17,12 +17,41 @@
   color: #000000;
   opacity: 1;
 }
+@media (min-width: 768px) {
+  .about-section .about-header {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-section .about-header {
+    font-size: 45px;
+  }
+}
 .about-section .about-custom-border {
   position: absolute;
   left: -36px;
   top: 28px;
   width: 137px;
   border: 1px solid black;
+}
+@media (min-width: 768px) {
+  .about-section .about-custom-border {
+    top: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-section .about-custom-border {
+    top: 58px;
+    border: 2px solid black;
+    width: 1013px;
+  }
+}
+@media (min-width: 1536px) {
+  .about-section .about-custom-border {
+    top: 58px;
+    border: 2px solid black;
+    width: 1413px;
+  }
 }
 .about-section .about-description {
   font-size: 12px;
@@ -31,6 +60,18 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+}
+@media (min-width: 1024px) {
+  .about-section .about-description {
+    margin-top: 66px;
+    font-size: 16px;
+    padding-inline: 142px;
+  }
+}
+@media (min-width: 1536px) {
+  .about-section .about-description {
+    font-size: 20px;
+  }
 }
 .about-section .about-description__bold {
   font-family: "Gilroy-bold";
@@ -45,18 +86,45 @@
   position: relative;
   white-space: nowrap;
   margin-top: 40px;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 40s linear infinite;
+}
+@media (min-width: 1536px) {
+  .about-section .collaborate-box {
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+    margin-top: 95px;
+    margin-bottom: 80px;
+    animation: none;
+  }
 }
 .about-section .collaborate-box__image {
   margin-right: 20px;
   background: transparent;
+}
+@media (min-width: 1536px) {
+  .about-section .collaborate-box__image {
+    animation: none;
+    display: none;
+  }
+}
+.about-section .collaborate-box__image-large {
+  display: none;
+  animation: none;
+}
+@media (min-width: 1536px) {
+  .about-section .collaborate-box__image-large {
+    display: block;
+    max-width: 300px;
+    animation: none;
+  }
 }
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-240%);
+    transform: translateX(-140%);
   }
 }
 .about-section .about-plus {
@@ -98,6 +166,11 @@
   height: 171px;
   opacity: 1;
   z-index: -60;
+}
+@media (min-width: 1024px) {
+  .about-section .dashed-circle {
+    display: none;
+  }
 }
 .about-section .about-dash {
   position: absolute;

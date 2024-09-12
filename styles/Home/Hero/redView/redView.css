@@ -4,16 +4,16 @@
 }
 .red-view .hero-image-small {
   position: absolute;
-  right: -110px;
-  top: 280px;
+  right: 0px;
+  top: 420px;
   rotate: 12deg;
-  height: 404px;
-  width: 404px;
+  width: 171px;
+  height: 162px;
   animation: growUpRedSmall 0.3s;
 }
 @media (min-width: 640px) {
   .red-view .hero-image-small {
-    right: -70px;
+    right: 0px;
   }
 }
 @media (min-width: 768px) {
@@ -28,11 +28,11 @@
 .red-view .hero-image-large-container .hero-image-large {
   position: absolute;
   left: 50%;
-  top: 407px;
+  top: 607px;
   z-index: 20;
   display: none;
-  height: 800px;
-  width: 622px;
+  width: 522px;
+  height: 493px;
   transform: translateX(0%);
 }
 @media (min-width: 768px) {

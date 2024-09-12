@@ -7,10 +7,22 @@
   align-items: center;
   //   overflow-x: hidden;
 
+  @media (min-width: 1024px) {
+    padding-bottom: 72px;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+  }
+  @media (min-width: 1546px) {
+    gap: 177px;
+  }
+
   .footer-logo {
-    width: 57px;
     height: 59px;
     opacity: 1;
+    @media (min-width: 1024px) {
+      height: 103px;
+    }
   }
 
   .information-container {
@@ -27,19 +39,34 @@
         width: 100%;
         max-width: 26px;
         max-height: 26px;
+        @media (min-width: 1024px) {
+          max-width: 45px;
+          max-height: 45px;
+        }
       }
 
       &__description {
+        font-family: 'Gilroy-light';
         font-size: 10px;
         display: flex;
         flex-direction: column;
         gap: 4px;
+        @media (min-width: 1024px) {
+          font-size: 18px;
+        }
 
         .bold {
           font-weight: 800;
           font-family: 'Gilroy-bold';
         }
       }
+    }
+  }
+  .footer-fiskasy-logo {
+    display: none;
+    @media (min-width: 1536px) {
+      display: block;
+      height: 73px;
     }
   }
 
@@ -66,6 +93,11 @@
     z-index: -50;
     transform: matrix(1, 0.02, -0.02, 1, 0, 0);
     border-radius: 78% 22% 40% 60% / 20% 11% 89% 80%;
+    @media (min-width: 1024px) {
+      width: 2199px;
+      top: -50px;
+      border-radius: 59% 41% 52% 48% / 12% 35% 65% 88%;
+    }
   }
   .dashed-circle {
     position: absolute;
@@ -82,5 +114,35 @@
     top: -80px;
     width: 98px;
     height: 98px;
+  }
+
+  .blue-circle-right {
+    display: none;
+    @media (min-width: 1536px) {
+      display: block;
+      position: absolute;
+      bottom: -275px; 
+      right: -91px; 
+      width: 492px;
+      height: 492px;
+      border-radius: 100%;
+      background: var(--unnamed-color-00a8f0) 0% 0% no-repeat padding-box;
+      background: #00a8f0 0% 0% no-repeat padding-box;
+      opacity: 1;
+      z-index: -30;
+    }
+  }
+  .dashed-circle-right {
+    display: none;
+    @media (min-width: 1536px) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -380px;
+      width: 640px;
+      height: 640px;
+      opacity: 1;
+      z-index: 30;
+    }
   }
 }

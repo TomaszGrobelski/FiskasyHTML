@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="styles/Home/Contact/contact.css" />
     <link rel="stylesheet" href="styles/Home/About/about.css" />
     <link rel="stylesheet" href="styles/Footer/footer.css" />
+    <link rel="stylesheet" href="styles/Aside/industries.css" />
   </head>
   <body>
     <div class="main-container">
@@ -224,11 +225,11 @@
         <!-- Red View -->
         <div id="red-view" class="red-view">
           <!-- Małe zdjęcie urządzenia -->
-          <img src="images/hero/agu@2x.png" width="404" height="404" alt="hero image" class="hero-image-small" />
+          <img src="images/hero/elzab.png" width="404" height="404" alt="hero image" class="hero-image-small" />
 
           <!-- Duże zdjęcie urządrzenia -->
           <div class="hero-image-large-container">
-            <img src="images/hero/agu@2x.png" width="800" height="600" alt="hero image" class="hero-image-large" />
+            <img src="images/hero/elzab.png" width="800" height="600" alt="hero image" class="hero-image-large" />
           </div>
 
           <!-- H1 ELZAB Zeta Online -->
@@ -298,7 +299,7 @@
           </p>
 
           <!-- Dashed main image small -->
-          <svg width="360" height="360" class="dashed-circle-image-small" >
+          <svg width="360" height="360" class="dashed-circle-image-small">
             <circle cx="180" cy="180" r="177" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" opacity="1"></circle>
           </svg>
 
@@ -601,6 +602,46 @@
           </div>
         </section>
 
+        <!-- Wybierz swoją branże i poznaj urządzenia -->
+        <aside class="industries-container">
+          <h3 class="industries-header"><span>WYBIERZ SWOJĄ BRANŻE</span><span>I POZNAJ URZĄDZENIA</span></h3>
+          <div class="industries-underline"></div>
+
+          <ul class="industries-list">
+            <li class="industries-list__item">Salon fryzjerski, salon kosmetyczny</li>
+            <li class="industries-list__item">Fitness i siłownie</li>
+            <li class="industries-list__item">Branża budowlana</li>
+            <li class="industries-list__item">Lekarze</li>
+            <li class="industries-list__item">Prawnicy</li>
+            <li class="industries-list__item">Mała gastronomia</li>
+            <li class="industries-list__item">Warsztat samochodowy, wulkanizacja</li>
+            <li class="industries-list__item">Apteka</li>
+            <li class="industries-list__item">Taxi</li>
+            <li class="industries-list__item">Piekarnia i cukiernia</li>
+            <li class="industries-list__item">Mały punkt handlowo usługowy</li>
+            <li class="industries-list__item">Sklep internetowy</li>
+          </ul>
+
+          <h3 class="industries-header">PORADNIK</h3>
+          <div class="industries-underline"></div>
+          <ul class="industries-list">
+            <li class="industries-list__item">Jak wybrać urządzenie fiskalne</li>
+            <li class="industries-list__item">Oprogramowanie do zarządzania firmą</li>
+            <li class="industries-list__item">Sklep (systemy sprzedaży)</li>
+            <li class="industries-list__item">Sklep (systemy sprzedaży)</li>
+            <li class="industries-list__item">Restauracja</li>
+          </ul>
+
+          <h3 class="industries-header">INFORMACJE</h3>
+          <div class="industries-underline"></div>
+          <ul class="industries-list">
+            <li class="industries-list__item">Zmiana VAT. Programowanie kasy</li>
+            <li class="industries-list__item">Przeglądy okresowe</li>
+            <li class="industries-list__item">Porady prawne</li>
+            <li class="industries-list__item">Często zadawne pytania</li>
+          </ul>
+        </aside>
+
         <!-- Contact -->
         <section class="contact-section">
           <h3 class="contact-header">KONTAKT</h3>
@@ -643,10 +684,59 @@
           </div>
 
           <div class="map-container">
-            <img class="map-container__image" src="images/contact/ajx.png" alt="" />
-            <img class="map-container__image" src="images/contact/ajw.png" alt="" />
+            <img class="map-container__image" src="images/contact/ajx.png" alt="ESC localization map" />
+            <img class="map-container__image" src="images/contact/ajw.png" alt="ESC localization map" />
+            <img class="map-container__image-large" src="images/contact/ajx@2x.png" alt="ESC localization map" />
+            <img class="map-container__image-large" src="images/contact/ajw@2x.png" alt="ESC localization map" />
             <div class="map-logo-background">
               <img class="map-logo-background__image" src="images/contact/aka.png" alt="" />
+            </div>
+          </div>
+
+          <div class="information-container-down">
+            <div class="first">
+              <div class="information-box">
+                <img src="icons/contact/amk.png" class="information-box__icon" alt="" />
+                <div class="information-box__description">
+                  <p>ESC SA Centrum - ul. Mieszczańska 19, 30-313 Kraków</p>
+                </div>
+              </div>
+              <div class="information-box">
+                <img src="icons/contact/amg.png" class="information-box__icon" alt="" />
+                <p>sprzedaz@escsa.pl</p>
+              </div>
+              <div class="information-box">
+                <img src="icons/contact/ana.png" class="information-box__icon" alt="" />
+                <div class="information-box__description">
+                  <p>+48 12 633 73 08</p>
+                  <p>+48 12 656 51 58</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="secound">
+              <div class="information-box__description">
+                <p>poniedziałek - piątek: 9.00 - 17.00</p>
+              </div>
+            </div>
+
+            <div class="three">
+              <div class="information-box-right">
+                <p>ESC SA Nowa Huta - Osiedle Teatralne 3, 31-945 Kraków</p>
+                <img src="icons/contact/amk.png" class="information-box__icon" alt="" />
+              </div>
+              <div class="information-box-right">
+                <div class="information-box__description">
+                  <p>sprzedaz@escsa.pl</p>
+                </div>
+                <img src="icons/contact/amg.png" class="information-box__icon" alt="" />
+              </div>
+              <div class="information-box-right">
+                <div class="information-box__description">
+                  <p class="red">+48 12 656 33 64</p>
+                </div>
+                <img src="icons/contact/amo.png" class="information-box__icon" alt="" />
+              </div>
             </div>
           </div>
 
@@ -660,7 +750,6 @@
           <div class="contact-blue-circle"></div>
 
           <div class="contact-azure-background-top"></div>
-          <div class="contact-azure-background-down"></div>
         </section>
 
         <!-- About -->
@@ -704,6 +793,9 @@
               Oferowany przez nas sprzęt fiskalny wyprodukowany jest przez firmy wiodące na rynku urządzeń fiskalnych tj. Novitus, Posnet, Elzab,
               Datecs, iNNOVA, Incotex, Aclas.
             </p>
+
+            <br />
+
             <p>
               Strona <span class="about-description__underline">www.kasy-fiskalne-krakow.pl</span> jest własnością firmy
               <span class="about-description__bold">ESC SA</span> Portal skupia się na obsłudze firm w Krakowie oraz całej Małopolsce. Obsługa
@@ -712,14 +804,18 @@
           </div>
 
           <div class="collaborate-box">
-            <img class="collaborate-box__image" src="images/about/alv.png" alt="" />
-            <img class="collaborate-box__image" src="images/about/alt.png" alt="" />
-            <img class="collaborate-box__image" src="images/about/alr.png" alt="" />
-            <img class="collaborate-box__image" src="images/about/alp.png" alt="" />
-            <img class="collaborate-box__image" src="images/about/alv.png" alt="" />
-            <img class="collaborate-box__image" src="images/about/alt.png" alt="" />
-            <img class="collaborate-box__image" src="images/about/alr.png" alt="" />
-            <img class="collaborate-box__image" src="images/about/alp.png" alt="" />
+            <img class="collaborate-box__image" src="images/about/alv.png" alt="Novitus baner" />
+            <img class="collaborate-box__image" src="images/about/alt.png" alt="Posnet baner" />
+            <img class="collaborate-box__image" src="images/about/alr.png" alt="Datecs baner" />
+            <img class="collaborate-box__image" src="images/about/alp.png" alt="Innova SA baner" />
+            <img class="collaborate-box__image" src="images/about/alv.png" alt="Novitus baner" />
+            <img class="collaborate-box__image" src="images/about/alt.png" alt="Posnet baner" />
+            <img class="collaborate-box__image" src="images/about/alr.png" alt="Datecs baner" />
+            <img class="collaborate-box__image" src="images/about/alp.png" alt="Innova SA baner" />
+            <img class="collaborate-box__image-large" src="images/about/alv@2x.png" alt="Novitus baner" />
+            <img class="collaborate-box__image-large" src="images/about/alt@2x.png" alt="Posnet baner" />
+            <img class="collaborate-box__image-large" src="images/about/alr@2x.png" alt="Datecs baner" />
+            <img class="collaborate-box__image-large" src="images/about/alp@2x.png" alt="Innova SA baner" />
           </div>
 
           <!-- About BackGround: -->
@@ -774,6 +870,8 @@
             </div>
           </div>
 
+          <img class="footer-fiskasy-logo" src="images/footer/aji@2x.png" alt="fiskasy logo" />
+
           <!-- BG: -->
           <div class="blue-circle"></div>
           <div class="azure-circle"></div>
@@ -789,6 +887,11 @@
               <img src="icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
             </div>
           </div>
+
+          <div class="blue-circle-right"></div>
+          <svg class="dashed-circle-right" width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5, 10" />
+          </svg>
         </section>
       </div>
     </div>

@@ -17,6 +17,10 @@
     box-shadow: 0px 0px 10px #00000021;
     border-radius: 7px;
     opacity: 1;
+
+    @media (min-width: 640px) {
+      
+    }
     &__title {
       width: 44px;
       height: 16px;

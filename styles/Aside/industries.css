@@ -1,0 +1,46 @@
+.industries-container {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .industries-container {
+    position: absolute;
+    display: block;
+    top: 1100px;
+    left: 71px;
+  }
+}
+@media (min-width: 1536px) {
+  .industries-container {
+    left: 142px;
+  }
+}
+.industries-container .industries-header {
+  display: flex;
+  flex-direction: column;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font: normal normal 800 30px/37px Gilroy;
+  font-family: "Gilroy-bold", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.industries-container .industries-underline {
+  position: relative;
+  top: 10px;
+  left: -142px;
+  width: 536px;
+  border: 2px solid black;
+}
+.industries-container .industries-list {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.industries-container .industries-list__item {
+  font-family: "Gilroy-light";
+  font-size: 20px;
+}/*# sourceMappingURL=industries.css.map */

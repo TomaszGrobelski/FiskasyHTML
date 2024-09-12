@@ -10,13 +10,32 @@
     font-family: 'Gilroy-bold';
     font-size: 13px;
     align-self: flex-start;
+    @media (min-width: 768px) {
+      font-size: 28px;
+    }
+    @media (min-width: 1024px) {
+      font-size: 45px;
+    }
   }
   .contact-custom-border {
     position: absolute;
     left: -36px;
-    top: 28px; 
+    top: 28px;
     width: 137px;
     border: 1px solid black;
+    @media (min-width: 768px) {
+      top: 38px;
+    }
+    @media (min-width: 1024px) {
+      top: 58px;
+      border: 2px solid black;
+      width: 1013px;
+    }
+    @media (min-width: 1536px) {
+      top: 58px;
+      border: 2px solid black;
+      width: 1413px;
+    }
   }
 
   @media (min-width: 768px) {
@@ -35,6 +54,9 @@
     align-self: flex-start;
     gap: 10px;
     margin-top: 27px;
+    @media (min-width: 1024px) {
+      display: none;
+    }
     .information-box {
       display: flex;
       align-items: center;
@@ -66,11 +88,29 @@
     position: relative;
     display: flex;
     width: 100vw;
+    @media (min-width: 1024px) {
+      margin-top: 7px;
+    }
 
     &__image {
       position: relative;
       width: 50%;
       height: 78px;
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
+    &__image-large {
+      display: none;
+      position: relative;
+      width: 50%;
+      @media (min-width: 1024px) {
+        display: block;
+        height: 240px;
+      }
+      @media (min-width: 1536px) {
+        height: 314px;
+      }
     }
     .map-logo-background {
       display: flex;
@@ -91,7 +131,6 @@
       &__image {
         width: 25px;
         height: 26px;
-        /* UI Properties */
         opacity: 1;
       }
     }
@@ -108,6 +147,40 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .information-container-down {
+    padding-top: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    .first {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .three {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .information-box {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 20px;
+    }
+    .information-box-right {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 20px;
+    }
   }
 
   // BackGround:
@@ -117,7 +190,6 @@
     left: 312px;
     width: 24px;
     height: 51px;
-    /* UI Properties */
     color: var(--unnamed-color-000000);
     text-align: left;
     font-family: 'Gilroy-bold';
@@ -155,10 +227,29 @@
     width: 621px;
     height: 646px;
     transform: matrix(0.12, -0.99, 0.99, 0.12, 0, 0);
-    /* UI Properties */
     background: #c4ecfc 0% 0% no-repeat padding-box;
     opacity: 1;
     z-index: -40;
     border-radius: 37%;
+    @media (min-width: 500px) {
+      width: 800px;
+      height: 800px;
+    }
+
+    @media (min-width: 640px) {
+      top: -500px;
+      left: 524px;
+      width: 1500px;
+      height: 1500px;
+      transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
+    }
+
+    @media (min-width: 1024px) {
+      top: -1200px;
+      left: 1224px;
+      width: 2390px;
+      height: 2471px;
+      transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
+    }
   }
 }

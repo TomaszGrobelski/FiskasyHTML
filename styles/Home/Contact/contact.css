@@ -12,12 +12,41 @@
   font-size: 13px;
   align-self: flex-start;
 }
+@media (min-width: 768px) {
+  .contact-section .contact-header {
+    font-size: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-section .contact-header {
+    font-size: 45px;
+  }
+}
 .contact-section .contact-custom-border {
   position: absolute;
   left: -36px;
   top: 28px;
   width: 137px;
   border: 1px solid black;
+}
+@media (min-width: 768px) {
+  .contact-section .contact-custom-border {
+    top: 38px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact-section .contact-custom-border {
+    top: 58px;
+    border: 2px solid black;
+    width: 1013px;
+  }
+}
+@media (min-width: 1536px) {
+  .contact-section .contact-custom-border {
+    top: 58px;
+    border: 2px solid black;
+    width: 1413px;
+  }
 }
 @media (min-width: 768px) {
   .contact-section {
@@ -36,6 +65,11 @@
   align-self: flex-start;
   gap: 10px;
   margin-top: 27px;
+}
+@media (min-width: 1024px) {
+  .contact-section .information-container {
+    display: none;
+  }
 }
 .contact-section .information-container .information-box {
   display: flex;
@@ -64,10 +98,36 @@
   display: flex;
   width: 100vw;
 }
+@media (min-width: 1024px) {
+  .contact-section .map-container {
+    margin-top: 7px;
+  }
+}
 .contact-section .map-container__image {
   position: relative;
   width: 50%;
   height: 78px;
+}
+@media (min-width: 1024px) {
+  .contact-section .map-container__image {
+    display: none;
+  }
+}
+.contact-section .map-container__image-large {
+  display: none;
+  position: relative;
+  width: 50%;
+}
+@media (min-width: 1024px) {
+  .contact-section .map-container__image-large {
+    display: block;
+    height: 240px;
+  }
+}
+@media (min-width: 1536px) {
+  .contact-section .map-container__image-large {
+    height: 314px;
+  }
 }
 .contact-section .map-container .map-logo-background {
   display: flex;
@@ -89,7 +149,6 @@
 .contact-section .map-container .map-logo-background__image {
   width: 25px;
   height: 26px;
-  /* UI Properties */
   opacity: 1;
 }
 .contact-section .get-route {
@@ -104,13 +163,45 @@
   color: #000000;
   opacity: 1;
 }
+@media (min-width: 1024px) {
+  .contact-section .get-route {
+    display: none;
+  }
+}
+.contact-section .information-container-down {
+  padding-top: 15px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-section .information-container-down .first {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact-section .information-container-down .three {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contact-section .information-container-down .information-box {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.contact-section .information-container-down .information-box-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 20px;
+}
 .contact-section .contact-nine {
   position: absolute;
   top: 110px;
   left: 312px;
   width: 24px;
   height: 51px;
-  /* UI Properties */
   color: var(--unnamed-color-000000);
   text-align: left;
   font-family: "Gilroy-bold";
@@ -148,9 +239,32 @@
   width: 621px;
   height: 646px;
   transform: matrix(0.12, -0.99, 0.99, 0.12, 0, 0);
-  /* UI Properties */
   background: #c4ecfc 0% 0% no-repeat padding-box;
   opacity: 1;
   z-index: -40;
   border-radius: 37%;
+}
+@media (min-width: 500px) {
+  .contact-section .contact-azure-background-top {
+    width: 800px;
+    height: 800px;
+  }
+}
+@media (min-width: 640px) {
+  .contact-section .contact-azure-background-top {
+    top: -500px;
+    left: 524px;
+    width: 1500px;
+    height: 1500px;
+    transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
+  }
+}
+@media (min-width: 1024px) {
+  .contact-section .contact-azure-background-top {
+    top: -1200px;
+    left: 1224px;
+    width: 2390px;
+    height: 2471px;
+    transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
+  }
 }/*# sourceMappingURL=contact.css.map */
