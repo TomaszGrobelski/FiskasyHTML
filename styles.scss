@@ -42,10 +42,27 @@ li {
   padding: 0;
   list-style: none;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 
 body {
   background-color: white;
   font-family: 'Gilroy-normal', sans-serif;
+  ::-webkit-scrollbar {
+    width: 8px; // Szerokość paska przewijania
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); // Kolor suwaka
+    border-radius: 10px; // Zaokrąglenie krawędzi suwaka
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); // Kolor tła paska przewijania
+    border-radius: 10px; // Zaokrąglenie krawędzi toru
+  }
 }
 
 .main-container {

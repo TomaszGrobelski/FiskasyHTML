@@ -3,13 +3,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   opacity: 0.1;
-  @media (min-width: 768px) {
-    display: grid;
-    max-width: 150px;
-    max-height: 150px;
-  }
+
   .icon {
-    width: 100%; // Sprawia, że obrazy wypełniają komórki siatki
+    width: 100%;
   }
 
   .icon1 {
@@ -33,9 +29,41 @@
   }
 }
 
+.iconBoxTwo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  opacity: 0.1;
+
+  .icon {
+    width: 100%;
+    height: auto;
+  }
+
+  .icon1 {
+    grid-column: 3;
+    grid-row: 3;
+  }
+
+  .icon2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .icon3 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .icon4 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+// Pierwszy Góra prawa
 .animatedBoxOne {
   position: absolute;
-  // display: block;
 
   top: 157px;
   left: 305px;
@@ -43,15 +71,18 @@
   z-index: 250;
 
   @media (min-width: 768px) {
+    display: block;
+    width: 150px;
+    height: 150px;
     top: 50%;
     left: 50%;
     top: 250px;
     transform: translate(-50%, -50%) translateX(500px);
     display: grid;
-    animation: moveInOneBlue 1s forwards;
+    animation: moveOneUpRight 1s forwards;
   }
 
-  @keyframes moveInOneBlue {
+  @keyframes moveOneUpRight {
     from {
       transform: translate(-50%, -50%) translateX(500px) translateY(100px);
     }
@@ -60,71 +91,91 @@
     }
   }
 }
+.animatedContainerOneRed {
+  position: absolute;
 
-// Drugi !!!! --------------------
-.iconBoxTwo {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  opacity: 0.1;
-  height: 135px; // Default height if needed
-  width: 135px; // Default width if needed
+  top: 157px;
+  left: 305px;
+  width: 59px;
+  z-index: 250;
 
   @media (min-width: 768px) {
-    width: 175px;
-    height: 175px;
+    display: block;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    top: 250px;
+    transform: translate(-50%, -50%) translateX(500px) translateY(100px);
     display: grid;
-  }
-  .icon {
-    width: 100%; // Ensures icons fill the grid cells
-    height: auto; // Maintain aspect ratio of images
+    animation: moveOneUpRightRed 1s forwards;
   }
 
-  .icon1 {
-    grid-column: 3;
-    grid-row: 3;
-  }
-
-  .icon2 {
-    grid-column: 1;
-    grid-row: 3;
-  }
-
-  .icon3 {
-    grid-column: 2;
-    grid-row: 2;
-  }
-
-  .icon4 {
-    grid-column: 3;
-    grid-row: 1;
+  @keyframes moveOneUpRightRed {
+    from {
+      transform: translate(-50%, -50%) translateX(700px) translateY(0px);
+    }
+    to {
+      transform: transslate(-50%, -50%) translateX(500px) translateY(100px);
+    }
   }
 }
+
+// Drugi Lewa-Góra !!!! --------------------
 
 .animatedContainerTwo {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) translateX(-500px); // Przesunięcie o 200px w lewo od środka ekranu
-  display: none; // Ukryte domyślnie
+  transform: translate(-50%, -50%) translateX(-500px);
+  display: none;
   z-index: -20;
 
   @media (min-width: 768px) {
-    // md breakpoint
-    display: grid;
+    display: block;
+    top: 324px;
+    width: 174px;
+    height: 175px;
+
+    animation: moveTwoLeftUp 1s forwards;
   }
 
-  /* Animacja */
-  animation: moveIn 1s forwards;
-
-  @keyframes moveIn {
+  @keyframes moveTwoLeftUp {
     from {
       opacity: 1;
-      transform: translate(-50%, -50%) translateY(105px) translateX(-700px);
+      transform: translate(-50%, -50%) translateX(-570px) translateY(150px);
+    }
+    to {
+      transform: translate(-50%, -50%) translateX(-400px) translateY(-80px);
+      opacity: 1;
+    }
+  }
+}
+.animatedContainerTwoRed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateX(-500px);
+  display: none;
+  z-index: -10;
+
+  @media (min-width: 768px) {
+    display: block;
+    top: 324px;
+    width: 174px;
+    height: 175px;
+
+    animation: moveTwoLeftUpRed 1s forwards;
+  }
+
+  @keyframes moveTwoLeftUpRed {
+    from {
+      opacity: 1;
+      transform: translate(-50%, -50%) translateX(-400px) translateY(-80px);
     }
     to {
       opacity: 1;
-      transform: translate(-50%, -50%) translateY(-80px) translateX(-500px);
+      transform: translate(-50%, -50%) translateX(-570px) translateY(150px);
     }
   }
 }
@@ -134,18 +185,19 @@
   top: 50%;
   left: 50%;
   top: 1000px;
-  transform: translate(-50%, -50%); /* Przesunięcie o 300px w prawo */
-  display: none; /* Ukryte domyślnie */
+  transform: translate(-50%, -50%);
+  display: none;
   z-index: -20;
 
   @media (min-width: 768px) {
+    width: 136px;
+    height: 136px;
     display: grid;
   }
 
-  /* Animacja */
-  animation: moveInDownLeft 1s forwards;
+  animation: moveThreeDownLeft 1s forwards;
 
-  @keyframes moveInDownLeft {
+  @keyframes moveThreeDownLeft {
     from {
       opacity: 1;
       transform: translate(-50%, -50%) translateX(750px) translateY(-50px);
@@ -156,95 +208,91 @@
     }
   }
 }
-
-.animatedContainerOneRed {
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  top: 350px;
-  transform: translate(-50%, -50%) translateX(680px);
-  display: none;
-  z-index: -20;
-
-  @media (min-width: 768px) {
-    display: grid;
-  }
-
-  animation: moveInOneBack 1s forwards;
-
-  @keyframes moveInOneBack {
-    from {
-      transform: translate(-50%, -50%) translateY(-100px) translateX(900px);
-    }
-    to {
-      transform: translate(-50%, -50%) translateY(0px) translateX(680px);
-    }
-  }
-}
-
-.animatedContainerTwoRed {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) translateX(-500px); // Przesunięcie o 200px w lewo od środka ekranu
-  display: none; // Ukryte domyślnie
-  z-index: -20;
-
-  @media (min-width: 768px) {
-    // md breakpoint
-    display: grid;
-  }
-
-  /* Animacja */
-  animation: moveInBackTwo 1s forwards;
-
-  @keyframes moveInBackTwo {
-    from {
-      opacity: 1;
-      transform: translate(-50%, -50%) translateY(-205px) translateX(-400px);
-    }
-    to {
-      opacity: 1;
-      transform: translate(-50%, -50%) translateY(150px) translateX(-700px);
-    }
-  }
-}
 .animatedContainerThreeRed {
   position: absolute;
   top: 50%;
   left: 50%;
   top: 1000px;
-  transform: translate(-50%, -50%); /* Przesunięcie o 300px w prawo */
-  display: none; /* Ukryte domyślnie */
+  transform: translate(-50%, -50%);
+  display: none;
   z-index: -20;
 
   @media (min-width: 768px) {
-    display: grid;
+    display: block;
+    width: 136px;
+    height: 136px;
   }
 
-  /* Animacja */
-  animation: moveInOne 0.7s forwards;
+  animation: moveThreeDownLeftRed 1s forwards;
 
-  @keyframes moveInOne {
+  @keyframes moveThreeDownLeftRed {
     from {
       opacity: 1;
-      transform: translate(-50%, -50%) translateX(650px) translateY(50px);
+      transform: translate(-50%, -50%) translateX(650px) translateY(0px);
     }
     to {
       opacity: 1;
-      transform: translate(-50%, -50%) translateX(700px) translateY(0px);
+      transform: translate(-50%, -50%) translateX(750px) translateY(-50px);
+    }
+  }
+}
+
+.animatedContainerFourBig {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 779px;
+    left: -260px;
+    width: 579px;
+    height: 579px;
+    z-index: -30;
+    animation: boxFourAnimation 1s forwards;
+  }
+
+  @keyframes boxFourAnimation {
+    from {
+      transform: translate(-50px, -100px);
+    }
+    to {
+      transform: translate(0, 0);
+    }
+  }
+}
+
+.animatedContainerFourBigRed {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 679px;
+    left: -310px;
+    width: 579px;
+    height: 579px;
+    z-index: -10;
+    animation: boxFourAnimationRed 1s forwards;
+  }
+
+  @keyframes boxFourAnimationRed {
+    from {
+      transform: translate(50px, 100px);
+    }
+    to {
+      transform: translate(0, 0);
     }
   }
 }
 
 .background-letter-x {
   position: absolute;
-  top: 73px;
-  left: 166px;
+  top: 212px;
+  left: 142px;
   color: var(--unnamed-color-000000);
   text-align: left;
-  font: normal normal 800 40px/49px Gilroy;
-  font-family: 'Gilroy-bold', sans-serif;
+  font-family: 'Gilroy-bold';
+  font-size: 75px;
   font-weight: bolder;
   letter-spacing: 0px;
   color: #000000;
@@ -255,14 +303,63 @@
   position: absolute;
   top: 770px;
   left: 36px;
-  width: 21px;
-  height: 51px;
-  /* UI Properties */
   color: var(--unnamed-color-000000);
   text-align: left;
-  font: normal normal 800 42px/51px Gilroy;
+  font-family: 'Gilroy-normal';
+  font-size: 42px;
   letter-spacing: 0px;
   color: #000000;
   opacity: 0.22;
-  scale: 2;
+  scale: 1;
+
+  @media (min-width: 768px) {
+    font-size: 75px;
+    top: 1212px;
+    left: 50%;
+    transform: translateX(700px) translateY(-50%);
+    animation: dashBlueAnimate 1s;
+  }
+  @keyframes dashBlueAnimate {
+    from {
+      transform: translateX(600px) translateY(-100px);
+      opacity: 0.2;
+    }
+    to {
+      opacity: 0.22;
+      transform: translateX(700px) translateY(-50%);
+    }
+  }
+}
+
+.background-dash-red {
+  position: absolute;
+  top: 770px;
+  left: 36px;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font-family: 'Gilroy-normal';
+  font-size: 42px;
+  letter-spacing: 0px;
+  transform: translateX(600px) translateY(-100px);
+  color: #000000;
+  opacity: 0.22;
+  scale: 1;
+
+  @media (min-width: 768px) {
+    font-size: 75px;
+    top: 1212px;
+    left: 50%;
+
+    animation: dashBlueAnimateRed 1s;
+  }
+  @keyframes dashBlueAnimateRed {
+    from {
+      transform: translateX(700px) translateY(-50%);
+      opacity: 0.2;
+    }
+    to {
+      transform: translateX(600px) translateY(-100px);
+      opacity: 0.22;
+    }
+  }
 }

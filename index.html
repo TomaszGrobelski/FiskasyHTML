@@ -63,8 +63,13 @@
             <div id="menu-background" class="menu-toggle menu-mobile__background"></div>
             <div id="menu-content" class="menu-mobile__box">
               <div class="action-box">
-                <button class="action-box__close menu-toggle">X</button>
-                <input class="action-box__close" type="text" />
+                <button class="action-box__close menu-toggle">
+                  <img src="icons/navbar/close.svg" alt="close icon" class="close-icon" />
+                </button>
+                <div class="box-search">
+                  <input class="box-search__input" type="text" placeholder="Wyszukaj..." />
+                  <img src="icons/navbar/search.svg" class="box-search__icon" alt="search icon" />
+                </div>
               </div>
 
               <ul class="nav-list">
@@ -103,16 +108,15 @@
                 </button>
               </div>
 
-              <div class="menu-language-select">
-                z\x\zxz\
-                <button class="menu-flag-button">
-                  <img src="icons/hero/flags/ua.svg" alt="Ukraine Flag" class="menu-flag-img" />
+              <div class="menu-language">
+                <button class="language-button">
+                  <img src="icons/hero/flags/ua-big.svg" alt="Ukraine Flag" class="menu-flag-img" />
                 </button>
-                <button class="menu-flag-button">
-                  <img src="icons/hero/flags/gb.svg" alt="Great Britain Flag" class="menu-flag-img" />
+                <button class="language-button">
+                  <img src="icons/hero/flags/gb-big.svg" alt="Great Britain Flag" class="menu-flag-img" />
                 </button>
-                <button class="menu-flag-button menu-selected-flag">
-                  <img src="icons/hero/flags/pl.svg" alt="Poland Flag" class="menu-flag-img" />
+                <button class="language-button active">
+                  <img src="icons/hero/flags/pl-big.svg" alt="Poland Flag" class="menu-flag-img" />
                 </button>
               </div>
 
@@ -281,7 +285,7 @@
           <!-- Litera: X -->
           <div class="background-letter-x">x</div>
 
-          <!-- Znak wyślnik: - -->
+          <!-- Znak myślnik (dash): - -->
           <div class="background-dash">-</div>
 
           <!-- Kwadraty do okoła -->
@@ -312,6 +316,15 @@
             </div>
           </div>
 
+          <div class="animatedContainerFourBig">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+
           <div class="custom-border-background-up"></div>
           <div class="custom-border-background"></div>
           <div class="custom-border-background-two"></div>
@@ -327,19 +340,16 @@
             <img src="images/hero/elzab.png" width="800" height="600" alt="hero image" class="hero-image-large" />
           </div>
 
-          <!-- H1 ELZAB Zeta Online -->
           <h1 class="heading">
             <span>ELZAB Zeta</span>
             <span>Online</span>
           </h1>
 
-          <!-- Zobacz produkt -->
           <p class="product-text">
             <span class="product-text-item"> ZOBACZ PRODUKT </span>
             <span class="product-text-item"> W SKLEPIE </span>
           </p>
 
-          <!-- Porównaj -->
           <button class="compare-button">
             <p class="compare-text">
               <span class="compare-text-item"> PORÓWNAJ </span>
@@ -364,7 +374,6 @@
           <!-- Describe Section -->
           <div class="describe-section"></div>
 
-          <!-- Cena netto 1990,00 -->
           <p class="price-section">
             <span class="price-item">cena netto</span>
             <span class="price-item">1990,00 zł</span>
@@ -379,13 +388,17 @@
             <circle cx="112.5" cy="112.5" r="105" stroke="#000000" stroke-width="1" fill="none" stroke-dasharray="3 3" />
           </svg>
 
-          <!-- Question Box -->
           <div class="question-box">
             <p class="question">MASZ PYTANIE?</p>
             <p class="send-message">WYŚLIJ WIADOMOŚĆ</p>
           </div>
 
-          <!-- BG: -->
+          <!-- Background: -->
+          <!-- Znak myślnik (dash): - -->
+          <div class="background-dash-red">-</div>
+          <!-- X: -->
+          <div class="background-letter-x">x</div>
+
           <!-- Czerwibe kółko w srodku -->
           <div class="red-circle"></div>
 
@@ -404,6 +417,7 @@
           </svg>
 
           <!-- Kwadraty do okoła: -->
+
           <div class="animatedContainerOneRed">
             <div class="iconBoxOne">
               <img src="icons/hero/aag.png" alt="slash icon" class="icon icon1" />
@@ -423,6 +437,15 @@
           </div>
 
           <div class="animatedContainerThreeRed">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerFourBigRed">
             <div class="iconBoxTwo">
               <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
               <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
@@ -681,6 +704,9 @@
             <div class="discount-blue-circle-two"></div>
             <svg class="discount-dashed-circle-three" width="291" height="291" viewBox="0 0 291 291" xmlns="http://www.w3.org/2000/svg">
               <circle cx="145.5" cy="145.5" r="143.5" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="5 10" opacity="1" />
+            </svg>
+            <svg class="discount-dashed-circle-three-big" width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="320" cy="320" r="310" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="5 10" opacity="1" />
             </svg>
             <svg class="discount-plus-two" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <line x1="50" y1="0" x2="50" y2="100" stroke="#000000" stroke-width="25" opacity="1" />

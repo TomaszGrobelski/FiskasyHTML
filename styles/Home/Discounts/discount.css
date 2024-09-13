@@ -81,6 +81,14 @@
   opacity: 1;
   z-index: -30;
 }
+@media (min-width: 768px) {
+  .discounts-view .discount-animatedBox {
+    top: 1300px;
+    left: -56px;
+    width: 578px;
+    height: 579px;
+  }
+}
 .discounts-view .discount-dashed-circle {
   position: absolute;
   top: 195px;
@@ -89,6 +97,11 @@
   height: 291px;
   z-index: -30;
   opacity: 1;
+}
+@media (min-width: 640px) {
+  .discounts-view .discount-dashed-circle {
+    display: none;
+  }
 }
 .discounts-view .discount-blue-circle {
   position: absolute;
@@ -101,6 +114,11 @@
   opacity: 1;
   border-radius: 100%;
   z-index: -40;
+}
+@media (min-width: 640px) {
+  .discounts-view .discount-blue-circle {
+    display: none;
+  }
 }
 .discounts-view .discount-two {
   position: absolute;
@@ -156,6 +174,15 @@
   z-index: -10;
   opacity: 1;
 }
+@media (min-width: 640px) {
+  .discounts-view .discount-dashed-circle-two {
+    top: 810px;
+    left: auto;
+    right: 300px;
+    width: 364px;
+    height: 364px;
+  }
+}
 .discounts-view .dicount-seven {
   position: absolute;
   top: 1060px;
@@ -175,7 +202,7 @@
   left: 394px;
   width: 24px;
   height: 51px;
-  /* UI Properties */
+  z-index: -10;
   color: var(--unnamed-color-000000);
   text-align: left;
   font: normal normal 800 42px/51px Gilroy;
@@ -191,6 +218,14 @@
   height: 170px;
   opacity: 1;
   z-index: -20;
+}
+@media (min-width: 768px) {
+  .discounts-view .discount-Box-two {
+    top: 1940px;
+    left: -310px;
+    width: 576px;
+    height: 579px;
+  }
 }
 .discounts-view .discount-azure-bg-two {
   position: absolute;
@@ -234,6 +269,14 @@
   border-radius: 100%;
   z-index: -40;
 }
+@media (min-width: 768px) {
+  .discounts-view .discount-blue-circle-two {
+    top: 1650px;
+    left: 64px;
+    width: 492px;
+    height: 492px;
+  }
+}
 .discounts-view .discount-dashed-circle-three {
   position: absolute;
   top: 1550px;
@@ -242,6 +285,26 @@
   height: 291px;
   z-index: -30;
   opacity: 1;
+}
+@media (min-width: 768px) {
+  .discounts-view .discount-dashed-circle-three {
+    display: none;
+  }
+}
+.discounts-view .discount-dashed-circle-three-big {
+  display: none;
+}
+@media (min-width: 768px) {
+  .discounts-view .discount-dashed-circle-three-big {
+    display: block;
+    position: absolute;
+    top: 1350px;
+    left: -181px;
+    width: 640px;
+    height: 640px;
+    z-index: -30;
+    opacity: 1;
+  }
 }
 .discounts-view .discount-plus-two {
   position: absolute;
@@ -263,4 +326,9 @@
   left: 140px;
   width: 150px;
   height: 150px;
+}
+@media (min-width: 768px) {
+  .discounts-view .discount-Box-three {
+    display: none;
+  }
 }/*# sourceMappingURL=discount.css.map */

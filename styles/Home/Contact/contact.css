@@ -97,6 +97,7 @@
   position: relative;
   display: flex;
   width: 100vw;
+  max-width: 1950px;
 }
 @media (min-width: 1024px) {
   .contact-section .map-container {
@@ -106,7 +107,7 @@
 .contact-section .map-container__image {
   position: relative;
   width: 50%;
-  height: 78px;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .contact-section .map-container__image {
@@ -121,12 +122,7 @@
 @media (min-width: 1024px) {
   .contact-section .map-container__image-large {
     display: block;
-    height: 240px;
-  }
-}
-@media (min-width: 1536px) {
-  .contact-section .map-container__image-large {
-    height: 314px;
+    height: auto;
   }
 }
 .contact-section .map-container .map-logo-background {
@@ -169,10 +165,16 @@
   }
 }
 .contact-section .information-container-down {
-  padding-top: 15px;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
+  display: none;
+}
+@media (min-width: 1024px) {
+  .contact-section .information-container-down {
+    display: flex;
+    padding-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 60px;
+  }
 }
 .contact-section .information-container-down .first {
   display: flex;
@@ -193,8 +195,11 @@
 .contact-section .information-container-down .information-box-right {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 20px;
+}
+.contact-section .information-container-down .information-box-right p {
+  text-align: end;
 }
 .contact-section .contact-nine {
   position: absolute;
@@ -213,24 +218,35 @@
 }
 .contact-section .contact-dashed-circle {
   position: absolute;
-  top: 220px;
-  left: 118px;
+  top: 230px;
+  left: 50%;
   width: 171px;
   height: 171px;
   z-index: -10;
   opacity: 1;
+  transform: translateX(-100px);
+}
+@media (min-width: 640px) {
+  .contact-section .contact-dashed-circle {
+    display: none;
+  }
 }
 .contact-section .contact-blue-circle {
   position: absolute;
   top: 265px;
-  left: 180px;
+  left: 50%;
   width: 132px;
   height: 131px;
   border-radius: 100%;
   z-index: -20;
-  background: var(--unnamed-color-00a8f0) 0% 0% no-repeat padding-box;
   background: #00a8f0 0% 0% no-repeat padding-box;
   opacity: 1;
+  transform: translateX(-35px);
+}
+@media (min-width: 640px) {
+  .contact-section .contact-blue-circle {
+    display: none;
+  }
 }
 .contact-section .contact-azure-background-top {
   position: absolute;

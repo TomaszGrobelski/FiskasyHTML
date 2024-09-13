@@ -459,10 +459,10 @@
   }
 }
 .blue-view .question-info__title {
-  font-weight: 800;
+  font-family: "Gilroy-bold";
 }
 .blue-view .question-info__message {
-  font-weight: 300;
+  font-family: "Gilroy-light";
 }
 .blue-view .arrowRightSmall {
   position: absolute;

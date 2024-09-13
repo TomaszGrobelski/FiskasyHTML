@@ -73,6 +73,13 @@
     height: 90px;
     opacity: 1;
     z-index: -30;
+
+    @media (min-width: 768px) {
+      top: 1300px;
+      left: -56px;
+      width: 578px;
+      height: 579px;
+    }
   }
   .discount-dashed-circle {
     position: absolute;
@@ -82,6 +89,9 @@
     height: 291px;
     z-index: -30;
     opacity: 1;
+    @media (min-width: 640px) {
+      display: none;
+    }
   }
   .discount-blue-circle {
     position: absolute;
@@ -94,6 +104,10 @@
     opacity: 1;
     border-radius: 100%;
     z-index: -40;
+
+    @media (min-width: 640px) {
+      display: none;
+    }
   }
   .discount-two {
     position: absolute;
@@ -146,6 +160,14 @@
     height: 195px;
     z-index: -10;
     opacity: 1;
+
+    @media (min-width: 640px) {
+      top: 810px;
+      left: auto;
+      right: 300px;
+      width: 364px;
+      height: 364px;
+    }
   }
   .dicount-seven {
     position: absolute;
@@ -167,7 +189,7 @@
     left: 394px;
     width: 24px;
     height: 51px;
-    /* UI Properties */
+    z-index: -10;
     color: var(--unnamed-color-000000);
     text-align: left;
     font: normal normal 800 42px/51px Gilroy;
@@ -183,6 +205,13 @@
     height: 170px;
     opacity: 1;
     z-index: -20;
+
+    @media (min-width: 768px) {
+      top: 1940px;
+      left: -310px;
+      width: 576px;
+      height: 579px;
+    }
   }
   .discount-azure-bg-two {
     position: absolute;
@@ -223,6 +252,13 @@
     opacity: 1;
     border-radius: 100%;
     z-index: -40;
+
+    @media (min-width: 768px) {
+      top: 1650px;
+      left: 64px;
+      width: 492px;
+      height: 492px;
+    }
   }
   .discount-dashed-circle-three {
     position: absolute;
@@ -232,6 +268,23 @@
     height: 291px;
     z-index: -30;
     opacity: 1;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  .discount-dashed-circle-three-big {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 1350px;
+      left: -181px;
+      width: 640px;
+      height: 640px;
+      z-index: -30;
+      opacity: 1;
+    }
   }
   .discount-plus-two {
     position: absolute;
@@ -253,5 +306,9 @@
     left: 140px;
     width: 150px;
     height: 150px;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
 }

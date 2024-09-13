@@ -312,18 +312,16 @@
   }
 }
 .red-view .question-box .question {
-  text-align: left;
-  font-weight: 800;
+  font-family: "Gilroy-bold";
 }
 .red-view .question-box .send-message {
-  text-align: left;
-  font-weight: 300;
+  font-family: "Gilroy-light";
 }
 .red-view .red-circle {
   position: absolute;
   right: -210px;
   top: 191px;
-  z-index: -10;
+  z-index: 0;
   height: 609px;
   width: 609px;
   background-color: #ff0000;
@@ -359,10 +357,12 @@
 }
 @keyframes growMoveUpLeft {
   from {
+    opacity: 0;
     scale: 0.6;
     transform: translateX(500px) translateY(800px);
   }
   to {
+    opacity: 1;
     scale: 1;
   }
 }
@@ -460,7 +460,7 @@
   }
 }
 .red-view .animated-text-nine {
-  font-family: "MyCustomFont", sans-serif;
+  font-family: "Gilroy-bold";
   position: absolute;
   display: none;
   height: 51px;
@@ -543,7 +543,7 @@
   height: 1052px;
   background-color: #c4ecfc;
   border-radius: 50% 50% 50% 50%/45% 45% 55% 55%;
-  z-index: -40;
+  z-index: -90;
 }
 @media (min-width: 768px) {
   .red-view .custom-border-background {
