@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fiskasy</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="styles/Home/NavBar/navBar.css" />
+    <link rel="stylesheet" href="styles/NavBar/navBar.css" />
     <link rel="stylesheet" href="styles/Home/Hero/flags/flags.css" />
     <link rel="stylesheet" href="styles/Home/Hero/redView/redView.css" />
     <link rel="stylesheet" href="styles/Home/Hero/blueView/blueView.css" />
@@ -53,13 +53,108 @@
             <i class="search-icon"></i>
           </div>
 
-          <button class="menu-toggle" onclick="toggleMenu()">
-            <img src="icons/navbar/menu.svg" alt="menu" class="menu-icon" />
-            <p class="menu-text">Menu</p>
+          <button class="menu-burger menu-toggle">
+            <img src="icons/navbar/menu.svg" alt="menu" class="menu-burger__icon" />
+            <p class="menu-burger__text">Menu</p>
           </button>
 
-          <div id="menu" class="menu hidden">
-            <!-- Menu content here -->
+          <!-- Mobile menu -->
+          <div id="menu-mobile" class="menu-mobile">
+            <div id="menu-background" class="menu-toggle menu-mobile__background"></div>
+            <div id="menu-content" class="menu-mobile__box">
+              <div class="action-box">
+                <button class="action-box__close menu-toggle">X</button>
+                <input class="action-box__close" type="text" />
+              </div>
+
+              <ul class="nav-list">
+                <li class="nav-list__item">Sklep</li>
+                <li class="nav-list__item">Promocje</li>
+                <li class="nav-list__item">Poradnik Fiskalny</li>
+              </ul>
+
+              <ul class="helper-list">
+                <li class="helper-list__item">Jak wybrać urządzenie fiskalne</li>
+                <li class="helper-list__item">Oprogramowanie do zarządzania firmą</li>
+                <li class="helper-list__item">Sklep (systemy sprzedaży)</li>
+                <li class="helper-list__item">Restauracja</li>
+              </ul>
+
+              <div class="contact-box">
+                <p class="contact-box__question">MASZ PYTANIE?</p>
+                <p class="contact-box__message">WYŚLIJ WIADOMOŚĆ</p>
+              </div>
+
+              <div class="menu-social-buttons-container">
+                <button class="social-button facebook">
+                  <img src="icons/social/mdi--facebook.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+                </button>
+
+                <button class="social-button instagram">
+                  <img src="icons/social/bi--instagram.svg" width="40" height="40" alt="facebook-icon" class="social-icon" />
+                </button>
+
+                <button class="social-button youtube">
+                  <img src="icons/social/iconoir--youtube.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+                </button>
+
+                <button class="social-button linkedin">
+                  <img src="icons/social/mdi--linkedin.svg" alt="facebook-icon" width="45" height="45" class="social-icon" />
+                </button>
+              </div>
+
+              <div class="menu-language-select">
+                z\x\zxz\
+                <button class="menu-flag-button">
+                  <img src="icons/hero/flags/ua.svg" alt="Ukraine Flag" class="menu-flag-img" />
+                </button>
+                <button class="menu-flag-button">
+                  <img src="icons/hero/flags/gb.svg" alt="Great Britain Flag" class="menu-flag-img" />
+                </button>
+                <button class="menu-flag-button menu-selected-flag">
+                  <img src="icons/hero/flags/pl.svg" alt="Poland Flag" class="menu-flag-img" />
+                </button>
+              </div>
+
+              <aside class="menu-industries-container">
+                <h3 class="menu-industries-header"><span>WYBIERZ SWOJĄ BRANŻE</span><span>I POZNAJ URZĄDZENIA</span></h3>
+                <div class="menu-industries-underline"></div>
+
+                <ul class="menu-industries-list">
+                  <li class="menu-industries-list__item">Salon fryzjerski, salon kosmetyczny</li>
+                  <li class="menu-industries-list__item">Fitness i siłownie</li>
+                  <li class="menu-industries-list__item">Branża budowlana</li>
+                  <li class="menu-industries-list__item">Lekarze</li>
+                  <li class="menu-industries-list__item">Prawnicy</li>
+                  <li class="menu-industries-list__item">Mała gastronomia</li>
+                  <li class="menu-industries-list__item">Warsztat samochodowy, wulkanizacja</li>
+                  <li class="menu-industries-list__item">Apteka</li>
+                  <li class="menu-industries-list__item">Taxi</li>
+                  <li class="menu-industries-list__item">Piekarnia i cukiernia</li>
+                  <li class="menu-industries-list__item">Mały punkt handlowo usługowy</li>
+                  <li class="menu-industries-list__item">Sklep internetowy</li>
+                </ul>
+
+                <h3 class="menu-industries-header">PORADNIK</h3>
+                <div class="menu-industries-underline"></div>
+                <ul class="menu-industries-list">
+                  <li class="menu-industries-list__item">Jak wybrać urządzenie fiskalne</li>
+                  <li class="menu-industries-list__item">Oprogramowanie do zarządzania firmą</li>
+                  <li class="menu-industries-list__item">Sklep (systemy sprzedaży)</li>
+                  <li class="menu-industries-list__item">Sklep (systemy sprzedaży)</li>
+                  <li class="menu-industries-list__item">Restauracja</li>
+                </ul>
+
+                <h3 class="menu-industries-header">INFORMACJE</h3>
+                <div class="menu-industries-underline"></div>
+                <ul class="menu-industries-list">
+                  <li class="menu-industries-list__item">Zmiana VAT. Programowanie kasy</li>
+                  <li class="menu-industries-list__item">Przeglądy okresowe</li>
+                  <li class="menu-industries-list__item">Porady prawne</li>
+                  <li class="menu-industries-list__item">Często zadawne pytania</li>
+                </ul>
+              </aside>
+            </div>
           </div>
         </nav>
 
