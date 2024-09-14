@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fiskasy</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles/NavBar/navBar.css" />
+    <link rel="stylesheet" href="/styles/Home/Contact/contact.css" />
+    <link rel="stylesheet" href="/styles/Home/About/about.css" />
+    <link rel="stylesheet" href="/styles/Footer/footer.css" />
+    <link rel="stylesheet" href="/styles/Home/Hero/background/background.css" />
+    <link rel="stylesheet" href="/styles/Aside/industries.css" />
+    <link rel="stylesheet" href="/styles/ProductInfo/productHero.css" />
+    <link rel="stylesheet" href="/styles/ProductInfo/productInfo.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="nav-links">
+          <button class="nav-button">
+            <p>Sklep</p>
+          </button>
+          <button class="nav-button">
+            <p>Promocje</p>
+          </button>
+          <button class="nav-button dropdown">
+            <p class="dropdown-title">Poradnik Fiskalny</p>
+            <div class="dropdown-menu">
+              <div class="dropdown-content">
+                <p class="dropdown-content__item">Jak wybrać urządzenie fiskalne</p>
+                <p class="dropdown-content__item">Oprogramowanie do zarządzania firmą</p>
+                <p class="dropdown-content__item">Sklep (systemy sprzedaży)</p>
+                <p class="dropdown-content__item">Restauracja</p>
+              </div>
+              <div class="dropdown-arrow"></div>
+            </div>
+          </button>
+        </div>
+
+        <img src="/images/navbar/aji.png" width="100" height="43" alt="Logo fiskasy.pl" class="logo-mobile" />
+        <img src="/images/navbar/aji@2x.png" width="172" height="73" alt="Logo fiskasy.pl" class="logo-desktop" />
+
+        <div class="search-container">
+          <input type="text" placeholder="Wyszukaj..." class="search-input" />
+          <i class="search-icon"></i>
+        </div>
+
+        <button class="menu-burger menu-toggle">
+          <img src="/icons/navbar/menu.svg" alt="menu" class="menu-burger__icon" />
+          <p class="menu-burger__text">Menu</p>
+        </button>
+
+        <!-- Mobile menu -->
+        <div id="menu-mobile" class="menu-mobile">
+          <div id="menu-background" class="menu-toggle menu-mobile__background"></div>
+          <div id="menu-content" class="menu-mobile__box">
+            <div class="action-box">
+              <button class="action-box__close menu-toggle">
+                <img src="/icons/navbar/close.svg" alt="close icon" class="close-icon" />
+              </button>
+              <div class="box-search">
+                <input class="box-search__input" type="text" placeholder="Wyszukaj..." />
+                <img src="/icons/navbar/search.svg" class="box-search__icon" alt="search icon" />
+              </div>
+            </div>
+
+            <ul class="nav-list">
+              <li class="nav-list__item">Sklep</li>
+              <li class="nav-list__item">Promocje</li>
+              <li class="nav-list__item">Poradnik Fiskalny</li>
+            </ul>
+
+            <ul class="helper-list">
+              <li class="helper-list__item">Jak wybrać urządzenie fiskalne</li>
+              <li class="helper-list__item">Oprogramowanie do zarządzania firmą</li>
+              <li class="helper-list__item">Sklep (systemy sprzedaży)</li>
+              <li class="helper-list__item">Restauracja</li>
+            </ul>
+
+            <div class="contact-box">
+              <p class="contact-box__question">MASZ PYTANIE?</p>
+              <p class="contact-box__message">WYŚLIJ WIADOMOŚĆ</p>
+            </div>
+
+            <div class="menu-social-buttons-container">
+              <button class="social-button facebook">
+                <img src="/icons/social/mdi--facebook.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+              </button>
+
+              <button class="social-button instagram">
+                <img src="/icons/social/bi--instagram.svg" width="40" height="40" alt="facebook-icon" class="social-icon" />
+              </button>
+
+              <button class="social-button youtube">
+                <img src="/icons/social/iconoir--youtube.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+              </button>
+
+              <button class="social-button linkedin">
+                <img src="/icons/social/mdi--linkedin.svg" alt="facebook-icon" width="45" height="45" class="social-icon" />
+              </button>
+            </div>
+
+            <div class="menu-language">
+              <button class="language-button">
+                <img src="/icons/hero/flags/ua-big.svg" alt="Ukraine Flag" class="menu-flag-img" />
+              </button>
+              <button class="language-button">
+                <img src="/icons/hero/flags/gb-big.svg" alt="Great Britain Flag" class="menu-flag-img" />
+              </button>
+              <button class="language-button active">
+                <img src="/icons/hero/flags/pl-big.svg" alt="Poland Flag" class="menu-flag-img" />
+              </button>
+            </div>
+
+            <aside class="menu-industries-container">
+              <h3 class="menu-industries-header"><span>WYBIERZ SWOJĄ BRANŻE</span><span>I POZNAJ URZĄDZENIA</span></h3>
+              <div class="menu-industries-underline"></div>
+
+              <ul class="menu-industries-list">
+                <li class="menu-industries-list__item">Salon fryzjerski, salon kosmetyczny</li>
+                <li class="menu-industries-list__item">Fitness i siłownie</li>
+                <li class="menu-industries-list__item">Branża budowlana</li>
+                <li class="menu-industries-list__item">Lekarze</li>
+                <li class="menu-industries-list__item">Prawnicy</li>
+                <li class="menu-industries-list__item">Mała gastronomia</li>
+                <li class="menu-industries-list__item">Warsztat samochodowy, wulkanizacja</li>
+                <li class="menu-industries-list__item">Apteka</li>
+                <li class="menu-industries-list__item">Taxi</li>
+                <li class="menu-industries-list__item">Piekarnia i cukiernia</li>
+                <li class="menu-industries-list__item">Mały punkt handlowo usługowy</li>
+                <li class="menu-industries-list__item">Sklep internetowy</li>
+              </ul>
+
+              <h3 class="menu-industries-header">PORADNIK</h3>
+              <div class="menu-industries-underline"></div>
+              <ul class="menu-industries-list">
+                <li class="menu-industries-list__item">Jak wybrać urządzenie fiskalne</li>
+                <li class="menu-industries-list__item">Oprogramowanie do zarządzania firmą</li>
+                <li class="menu-industries-list__item">Sklep (systemy sprzedaży)</li>
+                <li class="menu-industries-list__item">Sklep (systemy sprzedaży)</li>
+                <li class="menu-industries-list__item">Restauracja</li>
+              </ul>
+
+              <h3 class="menu-industries-header">INFORMACJE</h3>
+              <div class="menu-industries-underline"></div>
+              <ul class="menu-industries-list">
+                <li class="menu-industries-list__item">Zmiana VAT. Programowanie kasy</li>
+                <li class="menu-industries-list__item">Przeglądy okresowe</li>
+                <li class="menu-industries-list__item">Porady prawne</li>
+                <li class="menu-industries-list__item">Często zadawne pytania</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Azure BG: -->
+      <div>
+        <div class="custom-border-background-small-up"></div>
+        <div class="custom-border-background-small"></div>
+
+        <!-- Duży ekran azure z tyłu: -->
+        <div class="custom-azure-background-big-up"></div>
+        <div class="custom-azure-background-big"></div>
+      </div>
+
+      <!-- Product Hero -->
+      <div id="product-hero-view" class="product-view">
+        <!-- Duży telefon: czarny dashed do okola kalkulatorów  -->
+        <svg class="animated-circle" width="640" height="640">
+          <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5 10" />
+        </svg>
+        <!-- Maly telefon: czarny dashed do okola kalkulatorów -->
+        <div class="dashed-circle-container"></div>
+
+        <!-- Mały telefon, do okoła ceny -->
+        <svg class="price-circle" width="245" height="245">
+          <circle cx="122.5" cy="122.5" r="120" stroke="#FFFFFF" stroke-width="1" fill="none" stroke-dasharray="3 3" />
+        </svg>
+
+        <!-- Duży telefon, do okola ceny -->
+        <svg class="large-price-circle" width="376" height="376">
+          <circle cx="188" cy="188" r="180" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" />
+        </svg>
+
+        <!-- Masz pytanie? wyślij wiadomość -->
+        <div class="question-info">
+          <p class="question-info__title">MASZ PYTANIE?</p>
+          <p class="question-info__message">WYŚLIJ WIADOMOŚĆ</p>
+        </div>
+
+        <!-- Niebieski środek -->
+        <div class="blue-circle"></div>
+
+        <!-- Numer: 9 -->
+        <p class="background-number-nine">
+          <span>9</span>
+        </p>
+
+        <!-- Litera: X -->
+        <div class="background-letter-x">x</div>
+
+        <!-- Znak myślnik (dash): - -->
+        <div class="background-dash">-</div>
+
+        <!-- Kwadraty do okoła -->
+        <div class="animatedBoxOne">
+          <div class="iconBoxOne">
+            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+          </div>
+        </div>
+
+        <div class="animatedContainerTwo">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+          </div>
+        </div>
+
+        <div class="animatedContainerThree">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+          </div>
+        </div>
+
+        <div class="animatedContainerFourBig">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Product info -->
+      <div class="product-info-view">
+        <h2 class="info-header">Kasa fiskalna Novitus Nano II Online:</h2>
+
+        <ul class="product-description-list">
+          <li class="product-description-list__item">Lekka, wytrzymała konstrukcja</li>
+          <li class="product-description-list__item">Ergonomiczna obudowa odporna na uderzenia</li>
+          <li class="product-description-list__item">Możliwość pracy w trudnych warunkach pogodowych</li>
+          <li class="product-description-list__item">Udoskonalony design</li>
+          <li class="product-description-list__item">Podświetlana klawiatura</li>
+        </ul>
+
+        <h3 class="info-header">Polecana w:</h3>
+
+        <ul class="product-description-list">
+          <li class="product-description-list__item">Małych i średnich punktach handlowo-usługowych</li>
+          <li class="product-description-list__item">Gabinetach lekarskich</li>
+          <li class="product-description-list__item">Kancelariach prawnych</li>
+          <li class="product-description-list__item">Gabinetach kosmetycznych i salonach fryzjerskich</li>
+          <li class="product-description-list__item">unktach sprzedaży mobilnej</li>
+        </ul>
+
+        <p class="destiny-information">
+          Ta kasa fiskalna jest niezwykle wszechstronna i odnajdzie się w wielu branżach. Może pracować zarówno stacjonarnie jak i w sprzedaży
+          mobilnej, w małych i średnich placówkach handlowych. Kasa może łączyć się z Internetem za pomocą portu LAN oraz modułu WiFi, dzięki czemu
+          może pracować od razu po wyjęciu z pudełka. W nowym modelu znajduje się także podświetlana klawiatura, dzięki czemu praca z tym urządzeniem
+          jest możliwa również przy słabym oświetleniu.
+        </p>
+
+        <h3 class="product-detail-header">SZCZEGÓŁY PRODUKTU</h3>
+
+        <div class="product-detail-container">
+          <div class="spec-item">
+            <p class="spec-item__label">Liczba kasjerów</p>
+            <p class="spec-item__value">32</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Liczba grup towarowych</p>
+            <p class="spec-item__value">100</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Opakowania</p>
+            <p class="spec-item__value">64</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Pojemność bufora</p>
+            <p class="spec-item__value">20000</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">ON-LINE</p>
+            <p class="spec-item__value">usługi czasowe</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Kwity parkingowe</p>
+            <p class="spec-item__value">tak</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Rabaty / narzuty</p>
+            <p class="spec-item__value">18 (9 w dwóch poziomach) + 10 w trybie szybkiej sprzedaży</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Przeznaczenie</p>
+            <p class="spec-item__value">małe i mobilne punkty handlowe, gastronomiczne i usługowe</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Liczba Towarow</p>
+            <p class="spec-item__value">20000</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Liczba stawek PTU</p>
+            <p class="spec-item__value">7 (A-G)</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Wyświetlacz klient</p>
+            <p class="spec-item__value">graficzny, podświetlany, niebieski LCD, 192 x 48 px</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Wyświetlacz kasjer</p>
+            <p class="spec-item__value">graficzny, podświetlany, niebieski LCD, 192 x 48 px</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Złącza komunikacyjne</p>
+            <p class="spec-item__value">1 x RS232, 1 x USB, 1 x LAN</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Zasilanie zewnętrzne</p>
+            <p class="spec-item__value">230V /12V / 2A</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Zasilanie wewnętrzne</p>
+            <p class="spec-item__value">7,4V / 2,25 Ah, wymienny, możliwość ładowania akumulatora poza kasą</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Nazwa towaru</p>
+            <p class="spec-item__value">40 znaków</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Nośnik kopii</p>
+            <p class="spec-item__value">kasa online</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Wymiar papieru</p>
+            <p class="spec-item__value">57 x 30</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Obcinacz papieru</p>
+            <p class="spec-item__value">brak</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Mechanizm drukujący</p>
+            <p class="spec-item__value">termiczny "wrzuć i pracuj", Fujitsu FTP 628</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Klawiatura</p>
+            <p class="spec-item__value">switchowa, silikonowa, podświetlana</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Wymiary</p>
+            <p class="spec-item__value">100 x 65 x 233 mm</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Masa</p>
+            <p class="spec-item__value">0,65 kg</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Opcjonalne komponenty</p>
+            <p class="spec-item__value">BLUETOOTH, WIFI</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Nazwa</p>
+            <p class="spec-item__value">Novitus Nano II Online</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Współpraca z urządzeniami</p>
+            <p class="spec-item__value">GSM24</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Typ</p>
+            <p class="spec-item__value">
+              komputer, czytnik kodów kreskowych (skaner), waga elektroniczna, terminal płatniczy (EFT), PIN PAD programowalny (EFT), drukarka
+              zamówień, monitoring (monitor wydruku), WIFI dongle (WAN), BT dongle, BT LE dongle, modem GSM
+            </p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Komunikacja z CRK</p>
+            <p class="spec-item__value">przenośna kasa fiskalna online</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">e-Paragon</p>
+            <p class="spec-item__value">LAN, GSM, opcja WIFI</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Eurofiskalizacja</p>
+            <p class="spec-item__value">nie</p>
+          </div>
+          <div class="spec-item">
+            <p class="spec-item__label">Producent</p>
+            <p class="spec-item__value">Novitus</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wybierz swoją branże i poznaj urządzenia -->
+      <aside class="industries-container">
+        <h3 class="industries-header"><span>WYBIERZ SWOJĄ BRANŻE</span><span>I POZNAJ URZĄDZENIA</span></h3>
+        <div class="industries-underline"></div>
+
+        <ul class="industries-list">
+          <li class="industries-list__item">Salon fryzjerski, salon kosmetyczny</li>
+          <li class="industries-list__item">Fitness i siłownie</li>
+          <li class="industries-list__item">Branża budowlana</li>
+          <li class="industries-list__item">Lekarze</li>
+          <li class="industries-list__item">Prawnicy</li>
+          <li class="industries-list__item">Mała gastronomia</li>
+          <li class="industries-list__item">Warsztat samochodowy, wulkanizacja</li>
+          <li class="industries-list__item">Apteka</li>
+          <li class="industries-list__item">Taxi</li>
+          <li class="industries-list__item">Piekarnia i cukiernia</li>
+          <li class="industries-list__item">Mały punkt handlowo usługowy</li>
+          <li class="industries-list__item">Sklep internetowy</li>
+        </ul>
+
+        <h3 class="industries-header">PORADNIK</h3>
+        <div class="industries-underline"></div>
+        <ul class="industries-list">
+          <li class="industries-list__item">Jak wybrać urządzenie fiskalne</li>
+          <li class="industries-list__item">Oprogramowanie do zarządzania firmą</li>
+          <li class="industries-list__item">Sklep (systemy sprzedaży)</li>
+          <li class="industries-list__item">Sklep (systemy sprzedaży)</li>
+          <li class="industries-list__item">Restauracja</li>
+        </ul>
+
+        <h3 class="industries-header">INFORMACJE</h3>
+        <div class="industries-underline"></div>
+        <ul class="industries-list">
+          <li class="industries-list__item">Zmiana VAT. Programowanie kasy</li>
+          <li class="industries-list__item">Przeglądy okresowe</li>
+          <li class="industries-list__item">Porady prawne</li>
+          <li class="industries-list__item">Często zadawne pytania</li>
+        </ul>
+      </aside>
+
+      <!-- Contact -->
+      <section class="contact-section">
+        <h3 class="contact-header">KONTAKT</h3>
+        <div class="contact-custom-border"></div>
+
+        <div class="information-container">
+          <div class="information-box">
+            <img src="/icons/contact/amk.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>ESC SA Centrum - ul. Mieszczańska 19, 30-313 Kraków</p>
+              <p>ESC SA Nowa Huta - Osiedle Teatralne 3, 31-945 Kraków</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/ana.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>+48 12 633 73 08</p>
+              <p>+48 12 656 51 58</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/amg.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>sprzedaz@escsa.pl</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/amm.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>poniedziałek - piątek: 9.00 - 17.00</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/amo.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p class="red">+48 508 031 790</p>
+              <p>(telefon dyżurny - 8:00 - 18:00 w dni robocze)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <img class="map-container__image" src="/images/contact/ajx.png" alt="ESC localization map" />
+          <img class="map-container__image" src="/images/contact/ajw.png" alt="ESC localization map" />
+          <img class="map-container__image-large" src="/images/contact/ajx@2x.png" alt="ESC localization map" />
+          <img class="map-container__image-large" src="/images/contact/ajw@2x.png" alt="ESC localization map" />
+          <div class="map-logo-background">
+            <img class="map-logo-background__image" src="/images/contact/aka.png" alt="" />
+          </div>
+        </div>
+
+        <div class="information-container-down">
+          <div class="first">
+            <div class="information-box">
+              <img src="/icons/contact/amk.png" class="information-box__icon" alt="" />
+              <div class="information-box__description">
+                <p>ESC SA Centrum - ul. Mieszczańska 19, 30-313 Kraków</p>
+              </div>
+            </div>
+            <div class="information-box">
+              <img src="/icons/contact/amg.png" class="information-box__icon" alt="" />
+              <p>sprzedaz@escsa.pl</p>
+            </div>
+            <div class="information-box">
+              <img src="/icons/contact/ana.png" class="information-box__icon" alt="" />
+              <div class="information-box__description">
+                <p>+48 12 633 73 08</p>
+                <p>+48 12 656 51 58</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="secound">
+            <div class="information-box__description">
+              <p>poniedziałek - piątek: 9.00 - 17.00</p>
+            </div>
+          </div>
+
+          <div class="three">
+            <div class="information-box-right">
+              <p>ESC SA Nowa Huta - Osiedle Teatralne 3, 31-945 Kraków</p>
+              <img src="/icons/contact/amk.png" class="information-box__icon" alt="" />
+            </div>
+            <div class="information-box-right">
+              <div class="information-box__description">
+                <p>sprzedaz@escsa.pl</p>
+              </div>
+              <img src="/icons/contact/amg.png" class="information-box__icon" alt="" />
+            </div>
+            <div class="information-box-right">
+              <div class="information-box__description">
+                <p class="red">+48 12 656 33 64</p>
+              </div>
+              <img src="/icons/contact/amo.png" class="information-box__icon" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <p class="get-route">wyznacz trasę!</p>
+
+        <!-- Contact BackGround: -->
+        <div class="contact-nine">9</div>
+        <svg class="contact-dashed-circle" width="171" height="171" viewBox="0 0 171 171" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="85.5" cy="85.5" r="85" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="3 3" opacity="1" />
+        </svg>
+        <div class="contact-blue-circle"></div>
+
+        <div class="contact-azure-background-top"></div>
+        <svg class="contact-dashed-circle-two" width="368" height="368" viewBox="0 0 368 368" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="184" cy="184" r="180" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="5 10" opacity="1" />
+        </svg>
+      </section>
+
+      <!-- About -->
+      <section class="about-section">
+        <h3 class="about-header">O NAS</h3>
+        <div class="about-custom-border"></div>
+
+        <div class="about-description">
+          <p>
+            Zajmujemy się kompleksową obsługą informatyczną przedsiębiorstw oraz wdrażaniem oprogramowania do zarządzania sprzedażą i gospodarką
+            magazynową. Prezentowane na stronie produkty to oprócz oprogramowania szeroko rozumiana elektronika wyposażenia handlu. Na naszym portalu
+            znajdą Państwo atrakcyjną ofertę urządzeń fiskalnych w korzystnych cenach: kasy fiskalne, czy też inaczej nazywane kasy rejestrujące,
+            drukarki fiskalne, terminale fiskalne oraz zarówno fiskalne, jak i niefiskalne systemy POS. Ponadto mamy w ofercie sklepowe wagi
+            elektroniczne: etykietujące, kalkulacyjne i platformowe. Całość uzupełnia oferta terminali płatniczych, kolektorów danych, drukarek kart i
+            etykiet, drukarek paragonowych tzw. bonowników.
+          </p>
+          <p>
+            Znajdą Państwo u nas również szeroki asortyment akcesoriów do sprzedawanych urządzeń jak pokrowce do kas fiskalnych, szuflady kasowe,
+            rolki do kas i drukarek fiskalnych czy też metkownice. Oferowane przez nas urządzenia fiskalne wyprodukowane są przez czołowych na rynku
+            producentów, jak: Posnet, ElzaB, Novitus. Od jakiegoś czasu w naszej ofercie dostępne są nowego typu kasy fiskalne tzw. kasy fiskalne
+            online, które umożliwiają łączenie się z Centralnym Repozytorium Kas. Urządzenia fiskalne dostępne na naszej stronie są nowoczesne,
+            funkcjonalne i różnorodne po to, aby mogły być wykorzystywane w małych i dużych biznesach oraz sprzedaży mobilnej.
+          </p>
+          <p>
+            W szerokiej ofercie kas i drukarek sklepowych mamy te najnowocześniejsze z kopią elektroniczną czy też on-line ready ale też sprawdzone
+            nieco starsze modele z dwoma rolkami. Sprzęt zakupiony w naszej firmie otaczamy opieką serwisową oraz wykonujemy ustawowe przeglądy
+            okresowe kas i drukarek fiskalnych w bardzo atrakcyjnych cenach. Naszym klientom staramy się w miarę możliwości przypominać o ustawowych
+            obowiązkach w zakresie fiskalnych kas i drukarek sklepowych.
+          </p>
+          <p>
+            Obecnie wychodząc naprzeciw oczekiwaniom rynku poszerzyliśmy wachlarz urządzeń fiskalnych o te niewielkich rozmiarów, zaprojektowanych dla
+            małych i średnich firm lub do prowadzenia sprzedaży przenośnej lub obwoźnej a wyróżniające się atrakcyjnymi cenami. Jeśli szukasz
+            <span class="about-description__bold">kasy fiskalnej w Krakowie</span> to dobrze trafiłeś.
+          </p>
+          <p>
+            Warto przeglądać dział promocji prezentowany na górze naszej strony. W dziale tym prezentujemy urządzenia, w cenach najtańszych w
+            Krakowie. Drogi kliencie jeśli tak nie jest i znajdziesz promowane urządzenie taniej u konkurencji dzwoń do naszych handlowców. Postaramy
+            się zrobić wszystko abyś był zadowolony z ceny.
+          </p>
+          <p>
+            Oferowany przez nas sprzęt fiskalny wyprodukowany jest przez firmy wiodące na rynku urządzeń fiskalnych tj. Novitus, Posnet, Elzab,
+            Datecs, iNNOVA, Incotex, Aclas.
+          </p>
+
+          <br />
+
+          <p>
+            Strona <span class="about-description__underline">www.kasy-fiskalne-krakow.pl</span> jest własnością firmy
+            <span class="about-description__bold">ESC SA</span> Portal skupia się na obsłudze firm w Krakowie oraz całej Małopolsce. Obsługa
+            ogólnopolska urządzeń fiskalnych opisana jest a stronie fiskasy.pl
+          </p>
+        </div>
+
+        <div class="collaborate-box">
+          <img class="collaborate-box__image" src="/images/about/alv.png" alt="Novitus baner" />
+          <img class="collaborate-box__image" src="/images/about/alt.png" alt="Posnet baner" />
+          <img class="collaborate-box__image" src="/images/about/alr.png" alt="Datecs baner" />
+          <img class="collaborate-box__image" src="/images/about/alp.png" alt="Innova SA baner" />
+          <img class="collaborate-box__image" src="/images/about/alv.png" alt="Novitus baner" />
+          <img class="collaborate-box__image" src="/images/about/alt.png" alt="Posnet baner" />
+          <img class="collaborate-box__image" src="/images/about/alr.png" alt="Datecs baner" />
+          <img class="collaborate-box__image" src="/images/about/alp.png" alt="Innova SA baner" />
+          <img class="collaborate-box__image-large" src="/images/about/alv@2x.png" alt="Novitus baner" />
+          <img class="collaborate-box__image-large" src="/images/about/alt@2x.png" alt="Posnet baner" />
+          <img class="collaborate-box__image-large" src="/images/about/alr@2x.png" alt="Datecs baner" />
+          <img class="collaborate-box__image-large" src="/images/about/alp@2x.png" alt="Innova SA baner" />
+        </div>
+
+        <!-- About BackGround: -->
+        <svg class="about-plus" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <line x1="50" y1="0" x2="50" y2="100" stroke="#000000" stroke-width="25" opacity="1" />
+          <line x1="0" y1="50" x2="100" y2="50" stroke="#000000" stroke-width="25" opacity="1" />
+        </svg>
+        <p class="about-seven">7</p>
+        <div class="about-one">1</div>
+        <svg class="dashed-circle" width="171" height="171" viewBox="0 0 171 171" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="85.5" cy="85.5" r="85" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="3 3" opacity="1" />
+        </svg>
+        <div class="about-dash">-</div>
+        <div class="about-box-big">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-section">
+        <img src="/images/footer/ajv.png" class="footer-logo" alt="ESC logo" />
+
+        <div class="information-container">
+          <div class="information-box">
+            <img src="/icons/contact/amk.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>ESC SA Centrum - ul. Mieszczańska 19, 30-313 Kraków</p>
+              <p>ESC SA Nowa Huta - Osiedle Teatralne 3, 31-945 Kraków</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/ana.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>+48 12 633 73 08</p>
+              <p>+48 12 656 51 58</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/amg.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>sprzedaz@escsa.pl</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/amm.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p>poniedziałek - piątek: 9.00 - 17.00</p>
+            </div>
+          </div>
+          <div class="information-box">
+            <img src="/icons/contact/amo.png" class="information-box__icon" alt="" />
+            <div class="information-box__description">
+              <p class="bold">+48 508 031 790</p>
+              <p>(telefon dyżurny - 8:00 - 18:00 w dni robocze)</p>
+            </div>
+          </div>
+        </div>
+
+        <img class="footer-fiskasy-logo" src="/images/footer/aji@2x.png" alt="fiskasy logo" />
+
+        <!-- BG: -->
+        <div class="blue-circle"></div>
+        <div class="azure-circle"></div>
+        <svg class="dashed-circle" width="492" height="492" viewBox="0 0 492 492" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="246" cy="246" r="246" stroke="#ffffff" stroke-width="3" fill="none" stroke-dasharray="10, 10" />
+        </svg>
+
+        <div class="footer-animatedBox">
+          <div class="iconBoxOne">
+            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+          </div>
+        </div>
+
+        <div class="blue-circle-right"></div>
+        <svg class="dashed-circle-right" width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5, 10" />
+        </svg>
+      </footer>
+    </div>
+
+    <script src="/js/navbar.js"></script>
+  </body>
+</html>

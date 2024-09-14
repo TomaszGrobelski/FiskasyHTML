@@ -106,6 +106,9 @@
     z-index: -30;
     width: 492px;
     height: 492px;
+    @media (min-width: 1024px) {
+      left: -142px;
+    }
   }
 
   .footer-animatedBox {
@@ -114,6 +117,10 @@
     top: -80px;
     width: 98px;
     height: 98px;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
   }
 
   .blue-circle-right {
@@ -121,8 +128,8 @@
     @media (min-width: 1536px) {
       display: block;
       position: absolute;
-      bottom: -275px; 
-      right: -91px; 
+      bottom: -275px;
+      right: -91px;
       width: 492px;
       height: 492px;
       border-radius: 100%;

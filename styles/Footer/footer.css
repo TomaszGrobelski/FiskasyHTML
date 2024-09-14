@@ -113,12 +113,22 @@
   width: 492px;
   height: 492px;
 }
+@media (min-width: 1024px) {
+  .footer-section .dashed-circle {
+    left: -142px;
+  }
+}
 .footer-section .footer-animatedBox {
   position: absolute;
   left: -25px;
   top: -80px;
   width: 98px;
   height: 98px;
+}
+@media (min-width: 1024px) {
+  .footer-section .footer-animatedBox {
+    display: none;
+  }
 }
 .footer-section .blue-circle-right {
   display: none;

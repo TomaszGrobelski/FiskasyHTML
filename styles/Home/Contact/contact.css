@@ -7,6 +7,11 @@
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 1024px) {
+  .contact-section {
+    padding-inline: 142px;
+  }
+}
 .contact-section .contact-header {
   font-family: "Gilroy-bold";
   font-size: 13px;
@@ -258,7 +263,7 @@
   background: #c4ecfc 0% 0% no-repeat padding-box;
   opacity: 1;
   z-index: -40;
-  border-radius: 37%;
+  border-radius: 37% 37% 37% 37%;
 }
 @media (min-width: 500px) {
   .contact-section .contact-azure-background-top {
@@ -268,10 +273,11 @@
 }
 @media (min-width: 640px) {
   .contact-section .contact-azure-background-top {
-    top: -500px;
+    top: -250px;
     left: 524px;
+    border-radius: 37% 37% 37% 37%;
     width: 1500px;
-    height: 1500px;
+    height: 1000px;
     transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
   }
 }
@@ -283,4 +289,12 @@
     height: 2471px;
     transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
   }
+}
+.contact-section .contact-dashed-circle-two {
+  position: absolute;
+  width: 368px;
+  height: 368px;
+  top: -100px;
+  right: -100px;
+  z-index: -10;
 }/*# sourceMappingURL=contact.css.map */

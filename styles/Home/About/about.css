@@ -6,6 +6,11 @@
   gap: 31px;
   padding-inline: 36px;
 }
+@media (min-width: 1024px) {
+  .about-section {
+    padding-inline: 142px;
+  }
+}
 .about-section .about-header {
   font-size: 13px;
   font-family: "Gilroy-bold";
@@ -65,12 +70,12 @@
   .about-section .about-description {
     margin-top: 66px;
     font-size: 16px;
-    padding-inline: 142px;
   }
 }
 @media (min-width: 1536px) {
   .about-section .about-description {
     font-size: 20px;
+    max-width: 1500px;
   }
 }
 .about-section .about-description__bold {
@@ -142,13 +147,37 @@
   color: #000000;
   opacity: 0.22;
 }
+@media (min-width: 768px) {
+  .about-section .about-plus {
+    display: none;
+  }
+}
+.about-section .about-seven {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about-section .about-seven {
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 46px;
+    width: 37px;
+    height: 92px;
+    color: var(--unnamed-color-000000);
+    text-align: left;
+    font-family: "Gilroy-bold";
+    font-size: 75px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 0.22;
+  }
+}
 .about-section .about-one {
   position: absolute;
   top: 810px;
   left: 281px;
   width: 17px;
   height: 51px;
-  /* UI Properties */
   color: var(--unnamed-color-000000);
   text-align: left;
   font: normal normal 800 42px/51px Gilroy;
@@ -157,6 +186,11 @@
   color: #000000;
   opacity: 0.22;
   z-index: -60;
+}
+@media (min-width: 768px) {
+  .about-section .about-one {
+    display: none;
+  }
 }
 .about-section .dashed-circle {
   position: absolute;
@@ -185,4 +219,18 @@
   color: #000000;
   opacity: 0.22;
   scale: 2;
+}
+.about-section .about-box-big {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .about-section .about-box-big {
+    display: block;
+    position: absolute;
+    width: 576px;
+    height: 579px;
+    top: 100px;
+    right: -300px;
+    z-index: -10;
+  }
 }/*# sourceMappingURL=about.css.map */

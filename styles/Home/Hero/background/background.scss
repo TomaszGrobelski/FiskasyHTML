@@ -373,3 +373,65 @@
     }
   }
 }
+
+.custom-border-background-small-up {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #c4ecfc;
+  width: 100%;
+  height: 300px;
+  z-index: -70;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.custom-border-background-small {
+  position: absolute;
+  top: -154.0400390625px;
+  left: -461.29705810546875px;
+  width: 1007px;
+  height: 1052px;
+  background-color: #c4ecfc;
+  border-radius: 50% 50% 50% 50% / 45% 45% 55% 55%;
+  z-index: -40;
+  @media (min-width: 540px) {
+    left: -370px;
+  }
+  @media (min-width: 640px) {
+    left: -240px;
+  }
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+.custom-azure-background-big-up {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    background-color: #c4ecfc;
+    z-index: -40;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 800px;
+  }
+}
+
+.custom-azure-background-big {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    position: absolute;
+    top: -309.81005859375px;
+    left: -87.23750305175781px;
+    width: 2105px;
+    height: 2200px;
+    background: #c4ecfc 0% 0% no-repeat padding-box;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    opacity: 1;
+    z-index: -140;
+  }
+}

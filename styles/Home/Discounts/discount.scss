@@ -235,10 +235,13 @@
     color: var(--unnamed-color-000000);
     text-align: left;
     font-family: 'Gilroy-bold';
-
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.22;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
   .discount-plus {
     position: absolute;
@@ -249,10 +252,18 @@
     z-index: -10;
     color: var(--unnamed-color-000000);
     text-align: left;
-    font: normal normal 800 42px/51px Gilroy;
+    font-family: 'Gilroy-bold';
+    font-size: 42px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.22;
+    @media (min-width: 768px) {
+      top: 1350px;
+      right: 428px;
+      left: auto;
+      width: 42px;
+      font-size: 75px;
+    }
   }
   .discount-Box-two {
     position: absolute;
@@ -264,7 +275,7 @@
     z-index: -20;
 
     @media (min-width: 768px) {
-      top: 1940px;
+      top: 2270px;
       left: -310px;
       width: 576px;
       height: 579px;
@@ -291,11 +302,14 @@
     left: 26px;
     color: var(--unnamed-color-000000);
     text-align: left;
-    font: normal normal 800 22px/24px Gilroy;
     font-family: 'Gilroy-bold';
+    font-size: 22px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.22;
+    @media (min-width: 768px) {
+      display: none;
+    }
   }
   .discount-blue-circle-two {
     position: absolute;
@@ -303,7 +317,6 @@
     left: 370px;
     width: 224px;
     height: 224px;
-    /* UI Properties */
     background: var(--unnamed-color-00a8f0) 0% 0% no-repeat padding-box;
     background: #00a8f0 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -311,10 +324,10 @@
     z-index: -40;
 
     @media (min-width: 768px) {
-      top: 1650px;
-      left: 64px;
-      width: 492px;
-      height: 492px;
+      top: 1780px;
+      left: -124px;
+      width: 462px;
+      height: 462px;
     }
   }
   .discount-dashed-circle-three {
@@ -335,12 +348,42 @@
     @media (min-width: 768px) {
       display: block;
       position: absolute;
-      top: 1350px;
-      left: -181px;
+      top: 1550px;
+      left: -350px;
       width: 640px;
       height: 640px;
       z-index: -30;
       opacity: 1;
+    }
+  }
+  .discount-big-box-two {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 1780px;
+      left: 1460px;
+      width: 578px;
+      height: 579px;
+      z-index: -10;
+    }
+  }
+  .dicount-three {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 2436px;
+      left: 400px;
+      width: 41px;
+      height: 92px;
+      color: var(--unnamed-color-000000);
+      text-align: left;
+      font-family: 'Gilroy-bold';
+      font-size: 75px;
+      letter-spacing: 0px;
+      color: #000000;
+      opacity: 0.22;
     }
   }
   .discount-plus-two {
@@ -349,13 +392,22 @@
     left: 205px;
     width: 24px;
     height: 51px;
-    /* UI Properties */
     color: var(--unnamed-color-000000);
     text-align: left;
-    font: normal normal 800 42px/51px Gilroy;
+    font-family: 'Gilroy-bold';
+    font-size: 42px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 0.22;
+    z-index: -10;
+
+    @media (min-width: 768px) {
+      top: 2480px;
+      right: 328px;
+      left: auto;
+      width: 34px;
+      font-size: 75px;
+    }
   }
   .discount-Box-three {
     position: absolute;

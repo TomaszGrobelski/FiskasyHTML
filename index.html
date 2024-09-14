@@ -35,10 +35,10 @@
               <p class="dropdown-title">Poradnik Fiskalny</p>
               <div class="dropdown-menu">
                 <div class="dropdown-content">
-                  <p>Jak wybrać urządzenie fiskalne</p>
-                  <p>Oprogramowanie do zarządzania firmą</p>
-                  <p>Sklep (systemy sprzedaży)</p>
-                  <p>Restauracja</p>
+                  <p class="dropdown-content__item">Jak wybrać urządzenie fiskalne</p>
+                  <p class="dropdown-content__item">Oprogramowanie do zarządzania firmą</p>
+                  <p class="dropdown-content__item">Sklep (systemy sprzedaży)</p>
+                  <p class="dropdown-content__item">Restauracja</p>
                 </div>
                 <div class="dropdown-arrow"></div>
               </div>
@@ -184,15 +184,25 @@
         <!-- Flagi języK: -->
         <div class="language-select">
           <p class="language-title">JĘZYK</p>
-          <button class="flag-button">
+          <button class="language-button">
             <img src="icons/hero/flags/ua-big.svg" alt="Ukraine Flag" class="flag-img" />
           </button>
-          <button class="flag-button">
+          <button class="language-button">
             <img src="icons/hero/flags/gb-big.svg" alt="Great Britain Flag" class="flag-img" />
           </button>
-          <button class="flag-button selected-flag">
+          <button class="language-button active">
             <img src="icons/hero/flags/pl-big.svg" alt="Poland Flag" class="flag-img" />
           </button>
+        </div>
+
+        <!-- Azure BG: -->
+        <div>
+          <div class="custom-border-background-small-up"></div>
+          <div class="custom-border-background-small"></div>
+
+          <!-- Duży ekran azure z tyłu: -->
+          <div class="custom-azure-background-big-up"></div>
+          <div class="custom-azure-background-big"></div>
         </div>
 
         <!-- Blue View -->
@@ -324,14 +334,6 @@
               <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
             </div>
           </div>
-
-          <!-- mały ekran azure z tyłu: -->
-          <div class="custom-border-background-small-up"></div>
-          <div class="custom-border-background-small"></div>
-
-          <!-- Duży ekran azure z tyłu: -->
-          <div class="custom-azure-background-big-up"></div>
-          <div class="custom-azure-background-big"></div>
         </div>
 
         <!-- Red View -->
@@ -457,9 +459,6 @@
               <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
             </div>
           </div>
-
-          <div class="custom-border-background"></div>
-          <div class="custom-border-background-two"></div>
         </div>
 
         <!-- Discounts -->
@@ -743,6 +742,15 @@
             <svg class="discount-dashed-circle-three-big" width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
               <circle cx="320" cy="320" r="310" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="5 10" opacity="1" />
             </svg>
+            <div class="discount-big-box-two">
+              <div class="iconBoxOne">
+                <img src="icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+                <img src="icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+                <img src="icons/hero/aak.png" alt="add icon" class="icon icon3" />
+                <img src="icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+              </div>
+            </div>
+            <p class="dicount-three">3</p>
             <svg class="discount-plus-two" width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
               <line x1="50" y1="0" x2="50" y2="100" stroke="#000000" stroke-width="25" opacity="1" />
               <line x1="0" y1="50" x2="100" y2="50" stroke="#000000" stroke-width="25" opacity="1" />
@@ -906,6 +914,9 @@
           <div class="contact-blue-circle"></div>
 
           <div class="contact-azure-background-top"></div>
+          <svg class="contact-dashed-circle-two" width="368" height="368" viewBox="0 0 368 368" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="184" cy="184" r="180" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="5 10" opacity="1" />
+          </svg>
         </section>
 
         <!-- About -->
@@ -979,15 +990,24 @@
             <line x1="50" y1="0" x2="50" y2="100" stroke="#000000" stroke-width="25" opacity="1" />
             <line x1="0" y1="50" x2="100" y2="50" stroke="#000000" stroke-width="25" opacity="1" />
           </svg>
+          <p class="about-seven">7</p>
           <div class="about-one">1</div>
           <svg class="dashed-circle" width="171" height="171" viewBox="0 0 171 171" xmlns="http://www.w3.org/2000/svg">
             <circle cx="85.5" cy="85.5" r="85" fill="none" stroke="#000000" stroke-width="1" stroke-dasharray="3 3" opacity="1" />
           </svg>
           <div class="about-dash">-</div>
+          <div class="about-box-big">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+              <img src="icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+              <img src="icons/hero/aak.png" alt="add icon" class="icon icon3" />
+              <img src="icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+            </div>
+          </div>
         </section>
 
         <!-- Footer -->
-        <section class="footer-section">
+        <footer class="footer-section">
           <img src="images/footer/ajv.png" class="footer-logo" alt="ESC logo" />
 
           <div class="information-container">
@@ -1048,7 +1068,7 @@
           <svg class="dashed-circle-right" width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
             <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5, 10" />
           </svg>
-        </section>
+        </footer>
       </div>
     </div>
 
