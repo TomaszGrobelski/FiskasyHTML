@@ -39,6 +39,30 @@
     font-size: 45px;
   }
 }
+.discounts-view .product-catalog-header {
+  display: none;
+}
+@media (min-width: 768px) {
+  .discounts-view .product-catalog-header {
+    padding-top: 45px;
+    padding-bottom: 52px;
+    display: block;
+    color: var(--unnamed-color-ffffff);
+    text-align: left;
+    font-family: "Gilroy-bold";
+    font-size: 30px;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+}
+@media (min-width: 1024px) {
+  .discounts-view .product-catalog-header {
+    padding-top: 25px;
+    padding-bottom: 32px;
+    font-size: 45px;
+  }
+}
 .discounts-view .products-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -71,6 +95,15 @@
   .discounts-view .catalog-description {
     display: none;
   }
+}
+.discounts-view .discount-big-box-right {
+  position: absolute;
+  display: block;
+  left: 1280px;
+  top: 290px;
+  width: 576px;
+  height: 579px;
+  z-index: -10;
 }
 .discounts-view .discount-animatedBox {
   position: absolute;
@@ -120,6 +153,30 @@
     display: none;
   }
 }
+.discounts-view .discount-four {
+  display: none;
+}
+@media (min-width: 768px) {
+  .discounts-view .discount-four {
+    display: block;
+    position: absolute;
+    top: 300px;
+    left: 210px;
+    font-family: "Gilroy-bold";
+    font-size: 75px;
+    opacity: 0.22;
+    z-index: -10;
+  }
+}
+@media (min-width: 1280px) {
+  .discounts-view .discount-four {
+    display: block;
+    position: absolute;
+    top: 460px;
+    left: 410px;
+    font-size: 75px;
+  }
+}
 .discounts-view .discount-two {
   position: absolute;
   top: 445px;
@@ -133,6 +190,15 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 0.22;
+}
+@media (min-width: 768px) {
+  .discounts-view .discount-two {
+    font-size: 75px;
+    top: 987px;
+    left: auto;
+    right: 300px;
+    z-index: -10;
+  }
 }
 .discounts-view .discount-dash {
   position: absolute;
@@ -176,7 +242,7 @@
 }
 @media (min-width: 640px) {
   .discounts-view .discount-dashed-circle-two {
-    top: 810px;
+    top: 1160px;
     left: auto;
     right: 300px;
     width: 364px;

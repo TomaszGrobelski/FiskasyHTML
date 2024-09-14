@@ -654,7 +654,7 @@
     display: grid;
   }
 }
-.blue-view .custom-border-background-up {
+.blue-view .custom-border-background-small-up {
   position: absolute;
   left: 0;
   top: 0;
@@ -664,11 +664,11 @@
   z-index: -70;
 }
 @media (min-width: 768px) {
-  .blue-view .custom-border-background-up {
+  .blue-view .custom-border-background-small-up {
     display: none;
   }
 }
-.blue-view .custom-border-background {
+.blue-view .custom-border-background-small {
   position: absolute;
   top: -154.0400390625px;
   left: -461.2970581055px;
@@ -679,43 +679,49 @@
   z-index: -40;
 }
 @media (min-width: 540px) {
-  .blue-view .custom-border-background {
+  .blue-view .custom-border-background-small {
     left: -370px;
   }
 }
 @media (min-width: 640px) {
-  .blue-view .custom-border-background {
+  .blue-view .custom-border-background-small {
     left: -240px;
   }
 }
 @media (min-width: 768px) {
-  .blue-view .custom-border-background {
-    width: 1007px;
-    left: -50%;
-    top: 150px;
-    height: 1500px;
+  .blue-view .custom-border-background-small {
+    display: none;
   }
 }
-@media (min-width: 1024px) {
-  .blue-view .custom-border-background {
-    width: 100%;
-    left: 0;
-    top: 150px;
-    height: 1500px;
-  }
-}
-.blue-view .custom-border-background-two {
-  position: absolute;
+.blue-view .custom-azure-background-big-up {
   display: none;
-  background-color: #c4ecfc;
-  z-index: -40;
 }
 @media (min-width: 768px) {
-  .blue-view .custom-border-background-two {
+  .blue-view .custom-azure-background-big-up {
     display: block;
+    position: absolute;
+    background-color: #c4ecfc;
+    z-index: -40;
     top: 0px;
     left: 0;
     width: 100%;
     height: 800px;
+  }
+}
+.blue-view .custom-azure-background-big {
+  display: none;
+}
+@media (min-width: 768px) {
+  .blue-view .custom-azure-background-big {
+    display: block;
+    position: absolute;
+    top: -309.8100585938px;
+    left: -87.2375030518px;
+    width: 2105px;
+    height: 2200px;
+    background: #c4ecfc 0% 0% no-repeat padding-box;
+    border-radius: 50% 50% 50% 50%/50% 50% 50% 50%;
+    opacity: 1;
+    z-index: -140;
   }
 }/*# sourceMappingURL=blueView.css.map */

@@ -287,16 +287,26 @@
 
 .background-letter-x {
   position: absolute;
-  top: 212px;
-  left: 142px;
+  top: 73px;
+  left: 166px;
+  font-size: 40px;
   color: var(--unnamed-color-000000);
   text-align: left;
   font-family: 'Gilroy-bold';
-  font-size: 75px;
   font-weight: bolder;
   letter-spacing: 0px;
   color: #000000;
   opacity: 0.22;
+  @media (min-width: 1280px) {
+    top: 160px;
+    left: 102px;
+    font-size: 48px;
+  }
+  @media (min-width: 1536px) {
+    top: 212px;
+    left: 142px;
+    font-size: 75px;
+  }
 }
 
 .background-dash {

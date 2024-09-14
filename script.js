@@ -39,3 +39,57 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+//Karuzela zdjęć:
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
+const cards = document.querySelectorAll('.discount-card');
+let currentPosition = 0; // Początkowa pozycja
+
+// Obliczamy szerokość karty (wliczając odstępy)
+function getCardWidth() {
+  const card = cards[0];
+  const cardStyle = window.getComputedStyle(card);
+  const cardWidth = card.offsetWidth;
+  const cardMargin = parseInt(cardStyle.marginRight);
+  return cardWidth + cardMargin;
+}
+
+// Funkcja do aktualizacji widocznych kart
+function updateCards() {
+  const visibleCards = 3; // Liczba widocznych kart na ekranie
+
+  cards.forEach((card, index) => {
+    if (index >= currentPosition && index < currentPosition + visibleCards) {
+      card.style.display = 'flex'; // Pokazujemy widoczne karty
+    } else {
+      card.style.display = 'none'; // Ukrywamy niewidoczne karty
+    }
+  });
+}
+
+// Obsługa strzałki w prawo (przesunięcie w prawo)
+rightArrow.addEventListener('click', () => {
+  if (currentPosition < cards.length - 3) {
+    // Sprawdzamy, czy nie jesteśmy na końcu
+    currentPosition++;
+    updateCards();
+  }
+});
+
+// Obsługa strzałki w lewo (przesunięcie w lewo)
+leftArrow.addEventListener('click', () => {
+  if (currentPosition > 0) {
+    // Sprawdzamy, czy nie jesteśmy na początku
+    currentPosition--;
+    updateCards();
+  }
+});
+
+// Na początku ustawiamy widoczność kart
+updateCards();
+
+// Aktualizujemy szerokość kart przy zmianie rozmiaru okna
+window.addEventListener('resize', () => {
+  updateCards();
+});
