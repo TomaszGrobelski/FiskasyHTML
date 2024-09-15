@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/styles/Aside/industries.css" />
     <link rel="stylesheet" href="/styles/ProductInfo/productHero.css" />
     <link rel="stylesheet" href="/styles/ProductInfo/productInfo.css" />
+    <link rel="stylesheet" href="/styles/Home/Hero/social/social.css" />
+    
   </head>
   <body>
     <div class="main-container">
@@ -39,8 +41,12 @@
           </button>
         </div>
 
-        <img src="/images/navbar/aji.png" width="100" height="43" alt="Logo fiskasy.pl" class="logo-mobile" />
-        <img src="/images/navbar/aji@2x.png" width="172" height="73" alt="Logo fiskasy.pl" class="logo-desktop" />
+        <a href="/index.html">
+          <img src="/images/navbar/aji.png" width="100" height="43" alt="Logo fiskasy.pl" class="logo-mobile" />
+        </a>
+        <a href="/index.html">
+          <img src="/images/navbar/aji@2x.png" width="172" height="73" alt="Logo fiskasy.pl" class="logo-desktop" />
+        </a>
 
         <div class="search-container">
           <input type="text" placeholder="Wyszukaj..." class="search-input" />
@@ -156,6 +162,27 @@
         </div>
       </nav>
 
+      <!-- Social media: -->
+      <div class="social-buttons-container">
+        <a href="https://www.facebook.com/fiskasy/?locale=pl_PL">
+          <button class="social-button facebook">
+            <img src="/icons/social/mdi--facebook.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+          </button>
+        </a>
+
+        <button class="social-button instagram">
+          <img src="/icons/social/bi--instagram.svg" width="40" height="40" alt="facebook-icon" class="social-icon" />
+        </button>
+
+        <button class="social-button youtube">
+          <img src="/icons/social/iconoir--youtube.svg" width="45" height="45" alt="facebook-icon" class="social-icon" />
+        </button>
+
+        <button class="social-button linkedin">
+          <img src="/icons/social/mdi--linkedin.svg" alt="facebook-icon" width="45" height="45" class="social-icon" />
+        </button>
+      </div>
+
       <!-- Azure BG: -->
       <div>
         <div class="custom-border-background-small-up"></div>
@@ -182,7 +209,7 @@
 
         <!-- Duży telefon, do okola ceny -->
         <svg class="large-price-circle" width="376" height="376">
-          <circle cx="188" cy="188" r="180" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" />
+          <circle cx="188" cy="188" r="180" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="10 10" />
         </svg>
 
         <!-- Masz pytanie? wyślij wiadomość -->
@@ -273,6 +300,7 @@
         </p>
 
         <h3 class="product-detail-header">SZCZEGÓŁY PRODUKTU</h3>
+        <div class="product-detail-header-border"></div>
 
         <div class="product-detail-container">
           <div class="spec-item">

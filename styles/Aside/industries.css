@@ -6,10 +6,10 @@
     position: absolute;
     display: block;
     top: 1100px;
-    left: 30px;
+    left: 31px;
   }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1636px) {
   .industries-container {
     left: 142px;
   }
