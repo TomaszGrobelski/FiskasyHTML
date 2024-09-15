@@ -1,7 +1,6 @@
 .product-view {
   display: block;
 
-
   .animated-circle {
     display: none;
 
@@ -32,15 +31,14 @@
     animation: growUp 0.6s;
   }
 
-  .dashed-circle-container {
+  .dashed-circle-small {
     position: absolute;
+    top: 150px;
+    left: -103px;
     z-index: 10;
-    height: 359px;
-    width: 359px;
-    top: 262px;
-    left: -133px;
-    border: 2px dashed #000000; // border-dashed, border-black, border-[2px]
-    border-radius: 50%; // rounded-full
+    width: 313px;
+    height: 314px;
+    border-radius: 50%;
 
     @media (min-width: 640px) {
       // sm breakpoint
@@ -53,9 +51,89 @@
     }
   }
 
- 
+  .white-circle {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 236px;
+    z-index: 20;
+    left: -31px;
+    width: 219px;
+    height: 219px;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    opacity: 1;
+    border-radius: 100%;
+  }
 
-  
+  .back-to-hero {
+    position: absolute;
+    top: 193px;
+    left: 36px;
+    font-family: 'Gilroy-bold';
+    font-size: 11px;
+    color: white;
+  }
+  .hero-title {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 222px;
+    left: 215px;
+    max-width: 270px;
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Gilroy-bold', sans-serif;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+  .price-box {
+    position: absolute;
+    top: 314px;
+    left: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Gilroy-bold', sans-serif;
+    font-size: 14px;
+    color: white;
+    .hero-price {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      &__sub-two {
+        font-family: 'Gilroy-light';
+      }
+    }
+    .hero-producer {
+      padding-top: 20px;
+    }
+    .addition-avilabe {
+      padding-top: 20px;
+      font-family: 'Gilroy-light';
+    }
+  }
+
+  .hero-description {
+    position: absolute;
+    top: 468px;
+    left: 11px;
+    width: 358px;
+    height: 224px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Gilroy-light';
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    span {
+      font-family: 'Gilroy-bold', sans-serif;
+    }
+  }
 
   .price-circle {
     display: none;
@@ -149,7 +227,6 @@
     }
   }
 
-
   .blue-circle {
     position: absolute;
     border-radius: 50%;
@@ -157,8 +234,8 @@
     align-items: center;
     justify-content: center;
     background-color: #00aaff;
-    left: -210px;
-    top: 170px;
+    left: -200px;
+    top: 180px;
     z-index: -10;
     height: 609px;
     width: 609px;

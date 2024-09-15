@@ -154,6 +154,7 @@
   padding-bottom: 9px;
   border-bottom: 1px solid black;
   font-family: "Gilrot-bold", sans-serif;
+  font-size: 11px;
 }
 @media (min-width: 1024px) {
   .product-info-view .product-detail-container .spec-item {
@@ -165,4 +166,48 @@
 }
 .product-info-view .product-detail-container .spec-item__item {
   max-width: 50%;
+}
+.product-info-view .catalog-description {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 49px;
+  color: var(--unnamed-color-000000);
+  text-align: left;
+  font-size: 12px;
+  font-family: "Gilroy-light";
+  font-weight: 300;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  max-width: 358px;
+}
+@media (min-width: 1024px) {
+  .product-info-view .catalog-description {
+    display: none;
+  }
+}
+.product-info-view .details-blue-circle {
+  position: absolute;
+  left: -56px;
+  top: 1120px;
+  z-index: -10;
+  width: 224px;
+  height: 224px;
+  border-radius: 100%;
+  background: var(--unnamed-color-00a8f0) 0% 0% no-repeat padding-box;
+  background: #00a8f0 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.product-info-view .details-azure-bg {
+  position: absolute;
+  top: 1350px;
+  border-radius: 37%;
+  z-index: -10;
+  width: 995px;
+  height: 957px;
+  transform: matrix(-0.99, 0.14, -0.14, -0.99, 0, 0);
+  background: #c4ecfc 0% 0% no-repeat padding-box;
+  opacity: 1;
 }/*# sourceMappingURL=productInfo.css.map */
