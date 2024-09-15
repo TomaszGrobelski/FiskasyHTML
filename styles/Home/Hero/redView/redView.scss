@@ -295,18 +295,29 @@
     z-index: 10;
 
     @media (min-width: 768px) {
+      transform: translateX(50%);
+      right: 30%;
       top: 1008px;
       font-size: 30px;
     }
 
     @media (min-width: 1280px) {
-      color: black;
-      left: 30px;
-      top: 328px;
       display: flex;
+      transform: none;
+      left: 10px;
+      font-size: 22px;
+      top: 328px;
+      color: black;
     }
 
     @media (min-width: 1536px) {
+      font-size: 26px;
+      display: flex;
+      left: 60px;
+    }
+    @media (min-width: 1700px) {
+      font-size: 30px;
+      display: flex;
       left: 142px;
     }
 

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/styles/NavBar/navBar.css" />
     <link rel="stylesheet" href="/styles/Home/Contact/contact.css" />
+    <link rel="stylesheet" href="/styles/Home/Hero/flags/flags.css" />
     <link rel="stylesheet" href="/styles/Home/About/about.css" />
     <link rel="stylesheet" href="/styles/Footer/footer.css" />
     <link rel="stylesheet" href="/styles/Home/Hero/background/background.css" />
@@ -161,6 +162,20 @@
         </div>
       </nav>
 
+      <!-- Flagi języ: -->
+      <div class="language-select">
+        <p class="language-title">JĘZYK</p>
+        <button class="language-button">
+          <img src="/icons/hero/flags/ua-big.svg" alt="Ukraine Flag" class="flag-img" />
+        </button>
+        <button class="language-button">
+          <img src="/icons/hero/flags/gb-big.svg" alt="Great Britain Flag" class="flag-img" />
+        </button>
+        <button class="language-button active">
+          <img src="/icons/hero/flags/pl-big.svg" alt="Poland Flag" class="flag-img" />
+        </button>
+      </div>
+
       <!-- Social media: -->
       <div class="social-buttons-container">
         <a href="https://www.facebook.com/fiskasy/?locale=pl_PL">
@@ -208,16 +223,17 @@
           <p class="back-to-hero">< POWRÓT</p>
         </a>
         <div class="white-circle">
-          <img src="/images//hero/agu.png" alt="" />
+          <img id="product-image" src="/images//hero/agu.png" alt="product image" />
         </div>
 
-        <h1 class="hero-title"><span>Novitus Nano II</span> <span>Online GSM24</span></h1>
+        <h1 id="product-title" class="hero-title"><span>Novitus Nano II</span> <span>Online GSM24</span></h1>
 
         <div class="price-box">
-          <p class="hero-price">
-            <span class="hero-price__sub-one">CENA NETTO: 1750 zł</span><span class="hero-price__sub-two">cena brutto: 2152.50 zł</span>
-          </p>
-          <p class="hero-producer">PRODUCENT: NOVITUS</p>
+          <div class="hero-price">
+            <p class="hero-price__sub-one">CENA NETTO: <span id="product-netto-price">1750</span> zł</p>
+            <p class="hero-price__sub-two">cena brutto: <span id="product-brutto-price">2152.50</span> zł</p>
+          </div>
+          <p class="hero-producer">PRODUCENT: <span id="product-producer">NOVITUS</span></p>
 
           <p class="addition-avilabe">Dostępne również</p>
           <div class="addition-avilabe-box">
@@ -826,5 +842,6 @@
     </div>
 
     <script src="/js/navbar.js"></script>
+    <script src="/js/productDetail.js"></script>
   </body>
 </html>

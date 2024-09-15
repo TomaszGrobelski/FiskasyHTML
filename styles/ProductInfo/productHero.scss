@@ -61,10 +61,21 @@
     left: -31px;
     width: 219px;
     height: 219px;
-    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
     background: #ffffff 0% 0% no-repeat padding-box;
     opacity: 1;
     border-radius: 100%;
+
+    @media (min-width: 640px) {
+      left: 50px;
+    }
+
+    @media (min-width: 768px) {
+      width: 372px;
+      height: 372px;
+      transform: translateX(-50%);
+      left: 30%;
+      top: 400px;
+    }
 
     @media (min-width: 1024px) {
       transform: translateX(-50%);
@@ -81,6 +92,23 @@
     font-family: 'Gilroy-bold';
     font-size: 11px;
     color: white;
+    @media (min-width: 640px) {
+      font-size: 12px;
+      left: 150px;
+    }
+    @media (min-width: 768px) {
+      font-size: 16px;
+      transform: translateX(-50%);
+      top: 300px;
+      left: 30%;
+    }
+    @media (min-width: 1024px) {
+      font-size: 20px;
+      top: 323px;
+    }
+    @media (min-width: 1536px) {
+      left: 36%;
+    }
   }
   .hero-title {
     position: absolute;
@@ -96,12 +124,22 @@
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
+
+    @media (min-width: 640px) {
+      left: 300px;
+      top: 250px;
+    }
+    @media (min-width: 768px) {
+      font-size: 32px;
+      transform: translateX(-50%);
+      left: 72%;
+      top: 350px;
+    }
     @media (min-width: 1024px) {
       flex-direction: row;
       white-space: nowrap;
-      font-size: 28px;
       transform: translateX(-50%);
-      left: 70%;
+      left: 68%;
       top: 400px;
     }
     @media (min-width: 1280px) {
@@ -120,16 +158,27 @@
     font-size: 14px;
     color: white;
 
+    @media (min-width: 640px) {
+      left: 300px;
+    }
+    @media (min-width: 768px) {
+      transform: translateX(-50%);
+      left: 74%;
+      top: 500px;
+      font-size: 20px;
+    }
     @media (min-width: 1024px) {
       transform: translateX(-50%);
       left: 70%;
       top: 500px;
-      font-size: 16px;
     }
     @media (min-width: 1280px) {
       left: 60%;
-      font-size: 20px;
     }
+    @media (min-width: 1536px) {
+      left: 36%;
+    }
+
     .hero-price {
       display: flex;
       flex-direction: column;
@@ -156,15 +205,21 @@
         align-items: center;
         background: white;
         border-radius: 100%;
-        width: 63px;
-        height: 63px;
+        width: 37px;
+        height: 37px;
+        @media (min-width: 1024px) {
+          width: 63px;
+          height: 63px;
+        }
 
         .addition-image {
-          width: 61px;
+          width: 29px;
           height: auto;
           rotate: 35deg;
-          background: transparent url('img/197d527c46bdce7227fbbc5ac04f.png') 0% 0% no-repeat padding-box;
           opacity: 1;
+          @media (min-width: 1024px) {
+            width: 61px;
+          }
         }
       }
     }
@@ -182,6 +237,14 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media (min-width: 768px) {
+      font-size: 14px;
+      transform: translateX(-50%);
+      left: 50%;
+      top: 850px;
+      width: 700px;
+    }
 
     @media (min-width: 1024px) {
       transform: translateX(-50%);
@@ -266,18 +329,20 @@
     color: white;
     z-index: 20;
 
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       display: flex;
       left: 0px;
       top: 328px;
-      font-size: 30px;
+      font-size: 22px;
       color: black;
     }
 
     @media (min-width: 1280px) {
-      display: block;
-      left: 30px;
       display: flex;
+      left: 30px;
+      top: 328px;
+      font-size: 30px;
+      color: black;
     }
 
     @media (min-width: 1536px) {

@@ -6,7 +6,7 @@
   gap: 10px;
   z-index: 40;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .social-buttons-container {
     display: flex;
     top: 434px;
@@ -14,10 +14,16 @@
 }
 @media (min-width: 1280px) {
   .social-buttons-container {
-    left: 30px;
+    display: flex;
+    left: 10px;
   }
 }
 @media (min-width: 1536px) {
+  .social-buttons-container {
+    left: 60px;
+  }
+}
+@media (min-width: 1700px) {
   .social-buttons-container {
     left: 142px;
   }

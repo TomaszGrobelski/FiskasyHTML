@@ -439,21 +439,32 @@
 }
 @media (min-width: 768px) {
   .blue-view .question-info {
-    display: flex;
-    left: 0px;
-    top: 328px;
-    font-size: 30px;
-    color: black;
+    transform: translateX(-50%);
+    font-size: 24px;
+    left: 30%;
+    top: 950px;
   }
 }
 @media (min-width: 1280px) {
   .blue-view .question-info {
-    left: 30px;
     display: flex;
+    transform: none;
+    left: 10px;
+    font-size: 22px;
+    top: 328px;
+    color: black;
   }
 }
 @media (min-width: 1536px) {
   .blue-view .question-info {
+    font-size: 26px;
+    display: flex;
+    left: 60px;
+  }
+}
+@media (min-width: 1700px) {
+  .blue-view .question-info {
+    font-size: 30px;
     display: flex;
     left: 142px;
   }

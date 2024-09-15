@@ -8,11 +8,13 @@
   align-items: flex-end;
   gap: 18px;
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1024px) {
     display: flex;
+    top: 200px;
   }
 
   @media (min-width: 1536px) {
+    top: 364px;
     right: 142px;
   }
 

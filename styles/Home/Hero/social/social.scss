@@ -6,16 +6,20 @@
   gap: 10px;
   z-index: 40;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: flex;
     top: 434px;
   }
 
   @media (min-width: 1280px) {
-    left: 30px;
+    display: flex;
+    left: 10px;
   }
 
   @media (min-width: 1536px) {
+    left: 60px;
+  }
+  @media (min-width: 1700px) {
     left: 142px;
   }
 }

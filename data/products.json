@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Metkownice",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 1750,
+    "bruttoPrice": 2152.5,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 2,
+    "title": "Drukarki paragonowe",
+    "image": "/images/products/agt.png",
+    "nettoPrice": 1350,
+    "bruttoPrice": 1500,
+    "producer": "NOVITUS"
+  }
+]

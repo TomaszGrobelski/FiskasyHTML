@@ -441,19 +441,28 @@
     z-index: 20;
 
     @media (min-width: 768px) {
-      display: flex;
-      left: 0px;
-      top: 328px;
-      font-size: 30px;
-      color: black;
+      transform: translateX(-50%);
+      font-size: 24px;
+      left: 30%;
+      top: 950px;
     }
 
     @media (min-width: 1280px) {
-      left: 30px;
       display: flex;
+      transform: none;
+      left: 10px;
+      font-size: 22px;
+      top: 328px;
+      color: black;
     }
 
     @media (min-width: 1536px) {
+      font-size: 26px;
+      display: flex;
+      left: 60px;
+    }
+    @media (min-width: 1700px) {
+      font-size: 30px;
       display: flex;
       left: 142px;
     }
@@ -478,14 +487,12 @@
     }
 
     @media (min-width: 640px) {
-      // sm breakpoint
       left: 530px;
-      height: 36px; // sm:h-9 corresponds to 9 * 4px = 36px
-      width: 36px; // sm:w-9 corresponds to 9 * 4px = 36px
+      height: 36px;
+      width: 36px;
     }
 
     @media (min-width: 768px) {
-      // md breakpoint
       display: none;
     }
   }
@@ -495,24 +502,21 @@
     position: absolute;
     top: 600px;
     left: 50%;
-    height: 70px; // md:h-[70px]
-    width: 70px; // md:w-[70px]
+    height: 70px;
+    width: 70px;
     transform: translateX(700%);
 
     @media (min-width: 768px) {
-      // md breakpoint
       display: block;
       transform: translateX(450%);
     }
 
     @media (min-width: 1024px) {
-      // lg breakpoint
       top: 562px;
       transform: translateX(600%);
     }
 
     @media (min-width: 1280px) {
-      // xl breakpoint
       transform: translateX(700%);
     }
   }
