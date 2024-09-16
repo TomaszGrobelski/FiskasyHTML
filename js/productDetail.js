@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
           document.getElementById('product-netto-price').textContent = product.nettoPrice;
           document.getElementById('product-brutto-price').textContent = product.bruttoPrice;
           document.getElementById('product-producer').textContent = product.producer;
+
+          //Obsługa wyszukiwania:
+          
         } else {
           document.querySelector('.product-details').innerHTML = '<p>Nie znaleziono produktu.</p>';
         }

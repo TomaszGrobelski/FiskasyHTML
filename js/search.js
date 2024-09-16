@@ -1,47 +1,73 @@
-// Wyszukiwanie produktów:
-
-// const searchInput = document.getElementById('search-input');
-
-// searchInput.addEventListener('input', function () {
-//   const searchQuery = searchInput.value.trim();
-
-//   if (searchQuery !== '' && !window.location.href.includes('catalog.html')) {
-//     //   window.location.href = `catalog.html?search=${encodeURIComponent(searchQuery)}`;
-//     window.location.href = `pages/catalog.html`;
-//   }
-// });
-
 // Sprawdzenie, na której stronie się znajdujemy
 const currentPage = window.location.pathname;
+
 function getSearchParam() {
   const params = new URLSearchParams(window.location.search);
   return params.get('search') || '';
 }
 
+// Obsługa strony głównej i mobilnej
 if (currentPage.includes('index.html') || currentPage === '/') {
-  const searchInput = document.getElementById('search-input');
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-input');
+    const searchInputMobile = document.getElementById('search-input-mobile');
 
-  searchInput.addEventListener('input', function () {
-    const searchQuery = searchInput.value.trim();
+    console.log(searchInput);
+    // Wyszukiwanie desktopowe
+    if (searchInput) {
+      searchInput.addEventListener('input', function () {
+        const searchQuery = searchInput.value.trim();
+        if (searchQuery !== '') {
+          window.location.href = `pages/catalog.html?search=${encodeURIComponent(searchQuery)}`;
+        }
+      });
+    }
 
-    if (searchQuery !== '') {
-      window.location.href = `pages/catalog.html?search=${encodeURIComponent(searchQuery)}`;
+    // Wyszukiwanie mobilne
+    if (searchInputMobile) {
+      searchInputMobile.addEventListener('input', function () {
+        const searchQuery = searchInputMobile.value.trim();
+        if (searchQuery !== '') {
+          window.location.href = `pages/catalog.html?search=${encodeURIComponent(searchQuery)}&fromMobile=true`;
+        }
+      });
     }
   });
+
+  // Obsługa strony katalogu
 } else if (currentPage.includes('catalog.html')) {
-  const searchInput = document.getElementById('search-input');
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchInput = document.getElementById('search-input');
+    const searchInputMobile = document.getElementById('search-input-mobile');
+    const menuMobile = document.querySelector('#menu-mobile');
 
-  window.addEventListener('DOMContentLoaded', function () {
     const searchQuery = getSearchParam();
-    if (searchQuery) {
-      searchInput.value = searchQuery;
+    const isFromMobile = new URLSearchParams(window.location.search).get('fromMobile') === 'true';
 
-      searchInput.focus();
-      filterProducts(searchQuery);
+    if (searchQuery) {
+      if (isFromMobile) {
+        //mobile
+        if (menuMobile) {
+          menuMobile.style.display = 'block';
+
+          if (searchInputMobile) {
+            searchInputMobile.value = searchQuery;
+            searchInputMobile.focus();
+          }
+        }
+      } else {
+        // desktop
+        if (searchInput) {
+          searchInput.value = searchQuery;
+          searchInput.focus();
+        }
+        filterProducts(searchQuery);
+      }
     }
   });
 
   function filterProducts(query) {
     console.log('Filtrowanie produktów na podstawie:', query);
+    // Tutaj możesz dodać logikę do filtrowania produktów
   }
 }
