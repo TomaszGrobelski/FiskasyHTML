@@ -11,12 +11,17 @@
 @media (min-width: 1024px) {
   .language-select {
     display: flex;
-    top: 200px;
+    top: 230px;
+    right: 40px;
   }
 }
 @media (min-width: 1536px) {
   .language-select {
     top: 364px;
+  }
+}
+@media (min-width: 1700px) {
+  .language-select {
     right: 142px;
   }
 }

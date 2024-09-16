@@ -10,11 +10,15 @@
 
   @media (min-width: 1024px) {
     display: flex;
-    top: 200px;
+    top: 230px;
+    right: 40px;
   }
 
   @media (min-width: 1536px) {
     top: 364px;
+    
+  }
+  @media (min-width: 1700px) {
     right: 142px;
   }
 

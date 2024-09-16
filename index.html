@@ -26,7 +26,9 @@
         <nav class="navbar">
           <div class="nav-links">
             <button class="nav-button">
-              <p>Sklep</p>
+              <a href="/pages/catalog.html">
+                <p>Sklep</p>
+              </a>
             </button>
             <button class="nav-button">
               <p>Promocje</p>
@@ -53,7 +55,7 @@
           </a>
 
           <div class="search-box">
-            <input type="text" placeholder="Wyszukaj..." class="search-box__input" />
+            <input id="search-input" type="text" placeholder="Wyszukaj..." class="search-box__input" />
             <img src="icons/navbar/search.svg" class="search-box__icon" alt="search icon" />
           </div>
 
@@ -1086,6 +1088,7 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
+    <script src="/js/search.js"></script>
   </body>
 </html>

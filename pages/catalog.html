@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/ProductInfo/productHero.css" />
     <link rel="stylesheet" href="/styles/ProductInfo/productInfo.css" />
     <link rel="stylesheet" href="/styles/Home/Hero/social/social.css" />
+    <link rel="stylesheet" href="/styles/Catalog/catalog.css" />
   </head>
   <body>
     <div class="main-container">
@@ -225,53 +226,6 @@
           <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5 10" />
         </svg>
 
-        <a href="/index.html">
-          <p class="back-to-hero">< POWRÓT</p>
-        </a>
-        <div class="white-circle">
-          <img id="product-image" src="/images//hero/agu.png" alt="product image" />
-        </div>
-
-        <h1 id="product-title" class="hero-title"><span>Novitus Nano II</span> <span>Online GSM24</span></h1>
-
-        <div class="price-box">
-          <div class="hero-price">
-            <p class="hero-price__sub-one">CENA NETTO: <span id="product-netto-price">1750</span> zł</p>
-            <p class="hero-price__sub-two">cena brutto: <span id="product-brutto-price">2152.50</span> zł</p>
-          </div>
-          <p class="hero-producer">PRODUCENT: <span id="product-producer">NOVITUS</span></p>
-
-          <p class="addition-avilabe">Dostępne również</p>
-          <div class="addition-avilabe-box">
-            <div class="addition-image-bacground">
-              <a href="/pages/product.html?id=1">
-                <img src="/images/hero/ajt.png" class="addition-image" alt="additional image" />
-              </a>
-            </div>
-            <div class="addition-image-bacground">
-              <a href="/pages/product.html?id=1">
-                <img src="/images/hero/ajt.png" class="addition-image" alt="additional image" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Hero description -->
-        <div class="hero-description">
-          <p>
-            <span>Nano II Online</span> to najnowsza propozycja firmy Novitus, która jest bezpośrednim następcą jednej z najpopularniejszych kas
-            fiskalnych. Model ten utrzymuje najlepsze cechy swojej poprzedniczki i nadal posiada niewielkie rozmiary, ergonomiczny kształt oraz
-            wodoodporna klawiaturę. Jest on jednak wzbogacony o nowy design i dodatkowe klawisze funkcyjne. Novitus Nano II online w standardzie łączy
-            się z CRK przy pomocy WiFi oraz poprzez port LAN.
-          </p>
-
-          <p>
-            <span>Novitus Nano II</span> jest kolejną kasą fiskalną z grupy „Online Power”, co sprawia, że dysponuje podwyższoną mocą. W jej wnętrzu
-            znajdują się 32-bitowe procesory o taktowaniu ponad 500MHz, a także pamięć operacyjna o wielkości 256 Mb. Baza towarowa kasy Nano II
-            wynosi 20 000 PLU, a system Linux gwarantuje stabilną i bezawaryjną pracę.
-          </p>
-        </div>
-
         <!-- Mały telefon, do okoła ceny -->
         <svg class="price-circle" width="245" height="245">
           <circle cx="122.5" cy="122.5" r="120" stroke="#FFFFFF" stroke-width="1" fill="none" stroke-dasharray="3 3" />
@@ -340,169 +294,164 @@
         </div>
       </div>
 
-      <!-- Product info -->
-      <div class="product-info-view">
-        <h2 class="info-header">Kasa fiskalna Novitus Nano II Online:</h2>
+      <!-- Katalog produktów -->
+      <div class="catalog-container">
+        <h3 class="product-catalog-header">KATALOG PRODUKTÓW</h3>
+        <p class="product-catalog-subheader">kasy fiskalne ONLINE</p>
 
-        <ul class="product-description-list">
-          <li class="product-description-list__item">- Lekka, wytrzymała konstrukcja</li>
-          <li class="product-description-list__item">- Ergonomiczna obudowa odporna na uderzenia</li>
-          <li class="product-description-list__item">- Możliwość pracy w trudnych warunkach pogodowych</li>
-          <li class="product-description-list__item">- Udoskonalony design</li>
-          <li class="product-description-list__item">- Podświetlana klawiatura</li>
-        </ul>
+        <div class="products-container">
+          <a href="/pages/product.html?id=1">
+            <div class="product-card">
+              <p class="product-card__title">Metkownice</p>
+              <img src="/images/products/agu.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
+            </div>
+          </a>
+          <a href="/pages/product.html?id=2">
+            <div class="product-card">
+              <p class="product-card__title">Drukarki paragonowe</p>
+              <img src="/images/products/agt.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
+            </div>
+          </a>
 
-        <h3 class="info-header">Polecana w:</h3>
-
-        <ul class="product-description-list">
-          <li class="product-description-list__item">- Małych i średnich punktach handlowo-usługowych</li>
-          <li class="product-description-list__item">- Gabinetach lekarskich</li>
-          <li class="product-description-list__item">- Kancelariach prawnych</li>
-          <li class="product-description-list__item">- Gabinetach kosmetycznych i salonach fryzjerskich</li>
-          <li class="product-description-list__item">- unktach sprzedaży mobilnej</li>
-        </ul>
-
-        <p class="destiny-information">
-          Ta kasa fiskalna jest niezwykle wszechstronna i odnajdzie się w wielu branżach. Może pracować zarówno stacjonarnie jak i w sprzedaży
-          mobilnej, w małych i średnich placówkach handlowych. Kasa może łączyć się z Internetem za pomocą portu LAN oraz modułu WiFi, dzięki czemu
-          może pracować od razu po wyjęciu z pudełka. W nowym modelu znajduje się także podświetlana klawiatura, dzięki czemu praca z tym urządzeniem
-          jest możliwa również przy słabym oświetleniu.
-        </p>
-
-        <h3 class="product-detail-header">SZCZEGÓŁY PRODUKTU</h3>
-        <div class="product-detail-header-border"></div>
-
-        <div class="product-detail-container">
-          <div class="spec-item">
-            <p class="spec-item__label">Liczba kasjerów</p>
-            <p class="spec-item__value">32</p>
+          <div class="product-card">
+            <p class="product-card__title">Metkownice</p>
+            <img src="/images/products/agv.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Liczba grup towarowych</p>
-            <p class="spec-item__value">100</p>
+          <div class="product-card">
+            <p class="product-card__title">Drukarki fiskalne</p>
+            <img src="/images/products/agr.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Opakowania</p>
-            <p class="spec-item__value">64</p>
+          <div class="product-card">
+            <p class="product-card__title">Terminale fiskalne</p>
+            <img src="/images/products/agb.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Pojemność bufora ON-LINE</p>
-            <p class="spec-item__value">20000</p>
+          <div class="product-card">
+            <p class="product-card__title">Kasy fiskalne</p>
+            <img src="/images/products/afw.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Kwity parkingowe</p>
-            <p class="spec-item__value">usługi czasowe</p>
+          <div class="product-card">
+            <p class="product-card__title">Szuflady</p>
+            <img src="/images/products/ahf.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Rabaty / narzuty</p>
-            <p class="spec-item__value">tak</p>
+          <div class="product-card">
+            <p class="product-card__title">Kolektory</p>
+            <img src="/images/products/agx.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Klawisze skrótu</p>
-            <p class="spec-item__value">18 (9 w dwóch poziomach) + 10 w trybie szybkiej sprzedaży</p>
+          <div class="product-card">
+            <p class="product-card__title">Weryfikatory cen</p>
+            <img src="/images/products/ahh.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Przeznaczenie</p>
-            <p class="spec-item__value">małe i mobilne punkty handlowe, gastronomiczne i usługowe</p>
+          <div class="product-card">
+            <p class="product-card__title">Drukarki kart</p>
+            <img src="/images/products/agw.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Liczba Towarow</p>
-            <p class="spec-item__value">20000</p>
+          <div class="product-card">
+            <p class="product-card__title">Systemy POS</p>
+            <img src="/images/products/afr.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Liczba stawek PTU</p>
-            <p class="spec-item__value">7 (A-G)</p>
+          <div class="product-card">
+            <p class="product-card__title">Drukarki etykiet</p>
+            <img src="/images/products/agy.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Wyświetlacz klient</p>
-            <p class="spec-item__value">graficzny, podświetlany, niebieski LCD, 192 x 48 px</p>
+          <div class="product-card">
+            <p class="product-card__title">Czytniki kodów kreskowych</p>
+            <img src="/images/products/aga.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Wyświetlacz kasjer</p>
-            <p class="spec-item__value">graficzny, podświetlany, niebieski LCD, 192 x 48 px</p>
+          <div class="product-card">
+            <p class="product-card__title">Wagi elektroniczne</p>
+            <img src="/images/products/ags.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Złącza komunikacyjne</p>
-            <p class="spec-item__value">1 x RS232, 1 x USB, 1 x LAN</p>
+          <div class="product-card">
+            <p class="product-card__title">Akcesoria do urządzeń fiskalnych</p>
+            <img src="/images/products/afv.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Zasilanie zewnętrzne</p>
-            <p class="spec-item__value">230V /12V / 2A</p>
+          <div class="product-card">
+            <p class="product-card__title">Drukarki fiskalne</p>
+            <img src="/images/products/agq.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Zasilanie wewnętrzne</p>
-            <p class="spec-item__value">7,4V / 2,25 Ah, wymienny, możliwość ładowania akumulatora poza kasą</p>
+          <div class="product-card">
+            <p class="product-card__title">Kasy fiskalne</p>
+            <img src="/images/products/agf.png" class="product-card__image" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Nazwa towaru</p>
-            <p class="spec-item__value">40 znaków</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Nośnik kopii</p>
-            <p class="spec-item__value">kasa online</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Wymiar papieru</p>
-            <p class="spec-item__value">57 x 30</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Obcinacz papieru</p>
-            <p class="spec-item__value">brak</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Mechanizm drukujący</p>
-            <p class="spec-item__value">termiczny "wrzuć i pracuj", Fujitsu FTP 628</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Klawiatura</p>
-            <p class="spec-item__value">switchowa, silikonowa, podświetlana</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Wymiary</p>
-            <p class="spec-item__value">100 x 65 x 233 mm</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Masa</p>
-            <p class="spec-item__value">0,65 kg</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Opcjonalne komponenty</p>
-            <p class="spec-item__value">BLUETOOTH, WIFI</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Nazwa</p>
-            <p class="spec-item__value">Novitus Nano II Online GSM24</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Współpraca z urządzeniami</p>
-            <p class="spec-item__value">
-              komputer, czytnik kodów kreskowych (skaner), waga elektroniczna, terminal płatniczy (EFT), PIN PAD programowalny (EFT), drukarka
-              zamówień, monitoring (monitor wydruku), WIFI dongle (WAN), BT dongle, BT LE dongle, modem GSM
-            </p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Typ</p>
-            <p class="spec-item__value">przenośna kasa fiskalna online</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Komunikacja z CRK</p>
-            <p class="spec-item__value">LAN, GSM, opcja WIFI</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">e-Paragon</p>
-            <p class="spec-item__value">nie</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Eurofiskalizacja</p>
-            <p class="spec-item__value">tak</p>
-          </div>
-          <div class="spec-item">
-            <p class="spec-item__label">Producent</p>
-            <p class="spec-item__value">novitus</p>
+          <div class="product-card">
+            <p class="product-card__title">Terminale płatnicze</p>
+            <img src="/images/products/ahg.png" class="product-card__image" />
+            <img src="" alt="" />
+            <div class="price-box">
+              <span class="price-box__value">OD</span>
+              <span class="price-box__value">1299 zł</span>
+            </div>
           </div>
         </div>
 
-        <!-- Catalog descripion -->
         <div class="catalog-description">
           <p>
             Powyżej przedstawiamy Państwu katalog kas fiskalnych ONLINE. Kasy rejestrujące ONLINE, to nowy rodzaj kas posiadający możliwość łączenia
@@ -528,22 +477,6 @@
             znajdującego się pod domeną www.escsa.pl/sklep. Życzymy udanych zakupów.
           </p>
         </div>
-
-        <!-- BG Szczegółów porduktu -->
-        <div class="details-blue-circle"></div>
-        <div class="details-azure-bg"></div>
-        <div class="details-big-box">
-          <div class="iconBoxOne">
-            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
-            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
-            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
-            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
-          </div>
-        </div>
-        <div class="details-one">1</div>
-        <svg class="details-dashed-circle" width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="320" cy="320" r="300" fill="none" stroke="#000000" stroke-width="3" stroke-dasharray="5 10" opacity="1" />
-        </svg>
       </div>
 
       <!-- Wybierz swoją branże i poznaj urządzenia -->
