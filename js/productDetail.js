@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch('../data/products.json')
       .then((response) => response.json())
       .then((products) => {
-        const product = products.find((p) => p.id == productId);
+        const product = products.find((product) => product.id == productId);
 
         if (product) {
           document.getElementById('product-title').textContent = product.title;

@@ -1,7 +1,5 @@
-@charset "UTF-8";
 .blue-view {
   display: block;
-  /* Definicja animacji */
 }
 .blue-view .customHeroImage {
   position: absolute;
@@ -185,7 +183,7 @@
   z-index: 30;
   display: flex;
   height: 46px;
-  width: 162px;
+  width: auto;
   flex-direction: column;
   align-items: center;
   border-bottom: 2px solid transparent;
@@ -197,6 +195,41 @@
   color: white;
   transition: all 0.3s ease-in-out;
 }
+.blue-view .custom-button::before, .blue-view .custom-button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  top: 52px;
+  left: 50%;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+@media (min-width: 768px) {
+  .blue-view .custom-button::before, .blue-view .custom-button::after {
+    top: 105px;
+  }
+}
+@media (min-width: 1280px) {
+  .blue-view .custom-button::before, .blue-view .custom-button::after {
+    top: 110px;
+  }
+}
+.blue-view .custom-button::before {
+  transform: translateY(-50%);
+}
+.blue-view .custom-button::after {
+  transform: translateY(-50%);
+}
+.blue-view .custom-button:hover::before, .blue-view .custom-button:hover::after {
+  width: 40%;
+}
+.blue-view .custom-button:hover::before {
+  left: 10%;
+}
+.blue-view .custom-button:hover::after {
+  right: 0;
+}
 @media (min-width: 640px) {
   .blue-view .custom-button {
     left: 320px;
@@ -204,9 +237,8 @@
 }
 @media (min-width: 768px) {
   .blue-view .custom-button {
-    left: 45%;
+    left: 50%;
     top: 484px;
-    transform: translateX(100%);
     font-size: 35px;
     line-height: 55px;
   }
@@ -227,15 +259,10 @@
 }
 .blue-view .custom-span:first-of-type {
   animation: fadeInUp 1s forwards;
-  border-bottom: none;
 }
 .blue-view .custom-span:last-of-type {
   animation: fadeInUp 1s forwards;
-  border-bottom: 3px solid transparent;
   white-space: nowrap;
-}
-.custom-button:hover .blue-view .custom-span:last-of-type {
-  border-bottom: 3px solid white;
 }
 @keyframes fadeInUp {
   to {
@@ -250,7 +277,7 @@
   z-index: 30;
   display: flex;
   height: 46px;
-  width: 162px;
+  width: auto;
   flex-direction: column;
   align-items: center;
   text-align: center;
@@ -259,7 +286,41 @@
   line-height: 23px;
   letter-spacing: 0;
   color: white;
-  transition: all 0.3s ease-in-out;
+}
+.blue-view .compare-button::before, .blue-view .compare-button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  top: 22px;
+  left: 50%;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+@media (min-width: 768px) {
+  .blue-view .compare-button::before, .blue-view .compare-button::after {
+    top: 45px;
+  }
+}
+@media (min-width: 1280px) {
+  .blue-view .compare-button::before, .blue-view .compare-button::after {
+    top: 50px;
+  }
+}
+.blue-view .compare-button::before {
+  transform: translateY(-50%);
+}
+.blue-view .compare-button::after {
+  transform: translateY(-50%);
+}
+.blue-view .compare-button:hover::before, .blue-view .compare-button:hover::after {
+  width: 50%;
+}
+.blue-view .compare-button:hover::before {
+  left: 0;
+}
+.blue-view .compare-button:hover::after {
+  right: 0;
 }
 @media (min-width: 640px) {
   .blue-view .compare-button {
@@ -268,7 +329,7 @@
 }
 @media (min-width: 768px) {
   .blue-view .compare-button {
-    left: 45%;
+    left: 30%;
     top: 684px;
     transform: translateX(100%);
     font-size: 35px;
@@ -277,20 +338,16 @@
 }
 @media (min-width: 1280px) {
   .blue-view .compare-button {
-    left: 50%;
-    top: 695px;
+    left: 33%;
+    top: 710px;
     font-size: 45px;
   }
 }
 .blue-view .custom-span {
   border-bottom: 3px solid transparent;
-  transition: border-bottom 0.3s ease-in-out;
   opacity: 0;
   transform: translate(-100px, -50px);
   transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-}
-.blue-view .custom-span:hover {
-  border-bottom: 3px solid white;
 }
 @keyframes fadeInUp {
   to {
@@ -592,14 +649,14 @@
 }
 .blue-view .background-number-nine {
   position: absolute;
-  display: none; /* Domyślnie ukryte */
-  height: 51px; /* h-[51px] */
-  width: 24px; /* w-[24px] */
-  text-align: left; /* text-left */
-  font-weight: 800; /* font-extrabold */
-  line-height: 51px; /* leading-[51px] */
+  display: none;
+  height: 51px;
+  width: 24px;
+  text-align: left;
+  font-weight: 800;
+  line-height: 51px;
   opacity: 0.22;
-  transition: all 1.5s ease; /* Czas i rodzaj animacji */
+  transition: all 1.5s ease;
 }
 @media (min-width: 768px) {
   .blue-view .background-number-nine {

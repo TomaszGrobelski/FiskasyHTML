@@ -31,11 +31,16 @@
       top: 607px;
       z-index: 20;
       display: none;
-      width: 522px;
-      height: 493px;
+      height: auto;
       transform: translateX(0%);
 
       @media (min-width: 768px) {
+        width: 400px;
+        display: block;
+        animation: growMoveUpLeft 0.8s;
+      }
+      @media (min-width: 1280px) {
+        width: 522px;
         display: block;
         animation: growMoveUpLeft 0.8s;
       }
@@ -105,6 +110,7 @@
   }
 
   .product-text {
+    cursor: pointer;
     position: absolute;
     right: 185px;
     top: 355px;
@@ -114,7 +120,7 @@
     align-items: center;
     text-align: center;
     height: 46px;
-    width: 162px;
+    width: auto;
     font-size: 19px;
     font-weight: 800;
     line-height: 23px;
@@ -123,23 +129,67 @@
     transition: all 300ms ease-in-out;
     animation: growUpRedSmall 0.3s;
 
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 2px;
+      background-color: white;
+      width: 0;
+      top: 52px;
+      left: 50%;
+      transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+      @media (min-width: 768px) {
+        top: 105px;
+      }
+      @media (min-width: 1280px) {
+        top: 110px;
+      }
+    }
+
+    &::before {
+      transform: translateY(-50%);
+    }
+
+    &::after {
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        width: 40%;
+      }
+
+      &::before {
+        left: 10%;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+
     @media (min-width: 640px) {
       right: 203px;
     }
 
     @media (min-width: 768px) {
-      left: 45%;
+      left: 55%;
       top: 384px;
-      transform: translateX(-140%);
+      transform: translateX(-100%);
       font-size: 35px;
       line-height: 55px;
+      z-index: 550;
+      width: 350px;
     }
 
     @media (min-width: 1280px) {
-      left: 50%;
+      left: 55%;
       top: 448px;
-      transform: translateX(-170%);
+      transform: translateX(-100%);
       font-size: 45px;
+      width: 400px;
     }
   }
 
@@ -152,57 +202,94 @@
   }
 
   .compare-button {
-    .compare-text {
+    position: absolute;
+    top: 454px;
+    right: 210px;
+    z-index: 30;
+    display: flex;
+    height: 46px;
+    width: auto;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: white;
+
+    &::before,
+    &::after {
+      content: '';
       position: absolute;
-      right: 210px;
-      top: 454px;
-      z-index: 30;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      height: 46px;
-      width: 162px;
-      font-size: 19px;
-      font-weight: 800;
-      line-height: 23px;
-      letter-spacing: 0;
-      color: white;
-      transition: all 300ms ease-in-out;
-
-      @media (min-width: 640px) {
-        right: 260px;
-      }
-
+      height: 2px;
+      background-color: white;
+      width: 0;
+      top: 22px;
+      left: 50%;
+      transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
       @media (min-width: 768px) {
-        left: 45%;
-        top: 535px;
-        transform: translateX(-150%);
-        font-size: 35px;
-        line-height: 55px;
+        top: 45px;
       }
-
-      @media (min-width: 1024px) {
-        top: 535px;
-        transform: translateX(-200%);
-      }
-
       @media (min-width: 1280px) {
-        left: 50%;
-        top: 635px;
-        font-size: 45px;
+        top: 50px;
       }
     }
 
-    .compare-text-item {
-      display: inline-block;
-      border-bottom: 3px solid transparent;
-      transition: border-color 0.3s ease-in-out;
+    &::before {
+      transform: translateY(-50%);
+    }
 
-      &:hover {
-        border-color: white;
+    &::after {
+      transform: translateY(-50%);
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        width: 50%;
       }
 
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+
+    @media (min-width: 640px) {
+      right: 260px;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 35px;
+      left: 40%;
+      top: 535px;
+      line-height: 55px;
+      transform: translateX(-100%);
+      width: 225px;
+    }
+
+    @media (min-width: 1024px) {
+      top: 535px;
+      width: 225px;
+    }
+
+    @media (min-width: 1280px) {
+      left: 50%;
+      top: 635px;
+      font-size: 45px;
+      width: 290px;
+    }
+    @media (min-width: 1536px) {
+      left: 45%;
+      top: 635px;
+      font-size: 45px;
+    }
+
+    .compare-text {
       @keyframes fadeIn {
         from {
           scale: 0.7;

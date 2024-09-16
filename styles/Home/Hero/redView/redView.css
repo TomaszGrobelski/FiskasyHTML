@@ -32,12 +32,19 @@
   top: 607px;
   z-index: 20;
   display: none;
-  width: 522px;
-  height: 493px;
+  height: auto;
   transform: translateX(0%);
 }
 @media (min-width: 768px) {
   .red-view .hero-image-large-container .hero-image-large {
+    width: 400px;
+    display: block;
+    animation: growMoveUpLeft 0.8s;
+  }
+}
+@media (min-width: 1280px) {
+  .red-view .hero-image-large-container .hero-image-large {
+    width: 522px;
     display: block;
     animation: growMoveUpLeft 0.8s;
   }
@@ -106,6 +113,7 @@
   }
 }
 .red-view .product-text {
+  cursor: pointer;
   position: absolute;
   right: 185px;
   top: 355px;
@@ -115,7 +123,7 @@
   align-items: center;
   text-align: center;
   height: 46px;
-  width: 162px;
+  width: auto;
   font-size: 19px;
   font-weight: 800;
   line-height: 23px;
@@ -124,6 +132,41 @@
   transition: all 300ms ease-in-out;
   animation: growUpRedSmall 0.3s;
 }
+.red-view .product-text::before, .red-view .product-text::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  top: 52px;
+  left: 50%;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+@media (min-width: 768px) {
+  .red-view .product-text::before, .red-view .product-text::after {
+    top: 105px;
+  }
+}
+@media (min-width: 1280px) {
+  .red-view .product-text::before, .red-view .product-text::after {
+    top: 110px;
+  }
+}
+.red-view .product-text::before {
+  transform: translateY(-50%);
+}
+.red-view .product-text::after {
+  transform: translateY(-50%);
+}
+.red-view .product-text:hover::before, .red-view .product-text:hover::after {
+  width: 40%;
+}
+.red-view .product-text:hover::before {
+  left: 10%;
+}
+.red-view .product-text:hover::after {
+  right: 0;
+}
 @media (min-width: 640px) {
   .red-view .product-text {
     right: 203px;
@@ -131,77 +174,117 @@
 }
 @media (min-width: 768px) {
   .red-view .product-text {
-    left: 45%;
+    left: 55%;
     top: 384px;
-    transform: translateX(-140%);
+    transform: translateX(-100%);
     font-size: 35px;
     line-height: 55px;
+    z-index: 550;
+    width: 350px;
   }
 }
 @media (min-width: 1280px) {
   .red-view .product-text {
-    left: 50%;
+    left: 55%;
     top: 448px;
-    transform: translateX(-170%);
+    transform: translateX(-100%);
     font-size: 45px;
+    width: 400px;
   }
 }
 .red-view .product-text-item {
   white-space: nowrap;
 }
-.red-view .compare-button .compare-text {
+.red-view .compare-button {
   position: absolute;
-  right: 210px;
   top: 454px;
+  right: 210px;
   z-index: 30;
   display: flex;
+  height: 46px;
+  width: auto;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 46px;
-  width: 162px;
   font-size: 19px;
   font-weight: 800;
   line-height: 23px;
   letter-spacing: 0;
   color: white;
-  transition: all 300ms ease-in-out;
+}
+.red-view .compare-button::before, .red-view .compare-button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  width: 0;
+  top: 22px;
+  left: 50%;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+@media (min-width: 768px) {
+  .red-view .compare-button::before, .red-view .compare-button::after {
+    top: 45px;
+  }
+}
+@media (min-width: 1280px) {
+  .red-view .compare-button::before, .red-view .compare-button::after {
+    top: 50px;
+  }
+}
+.red-view .compare-button::before {
+  transform: translateY(-50%);
+}
+.red-view .compare-button::after {
+  transform: translateY(-50%);
+}
+.red-view .compare-button:hover::before, .red-view .compare-button:hover::after {
+  width: 50%;
+}
+.red-view .compare-button:hover::before {
+  left: 0;
+}
+.red-view .compare-button:hover::after {
+  right: 0;
 }
 @media (min-width: 640px) {
-  .red-view .compare-button .compare-text {
+  .red-view .compare-button {
     right: 260px;
   }
 }
 @media (min-width: 768px) {
-  .red-view .compare-button .compare-text {
-    left: 45%;
-    top: 535px;
-    transform: translateX(-150%);
+  .red-view .compare-button {
     font-size: 35px;
+    left: 40%;
+    top: 535px;
     line-height: 55px;
+    transform: translateX(-100%);
+    width: 225px;
   }
 }
 @media (min-width: 1024px) {
-  .red-view .compare-button .compare-text {
+  .red-view .compare-button {
     top: 535px;
-    transform: translateX(-200%);
+    width: 225px;
   }
 }
 @media (min-width: 1280px) {
-  .red-view .compare-button .compare-text {
+  .red-view .compare-button {
     left: 50%;
+    top: 635px;
+    font-size: 45px;
+    width: 290px;
+  }
+}
+@media (min-width: 1536px) {
+  .red-view .compare-button {
+    left: 45%;
     top: 635px;
     font-size: 45px;
   }
 }
-.red-view .compare-button .compare-text-item {
-  display: inline-block;
-  border-bottom: 3px solid transparent;
-  transition: border-color 0.3s ease-in-out;
+.red-view .compare-button .compare-text {
   animation: fadeIn 0.5s ease-in-out;
-}
-.red-view .compare-button .compare-text-item:hover {
-  border-color: white;
 }
 @keyframes fadeIn {
   from {

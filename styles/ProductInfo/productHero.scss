@@ -176,7 +176,7 @@
       left: 60%;
     }
     @media (min-width: 1536px) {
-      left: 36%;
+      left: 60%;
     }
 
     .hero-price {
@@ -206,7 +206,15 @@
         background: white;
         border-radius: 100%;
         width: 37px;
-        height: 37px;
+
+        @media (min-width: 640px) {
+          width: 42px;
+          height: 42px;
+        }
+        @media (min-width: 768px) {
+          width: 52px;
+          height: 52px;
+        }
         @media (min-width: 1024px) {
           width: 63px;
           height: 63px;
@@ -217,8 +225,17 @@
           height: auto;
           rotate: 35deg;
           opacity: 1;
+          @media (min-width: 640px) {
+            width: 38px;
+            
+          }
+          @media (min-width: 768px) {
+            width: 46px;
+            
+          }
           @media (min-width: 1024px) {
             width: 61px;
+            height: auto;
           }
         }
       }
@@ -238,6 +255,10 @@
     flex-direction: column;
     gap: 15px;
 
+    @media (min-width: 640px) {
+      top: 510px;
+      width: 500px;
+    }
     @media (min-width: 768px) {
       font-size: 14px;
       transform: translateX(-50%);
@@ -339,13 +360,17 @@
 
     @media (min-width: 1280px) {
       display: flex;
-      left: 30px;
+      left: 10px;
       top: 328px;
       font-size: 30px;
       color: black;
     }
 
     @media (min-width: 1536px) {
+      display: flex;
+      left: 60px;
+    }
+    @media (min-width: 1700px) {
       display: flex;
       left: 142px;
     }
