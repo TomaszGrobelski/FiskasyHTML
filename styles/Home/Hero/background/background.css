@@ -56,7 +56,7 @@
   top: 157px;
   left: 305px;
   width: 59px;
-  z-index: 250;
+  z-index: -20;
 }
 @media (min-width: 768px) {
   .animatedBoxOne {
@@ -85,7 +85,7 @@
   top: 157px;
   left: 305px;
   width: 59px;
-  z-index: 250;
+  z-index: -20;
 }
 @media (min-width: 768px) {
   .animatedContainerOneRed {

@@ -9,10 +9,138 @@
   },
   {
     "id": 2,
-    "title": "Drukarki paragonowe",
-    "image": "/images/products/agt.png",
+    "title": "Drukarka termiczna",
+    "image": "/images/products/agu.png",
     "nettoPrice": 1350,
-    "bruttoPrice": 1500,
+    "bruttoPrice": 1600,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 3,
+    "title": "Skaner kodów kreskowych",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 980,
+    "bruttoPrice": 1150,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 4,
+    "title": "Terminal płatniczy",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 2200,
+    "bruttoPrice": 2700,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 5,
+    "title": "Kasa fiskalna",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 1400,
+    "bruttoPrice": 1722,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 6,
+    "title": "Ręczny terminal",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 1950,
+    "bruttoPrice": 2400,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 7,
+    "title": "Drukarka etykiet",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 1200,
+    "bruttoPrice": 1450,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 8,
+    "title": "Waga elektroniczna",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 900,
+    "bruttoPrice": 1100,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 9,
+    "title": "Monitor dotykowy",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 2700,
+    "bruttoPrice": 3200,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 10,
+    "title": "System POS",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 3500,
+    "bruttoPrice": 4300,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 11,
+    "title": "Drukarka mobilna",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 800,
+    "bruttoPrice": 1000,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 12,
+    "title": "Podajnik etykiet",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 1150,
+    "bruttoPrice": 1400,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 13,
+    "title": "Etykiety termiczne",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 300,
+    "bruttoPrice": 370,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 14,
+    "title": "Czytnik kart RFID",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 650,
+    "bruttoPrice": 800,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 15,
+    "title": "Skaner ręczny",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 750,
+    "bruttoPrice": 920,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 16,
+    "title": "Komputer przemysłowy",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 3000,
+    "bruttoPrice": 3700,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 17,
+    "title": "Stacja dokująca",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 500,
+    "bruttoPrice": 620,
+    "producer": "NOVITUS"
+  },
+  {
+    "id": 18,
+    "title": "Oprogramowanie POS",
+    "image": "/images/products/agu.png",
+    "nettoPrice": 1700,
+    "bruttoPrice": 2100,
     "producer": "NOVITUS"
   }
 ]

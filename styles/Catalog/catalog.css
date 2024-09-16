@@ -5,22 +5,26 @@
   align-items: center;
   padding-top: 10px;
   z-index: 200;
+  min-height: 900px;
 }
 @media (min-width: 768px) {
   .catalog-container {
     padding-top: 250px;
+    min-height: 2000px;
   }
 }
 @media (min-width: 1024px) {
   .catalog-container {
     padding-top: 290px;
     padding-left: 250px;
+    min-height: 2200px;
   }
 }
 @media (min-width: 1280px) {
   .catalog-container {
     padding-top: 325px;
     padding-left: 272px;
+    min-height: 2300px;
   }
 }
 .catalog-container .product-catalog-header {
