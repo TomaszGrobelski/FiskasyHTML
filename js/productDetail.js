@@ -20,6 +20,24 @@ document.addEventListener('DOMContentLoaded', function () {
           document.getElementById('product-producer').textContent = product.producer;
 
           //Obsługa wyszukiwania:
+          const searchInput = document.getElementById('search-input');
+          const searchInputMobile = document.getElementById('search-input-mobile');
+          if (searchInput) {
+            searchInput.addEventListener('input', function () {
+              const searchQuery = searchInput.value.trim();
+              if (searchQuery !== '') {
+                window.location.href = `catalog.html?search=${encodeURIComponent(searchQuery)}`;
+              }
+            });
+          }
+          if (searchInputMobile) {
+            searchInputMobile.addEventListener('input', function () {
+              const searchQuery = searchInputMobile.value.trim();
+              if (searchQuery !== '') {
+                window.location.href = `catalog.html?search=${encodeURIComponent(searchQuery)}&fromMobile=true`;
+              }
+            });
+          }
           
         } else {
           document.querySelector('.product-details').innerHTML = '<p>Nie znaleziono produktu.</p>';

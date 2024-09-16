@@ -12,7 +12,6 @@ if (currentPage.includes('index.html') || currentPage === '/') {
     const searchInput = document.getElementById('search-input');
     const searchInputMobile = document.getElementById('search-input-mobile');
 
-    console.log(searchInput);
     // Wyszukiwanie desktopowe
     if (searchInput) {
       searchInput.addEventListener('input', function () {
@@ -52,7 +51,9 @@ if (currentPage.includes('index.html') || currentPage === '/') {
 
           if (searchInputMobile) {
             searchInputMobile.value = searchQuery;
-            searchInputMobile.focus();
+            setTimeout(() => {
+                searchInputMobile.focus();
+              }, 200); 
           }
         }
       } else {
