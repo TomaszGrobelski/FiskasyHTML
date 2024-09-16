@@ -93,6 +93,7 @@
   font-family: "Gilroy-bold";
   font-size: 11px;
   color: white;
+  z-index: 100;
 }
 @media (min-width: 640px) {
   .product-view .back-to-hero {
