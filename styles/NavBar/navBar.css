@@ -1,4 +1,6 @@
+@charset "UTF-8";
 .navbar {
+  position: relative;
   z-index: 250;
   display: flex;
   align-items: center;
@@ -116,9 +118,12 @@
   transition: opacity 75ms ease;
 }
 .navbar .logo-mobile {
-  margin-left: 7px;
-  height: 43px;
+  position: absolute; /* Logo jest wycentrowane absolutnie */
+  left: 50%; /* Ustawienie środka ekranu */
+  top: 14px;
+  transform: translateX(-50%);
   width: 100px;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .navbar .logo-mobile {
@@ -126,9 +131,12 @@
   }
 }
 .navbar .logo-desktop {
-  margin-left: 7px;
-  height: 73px;
+  position: absolute;
+  left: 50%;
+  top: 14px;
+  transform: translateX(-50%);
   width: 172px;
+  height: auto;
 }
 @media (min-width: 1024px) {
   .navbar .logo-desktop {
@@ -140,16 +148,22 @@
     display: none;
   }
 }
-.navbar .search-container {
+.navbar .search-box {
   position: relative;
-  max-width: 300px;
+  width: 100%;
+  max-width: 350px;
 }
 @media (min-width: 1280px) {
-  .navbar .search-container {
+  .navbar .search-box {
     max-width: 400px;
   }
 }
-.navbar .search-container .search-input {
+@media (min-width: 1536px) {
+  .navbar .search-box {
+    max-width: 477px;
+  }
+}
+.navbar .search-box__input {
   display: none;
   margin-top: 5px;
   height: 39px;
@@ -162,23 +176,25 @@
   color: black;
   outline: none;
 }
-.navbar .search-container .search-input placeholder {
+.navbar .search-box__input placeholder {
   color: black;
 }
 @media (min-width: 1024px) {
-  .navbar .search-container .search-input {
+  .navbar .search-box__input {
     display: block;
   }
 }
-.navbar .search-container .search-icon {
-  position: absolute;
-  right: 2px;
-  top: 7px;
-  font-size: 24px;
+.navbar .search-box__icon {
+  display: none;
 }
-@media (max-width: 1023px) {
-  .navbar .search-container .search-icon {
-    display: none;
+@media (min-width: 1024px) {
+  .navbar .search-box__icon {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    top: 9px;
+    right: 11px;
   }
 }
 .navbar .menu-burger {

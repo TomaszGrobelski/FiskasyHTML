@@ -649,14 +649,13 @@
 }
 .blue-view .background-number-nine {
   position: absolute;
+  font-family: "Gilroy-bold";
   display: none;
   height: 51px;
   width: 24px;
   text-align: left;
-  font-weight: 800;
   line-height: 51px;
   opacity: 0.22;
-  transition: all 1.5s ease;
 }
 @media (min-width: 768px) {
   .blue-view .background-number-nine {
@@ -664,16 +663,15 @@
     left: 1660px;
     top: 679px;
     font-size: 75px;
-    animation: slideUpAndLeft 1s;
+    animation: slideDownAndLeft 1s;
   }
 }
-@keyframes slideUpAndLeft {
+@keyframes slideDownAndLeft {
   from {
-    transform: translate(-100px, -100px);
+    transform: translateX(-42px) translateY(-70px);
   }
   to {
     transform: translate(0, 0);
-    opacity: 0.22;
   }
 }
 .blue-view .icon-box-container {

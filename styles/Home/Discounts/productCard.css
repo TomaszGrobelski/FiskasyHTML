@@ -14,18 +14,21 @@
 }
 @media (min-width: 640px) {
   .product-card {
+    border-radius: 12px;
     width: 220px;
     height: 290px;
   }
 }
 @media (min-width: 768px) {
   .product-card {
+    border-radius: 20px;
     width: 210px;
     height: 311px;
   }
 }
 @media (min-width: 1024px) {
   .product-card {
+    border-radius: 35px;
     width: 260px;
     height: 331px;
   }

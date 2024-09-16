@@ -564,22 +564,21 @@
   height: 51px;
   width: 24px;
   text-align: left;
-  font-weight: bold;
   line-height: 51px;
   opacity: 0.22;
 }
 @media (min-width: 768px) {
   .red-view .animated-text-nine {
-    left: 1590px;
+    left: 1618px;
     top: 609px;
     display: block;
     font-size: 75px;
-    animation: fadeIn 0.5s ease-in-out forwards;
+    animation: slideUpAndLeftRed 1s;
   }
 }
-@keyframes fadeIn {
+@keyframes slideUpAndLeftRed {
   from {
-    transform: translateY(50px) translateX(50px);
+    transform: translateX(42px) translateY(70px);
   }
   to {
     transform: translateY(0) translateX(0);

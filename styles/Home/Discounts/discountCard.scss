@@ -5,13 +5,11 @@
   gap: 38px;
   overflow-x: visible;
   flex-wrap: nowrap;
-  transition: transform 0.5s ease; 
- 
-
+  transition: transform 0.5s ease;
 
   @media (min-width: 640px) {
     min-height: 190px;
-    max-width: calc((120px + 38px) * 3 - 38px);  
+    max-width: calc((120px + 38px) * 3 - 38px);
   }
   @media (min-width: 768px) {
     min-height: 220px;
@@ -19,7 +17,7 @@
   }
   @media (min-width: 1536px) {
     min-height: 370px;
-    max-width: calc((290px + 56px) * 3 - 46px);  
+    max-width: calc((290px + 56px) * 3 - 46px);
   }
 
   .discount-card {
@@ -37,10 +35,12 @@
     flex-shrink: 0;
 
     @media (min-width: 640px) {
+      border-radius: 12px;
       width: 120px;
       height: 175px;
     }
     @media (min-width: 768px) {
+      border-radius: 20px;
       width: 150px;
       height: 205px;
     }

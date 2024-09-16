@@ -41,12 +41,14 @@
 }
 @media (min-width: 640px) {
   .discount-moving-box .discount-card {
+    border-radius: 12px;
     width: 120px;
     height: 175px;
   }
 }
 @media (min-width: 768px) {
   .discount-moving-box .discount-card {
+    border-radius: 20px;
     width: 150px;
     height: 205px;
   }
