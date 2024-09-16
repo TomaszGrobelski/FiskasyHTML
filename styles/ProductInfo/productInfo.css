@@ -75,21 +75,21 @@
   .product-info-view .destiny-information {
     font-size: 20px;
     margin-bottom: 50px;
-    height: 215px;
+    height: 260px;
   }
 }
 @media (min-width: 1280px) {
   .product-info-view .destiny-information {
     font-size: 20px;
     margin-bottom: 80px;
-    height: 138px;
+    height: 182px;
   }
 }
 @media (min-width: 1536px) {
   .product-info-view .destiny-information {
     font-size: 20px;
     margin-bottom: 50px;
-    height: 138px;
+    height: 174px;
   }
 }
 .product-info-view .product-detail-header {

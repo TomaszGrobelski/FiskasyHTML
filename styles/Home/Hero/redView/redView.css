@@ -331,7 +331,7 @@
 @media (min-width: 1024px) {
   .red-view .right-arrow-large {
     display: block;
-    top: 602px;
+    top: 562px;
     transform: translateX(650%);
   }
 }
@@ -358,7 +358,7 @@
 }
 @media (min-width: 1024px) {
   .red-view .left-arrow-large {
-    top: 612px;
+    top: 562px;
   }
 }
 @media (min-width: 1280px) {
