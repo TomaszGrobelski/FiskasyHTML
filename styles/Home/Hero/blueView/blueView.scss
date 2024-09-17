@@ -595,6 +595,8 @@
     transform: translateX(-500%);
     border: 6px black solid;
     border-radius: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s, opacity 0.3s;
 
     @media (min-width: 1366px) {
       transform: translateX(-800%);
@@ -603,13 +605,20 @@
       align-items: center;
       top: 562px;
 
-      :hover{
-        color: white;
-        fill: white;
-        
-        
-        // background: black;
+      background: black;
+      color: transparent;
+      svg{
+        z-index: -10;
       }
+      // svg {
+      //   :hover {
+      //     width: 70px;
+      //     height: 70px;
+      //     color: white;
+      //     background: black;
+      //     border-radius: 100%;
+      //   }
+      // }
     }
   }
 
