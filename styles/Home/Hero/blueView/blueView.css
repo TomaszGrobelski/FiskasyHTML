@@ -591,12 +591,20 @@
   height: 70px;
   width: 70px;
   transform: translateX(-500%);
+  border: 6px black solid;
+  border-radius: 100%;
 }
 @media (min-width: 1366px) {
   .blue-view .arrowLeftLarge {
     transform: translateX(-800%);
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 562px;
+  }
+  .blue-view .arrowLeftLarge :hover {
+    color: white;
+    fill: white;
   }
 }
 .blue-view .blue-circle {

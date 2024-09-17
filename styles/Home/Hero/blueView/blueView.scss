@@ -593,11 +593,23 @@
     height: 70px;
     width: 70px;
     transform: translateX(-500%);
+    border: 6px black solid;
+    border-radius: 100%;
 
     @media (min-width: 1366px) {
       transform: translateX(-800%);
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       top: 562px;
+
+      :hover{
+        color: white;
+        fill: white;
+        
+        
+        // background: black;
+      }
     }
   }
 

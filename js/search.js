@@ -51,9 +51,7 @@ if (currentPage.includes('index.html') || currentPage === '/') {
 
           if (searchInputMobile) {
             searchInputMobile.value = searchQuery;
-            setTimeout(() => {
-                searchInputMobile.focus();
-              }, 200); 
+            searchInputMobile.focus();
           }
         }
       } else {

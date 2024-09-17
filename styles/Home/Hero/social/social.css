@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  z-index: 40;
+  z-index: 210;
 }
 @media (min-width: 1024px) {
   .social-buttons-container {
