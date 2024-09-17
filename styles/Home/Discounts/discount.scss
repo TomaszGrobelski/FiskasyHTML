@@ -12,7 +12,11 @@
 
   @media (min-width: 1024px) {
     left: 200px;
-    margin-top: 1006px;
+    margin-top: 1106px;
+  }
+  @media (min-width: 1280px) {
+    left: 200px;
+    margin-top: 1036px;
   }
 
   &__header {

@@ -48,6 +48,13 @@
 @media (min-width: 768px) {
   .discount-moving-box .discount-card {
     border-radius: 20px;
+    width: 180px;
+    height: 245px;
+  }
+}
+@media (min-width: 1024px) {
+  .discount-moving-box .discount-card {
+    border-radius: 20px;
     width: 150px;
     height: 205px;
   }
@@ -69,6 +76,7 @@
   letter-spacing: 0px;
   color: #000000;
   opacity: 1;
+  padding-inline: 10px;
 }
 @media (min-width: 640px) {
   .discount-moving-box .discount-card__title {

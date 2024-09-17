@@ -50,11 +50,11 @@
 .catalog-container .product-catalog-subheader {
   font-size: 12px;
   font-family: "Gilroy-light";
+  color: white;
 }
 @media (min-width: 768px) {
   .catalog-container .product-catalog-subheader {
     font-size: 16px;
-    color: white;
   }
 }
 @media (min-width: 1024px) {

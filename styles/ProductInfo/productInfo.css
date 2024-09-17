@@ -7,19 +7,24 @@
 }
 @media (min-width: 768px) {
   .product-info-view {
-    padding-top: 1000px;
+    padding-top: 1060px;
   }
 }
 @media (min-width: 1024px) {
   .product-info-view {
-    margin-left: 460px;
+    margin-left: 400px;
     max-width: 808px;
-    padding-top: 1000px;
+    padding-top: 1060px;
+  }
+}
+@media (min-width: 1280px) {
+  .product-info-view {
+    margin-left: 450px;
   }
 }
 @media (min-width: 1536px) {
   .product-info-view {
-    margin-left: 4640x;
+    margin-left: 464px;
     max-width: 50%;
     padding-top: 1030px;
   }
@@ -62,6 +67,11 @@
 }
 @media (min-width: 1024px) {
   .product-info-view .product-description-list__item {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1280px) {
+  .product-info-view .product-description-list__item {
     font-size: 20px;
   }
 }
@@ -73,23 +83,19 @@
 }
 @media (min-width: 1024px) {
   .product-info-view .destiny-information {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 50px;
-    height: 260px;
   }
 }
 @media (min-width: 1280px) {
   .product-info-view .destiny-information {
     font-size: 20px;
     margin-bottom: 80px;
-    height: 182px;
   }
 }
 @media (min-width: 1536px) {
   .product-info-view .destiny-information {
-    font-size: 20px;
     margin-bottom: 50px;
-    height: 174px;
   }
 }
 .product-info-view .product-detail-header {
@@ -106,34 +112,7 @@
 @media (min-width: 1024px) {
   .product-info-view .product-detail-header {
     font-size: 30px;
-    padding-bottom: 61px;
-  }
-}
-.product-info-view .product-detail-header-border {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .product-info-view .product-detail-header-border {
-    display: block;
-    position: relative;
-    width: 830px;
-    height: 4px;
-    top: -60px;
-    left: -47px;
-    z-index: 30;
-    background: black;
-  }
-}
-@media (min-width: 1280px) {
-  .product-info-view .product-detail-header-border {
-    top: -31px;
-    width: 870px;
-  }
-}
-@media (min-width: 1536px) {
-  .product-info-view .product-detail-header-border {
-    top: -31px;
-    width: 870px;
+    padding-bottom: 51px;
   }
 }
 .product-info-view .product-detail-container {
@@ -142,8 +121,8 @@
   align-items: center;
   opacity: 1;
   background-color: rgba(255, 255, 255, 0.1843137255);
-  backdrop-filter: blur(41px);
   -webkit-backdrop-filter: blur(41px);
+          backdrop-filter: blur(41px);
 }
 .product-info-view .product-detail-container .spec-item {
   display: flex;
@@ -240,6 +219,7 @@
   left: 142px;
   width: 578px;
   height: 579px;
+  z-index: -10;
 }
 .product-info-view .details-one {
   display: none;

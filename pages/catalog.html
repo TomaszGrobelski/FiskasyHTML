@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/styles/ProductInfo/productInfo.css" />
     <link rel="stylesheet" href="/styles/Home/Hero/social/social.css" />
     <link rel="stylesheet" href="/styles/Catalog/catalog.css" />
+    <link rel="stylesheet" href="/styles/Catalog/catalogbackground.css" />
   </head>
   <body>
     <div class="main-container">
@@ -218,91 +219,20 @@
 
       <!-- Product Hero -->
       <div id="product-view" class="product-view">
-        <!-- Maly telefon: czarny dashed do okola kalkulatorów -->
-        <!-- <div class="dashed-circle-container"></div> -->
-        <svg class="dashed-circle-small" width="314" height="314">
-          <circle cx="157" cy="157" r="150" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5 10" />
-        </svg>
-        <!-- Duży telefon: czarny dashed do okola kalkulatorów  -->
-        <svg class="animated-circle" width="640" height="640">
-          <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5 10" />
-        </svg>
-
-        <!-- Mały telefon, do okoła ceny -->
-        <svg class="price-circle" width="245" height="245">
-          <circle cx="122.5" cy="122.5" r="120" stroke="#FFFFFF" stroke-width="1" fill="none" stroke-dasharray="3 3" />
-        </svg>
-
-        <!-- Duży telefon, do okola ceny -->
-        <svg class="large-price-circle" width="376" height="376">
-          <circle cx="188" cy="188" r="180" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="10 10" />
-        </svg>
-
         <!-- Masz pytanie? wyślij wiadomość -->
         <div class="question-info">
           <p class="question-info__title">MASZ PYTANIE?</p>
           <p class="question-info__message">WYŚLIJ WIADOMOŚĆ</p>
         </div>
-
-        <!-- Niebieski środek -->
-        <div class="blue-circle"></div>
-
-        <!-- Numer: 9 -->
-        <p class="background-number-nine">
-          <span>9</span>
-        </p>
-
-        <!-- Litera: X -->
-        <div class="background-letter-x">x</div>
-
-        <!-- Znak myślnik (dash): - -->
-        <div class="background-dash">-</div>
-
-        <!-- Kwadraty do okoła -->
-        <div class="animatedBoxOne">
-          <div class="iconBoxOne">
-            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
-            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
-            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
-            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
-          </div>
-        </div>
-
-        <div class="animatedContainerTwo">
-          <div class="iconBoxTwo">
-            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
-            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
-            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
-            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
-          </div>
-        </div>
-
-        <div class="animatedContainerThree">
-          <div class="iconBoxTwo">
-            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
-            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
-            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
-            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
-          </div>
-        </div>
-
-        <div class="animatedContainerFourBig">
-          <div class="iconBoxTwo">
-            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
-            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
-            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
-            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
-          </div>
-        </div>
       </div>
 
-      <!-- Katalog produktów -->
+      <!-- Katalog produktów ------------------------------------------------------------------- -->
       <div class="catalog-container">
         <h3 class="product-catalog-header">KATALOG PRODUKTÓW</h3>
         <p class="product-catalog-subheader">kasy fiskalne ONLINE</p>
 
         <div class="products-container">
-          <!-- <a href="/pages/product.html?id=1">
+          <a href="/pages/product.html">
             <div class="product-card">
               <p class="product-card__title">Metkownice</p>
               <img src="/images/products/agu.png" class="product-card__image" />
@@ -312,7 +242,8 @@
               </div>
             </div>
           </a>
-          <a href="/pages/product.html?id=2">
+
+          <a href="/pages/product.html">
             <div class="product-card">
               <p class="product-card__title">Drukarki paragonowe</p>
               <img src="/images/products/agt.png" class="product-card__image" />
@@ -323,70 +254,88 @@
             </div>
           </a>
 
-          <div class="product-card">
-            <p class="product-card__title">Metkownice</p>
-            <img src="/images/products/agv.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Metkownice</p>
+              <img src="/images/products/agv.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
-          <div class="product-card">
-            <p class="product-card__title">Drukarki fiskalne</p>
-            <img src="/images/products/agr.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          </a>
+
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Drukarki fiskalne</p>
+              <img src="/images/products/agr.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
-          <div class="product-card">
-            <p class="product-card__title">Terminale fiskalne</p>
-            <img src="/images/products/agb.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          </a>
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Terminale fiskalne</p>
+              <img src="/images/products/agb.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
-          <div class="product-card">
-            <p class="product-card__title">Kasy fiskalne</p>
-            <img src="/images/products/afw.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          </a>
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Kasy fiskalne</p>
+              <img src="/images/products/afw.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
-          <div class="product-card">
-            <p class="product-card__title">Szuflady</p>
-            <img src="/images/products/ahf.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          </a>
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Szuflady</p>
+              <img src="/images/products/ahf.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
-          <div class="product-card">
-            <p class="product-card__title">Kolektory</p>
-            <img src="/images/products/agx.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          </a>
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Kolektory</p>
+              <img src="/images/products/agx.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
-          <div class="product-card">
-            <p class="product-card__title">Weryfikatory cen</p>
-            <img src="/images/products/ahh.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          </a>
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Weryfikatory cen</p>
+              <img src="/images/products/ahh.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
-          <div class="product-card">
-            <p class="product-card__title">Drukarki kart</p>
-            <img src="/images/products/agw.png" class="product-card__image" />
-            <div class="price-box">
-              <span class="price-box__value">OD</span>
-              <span class="price-box__value">1299 zł</span>
+          </a>
+          <a href="/pages/product.html">
+            <div class="product-card">
+              <p class="product-card__title">Drukarki kart</p>
+              <img src="/images/products/agw.png" class="product-card__image" />
+              <div class="price-box">
+                <span class="price-box__value">OD</span>
+                <span class="price-box__value">1299 zł</span>
+              </div>
             </div>
-          </div>
+          </a>
+
           <div class="product-card">
             <p class="product-card__title">Systemy POS</p>
             <img src="/images/products/afr.png" class="product-card__image" />
@@ -451,7 +400,7 @@
               <span class="price-box__value">OD</span>
               <span class="price-box__value">1299 zł</span>
             </div>
-          </div> -->
+          </div>
         </div>
 
         <div class="catalog-description">
@@ -479,6 +428,114 @@
             znajdującego się pod domeną www.escsa.pl/sklep. Życzymy udanych zakupów.
           </p>
         </div>
+      </div>
+
+      <!-- Catalog Background: ----------------------------------------------------------------- -->
+      <div class="catalog-background">
+        <!-- Litera: X -->
+        <div class="catalog-letter-x">x</div>
+
+        <!-- Niebieski środek -->
+        <div class="blue-circle"></div>
+
+        <!-- Mobile dashed koło Czarne -->
+        <svg class="dashed-circle-small" width="360" height="360" viewBox="0 0 360 360">
+          <circle cx="180" cy="180" r="170" stroke="#000000" stroke-width="2" fill="none" stroke-dasharray="10 4" />
+        </svg>
+
+        <!-- Desktop dashed koło Czarne -->
+        <svg class="dashed-circle-big" width="640" height="640">
+          <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5 10" />
+        </svg>
+
+        <!-- Desktop dashed koło Białe -->
+        <svg class="dashed-circle-white" width="376" height="376">
+          <circle cx="188" cy="188" r="180" stroke="#ffffff" stroke-width="3" fill="none" stroke-dasharray="10 10" />
+        </svg>
+
+        <!-- Numer: 9 -->
+        <p class="background-number-nine">
+          <span>9</span>
+        </p>
+
+        <!-- Znak myślnik (dash): - -->
+        <div class="background-dash">-</div>
+
+        <!-- Kwadraty do okoła -->
+        <div class="animatedBoxOne">
+          <div class="iconBoxOne">
+            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+          </div>
+        </div>
+
+        <div class="animatedContainerTwo">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+          </div>
+        </div>
+
+        <div class="animatedContainerThree">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+          </div>
+        </div>
+
+        <div class="animatedContainerFourBig">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag@2x.png" alt="" class="icon icon1" />
+            <img src="/icons/hero/aam@2x.png" alt="" class="icon icon2" />
+            <img src="/icons/hero/aak@2x.png" alt="" class="icon icon3" />
+            <img src="/icons/hero/aai@2x.png" alt="" class="icon icon4" />
+          </div>
+        </div>
+
+        <p class="catalog-four">4</p>
+
+        <div class="catalog-big-box-right">
+          <div class="iconBoxTwo">
+            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+          </div>
+        </div>
+
+        <p class="catalog-two">2</p>
+
+        <div class="discount-animatedBox">
+          <div class="iconBoxOne">
+            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+          </div>
+        </div>
+
+        <p class="discount-one">1</p>
+        <div class="discount-blue-circle-two"></div>
+        <svg class="discount-dashed-circle-three-big" width="640" height="640" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="320" cy="320" r="310" fill="none" stroke="#000000" stroke-width="2" stroke-dasharray="5 10" opacity="1" />
+        </svg>
+
+        <div class="catalog-big-box-two">
+          <div class="iconBoxOne">
+            <img src="/icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+            <img src="/icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+            <img src="/icons/hero/aak.png" alt="add icon" class="icon icon3" />
+            <img src="/icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+          </div>
+        </div>
+
+        
       </div>
 
       <!-- Wybierz swoją branże i poznaj urządzenia -->

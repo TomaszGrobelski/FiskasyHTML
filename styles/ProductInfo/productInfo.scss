@@ -6,15 +6,18 @@
   align-items: flex-start;
 
   @media (min-width: 768px) {
-    padding-top: 1000px;
+    padding-top: 1060px;
   }
   @media (min-width: 1024px) {
-    margin-left: 460px;
+    margin-left: 400px;
     max-width: 808px;
-    padding-top: 1000px;
+    padding-top: 1060px;
+  }
+  @media (min-width: 1280px) {
+    margin-left: 450px;
   }
   @media (min-width: 1536px) {
-    margin-left: 4640x;
+    margin-left: 464px;
     max-width: 50%;
     padding-top: 1030px;
   }
@@ -48,6 +51,9 @@
       font-size: 12px;
       font-family: 'Gilroy-normal';
       @media (min-width: 1024px) {
+        font-size: 16px;
+      }
+      @media (min-width: 1280px) {
         font-size: 20px;
       }
     }
@@ -58,19 +64,15 @@
     font-size: 12px;
     font-family: 'Gilroy-normal';
     @media (min-width: 1024px) {
-      font-size: 20px;
+      font-size: 16px;
       margin-bottom: 50px;
-      height: 260px;
     }
     @media (min-width: 1280px) {
       font-size: 20px;
       margin-bottom: 80px;
-      height: 182px;
     }
     @media (min-width: 1536px) {
-      font-size: 20px;
       margin-bottom: 50px;
-      height: 174px;
     }
   }
 
@@ -86,30 +88,10 @@
     opacity: 1;
     @media (min-width: 1024px) {
       font-size: 30px;
-      padding-bottom: 61px;
+      padding-bottom: 51px;
     }
   }
-  .product-detail-header-border {
-    display: none;
-    @media (min-width: 1024px) {
-      display: block;
-      position: relative;
-      width: 830px;
-      height: 4px;
-      top: -60px;
-      left: -47px;
-      z-index: 30;
-      background: black;
-    }
-    @media (min-width: 1280px) {
-      top: -31px;
-      width: 870px;
-    }
-    @media (min-width: 1536px) {
-      top: -31px;
-      width: 870px;
-    }
-  }
+  
   .product-detail-container {
     display: flex;
     flex-direction: column;
@@ -117,7 +99,6 @@
     opacity: 1;
     background-color: #ffffff2f;
     backdrop-filter: blur(41px);
-    -webkit-backdrop-filter: blur(41px);
 
     .spec-item {
       display: flex;
@@ -213,6 +194,7 @@
     left: 142px;
     width: 578px;
     height: 579px;
+    z-index: -10;
   }
   .details-one {
     display: none;

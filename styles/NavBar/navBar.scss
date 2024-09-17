@@ -7,15 +7,17 @@
   padding-right: 27px;
   padding-top: 26px;
   gap: 1rem;
-  @media (min-width: 1024px) {
-    // margin-top: 54px;
+  @media (min-width: 1536px) {
+    padding-inline: 50px;
+  }
+  @media (min-width: 1700px) {
+    padding-inline: 135px;
   }
 
   .nav-links {
     display: none;
     gap: 20px;
     font-size: 20px;
-    font-weight: 300;
 
     @media (min-width: 1024px) {
       display: flex;
@@ -28,6 +30,7 @@
     }
 
     .nav-button {
+      font-family: 'Gilroy-light';
       cursor: pointer;
       background: transparent;
       @media (min-width: 768px) {
@@ -132,10 +135,9 @@
   }
 
   .logo-mobile {
-    position: absolute; /* Logo jest wycentrowane absolutnie */
-    left: 50%; /* Ustawienie środka ekranu */
+    position: absolute;
+    left: 28px;
     top: 14px;
-    transform: translateX(-50%);
     width: 100px;
     height: auto;
 
@@ -164,7 +166,6 @@
     position: relative;
     width: 100%;
     max-width: 350px;
-    // color: black;
 
     @media (min-width: 1280px) {
       max-width: 400px;
@@ -191,6 +192,7 @@
 
       @media (min-width: 1024px) {
         display: block;
+        font-size: 16px;
       }
     }
 
@@ -222,8 +224,8 @@
 
     &__text {
       color: black;
+      font-family: 'Gilroy-light';
       font-size: 14px;
-      font-weight: 300;
     }
 
     @media (min-width: 1024px) {

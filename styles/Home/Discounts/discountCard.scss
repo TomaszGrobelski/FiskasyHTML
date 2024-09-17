@@ -40,6 +40,11 @@
     }
     @media (min-width: 768px) {
       border-radius: 20px;
+      width: 180px;
+      height: 245px;
+    }
+    @media (min-width: 1024px) {
+      border-radius: 20px;
       width: 150px;
       height: 205px;
     }
@@ -58,12 +63,14 @@
       letter-spacing: 0px;
       color: #000000;
       opacity: 1;
+      padding-inline: 10px;
 
       @media (min-width: 640px) {
         font-size: 10px;
       }
       @media (min-width: 768px) {
         font-size: 12px;
+        
       }
       @media (min-width: 1024px) {
         font-size: 16px;
