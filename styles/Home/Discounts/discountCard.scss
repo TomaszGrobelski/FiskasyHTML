@@ -195,17 +195,18 @@
 .discount-moving-container {
   position: relative;
   margin-top: 50px;
-  min-height: 340px;
+  min-height: 180px;
   display: flex;
   justify-content: flex-start;
   gap: 38px;
   overflow-x: hidden;
   flex-wrap: nowrap;
   transition: transform 0.5s ease;
-  width: 800px;
-  background: burlywood;
+  width: 300px;
+  // background: burlywood;
 
   @media (min-width: 640px) {
+    width: 800px;
     min-height: 190px;
     max-width: calc((120px + 38px) * 3 - 38px);
   }
@@ -226,7 +227,7 @@
     padding: 5px;
     gap: 38px;
     pointer-events: auto;
-    background: purple;
+    // background: purple;
     transform: translateX(0);
     transition: transform 0.3s ease;
     width: 300%;
