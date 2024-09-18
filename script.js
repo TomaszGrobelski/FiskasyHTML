@@ -51,47 +51,91 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //Karuzela zdjęć:
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
-const cards = document.querySelectorAll('.discount-card');
-let currentPosition = 0;
+// const leftArrow = document.querySelector('.left-arrow');
+// const rightArrow = document.querySelector('.right-arrow');
+// const cards = document.querySelectorAll('.discount-card');
+// const discountBox = document.querySelector('.discount-moving-box'); // The container for all cards
+// let currentPosition = 0;
 
-function getCardWidth() {
-  const card = cards[0];
-  const cardStyle = window.getComputedStyle(card);
-  const cardWidth = card.offsetWidth;
-  const cardMargin = parseInt(cardStyle.marginRight);
-  return cardWidth + cardMargin;
-}
+// function getCardWidth() {
+//   const card = cards[0];
+//   const cardStyle = window.getComputedStyle(card);
+//   const cardWidth = card.offsetWidth;
+//   const cardMargin = parseInt(cardStyle.marginRight);
+//   return cardWidth + cardMargin; // Total width including margin
+// }
 
-function updateCards() {
-  const visibleCards = 3; 
+// function updateCards() {
+//   const cardWidth = getCardWidth();
+//   const totalTranslate = -(currentPosition * cardWidth); // Calculate the total translate value
+//   discountBox.style.transform = `translateX(${totalTranslate}px)`; // Move the entire box
+// }
 
-  cards.forEach((card, index) => {
-    if (index >= currentPosition && index < currentPosition + visibleCards) {
-      card.style.display = 'flex'; 
-    } else {
-      card.style.display = 'none'; 
-    }
-  });
-}
+// rightArrow.addEventListener('click', () => {
+//   if (currentPosition < cards.length - 3) {
+//     // Ensure we don't go beyond available cards
+//     currentPosition++;
+//     updateCards(); // Update the position and animate
+//   }
+// });
 
-rightArrow.addEventListener('click', () => {
-  if (currentPosition < cards.length - 3) {
-    currentPosition++;
-    updateCards();
+// leftArrow.addEventListener('click', () => {
+//   if (currentPosition > 0) {
+//     // Ensure we don't go below the first card
+//     currentPosition--;
+//     updateCards(); // Update the position and animate
+//   }
+// });
+
+// updateCards(); // Initial setup
+
+// window.addEventListener('resize', () => {
+//   updateCards(); // Recalculate position on window resize
+// });
+
+let container = document.querySelector(".discount-moving-container");
+let innerContainer = document.querySelector(".discount-inner-container");
+
+let pressed = false;
+let startX;
+let x;
+let currentTranslateX = 0;
+const scrollSpeedMultiplier = 1.5;  // Dodaj mnożnik szybkości
+
+container.addEventListener("mousedown", (e) => {
+  pressed = true;
+  startX = e.clientX - currentTranslateX;
+  container.style.cursor = "grabbing";
+});
+
+container.addEventListener("mouseup", () => {
+  container.style.cursor = "grab";
+  pressed = false;
+});
+
+container.addEventListener("mouseleave", () => {
+  pressed = false;
+  container.style.cursor = "grab";
+});
+
+container.addEventListener("mousemove", (e) => {
+  if (!pressed) return;
+
+  e.preventDefault();
+
+  x = e.clientX;
+  let moveDistance = (x - startX) * scrollSpeedMultiplier; // Zastosuj mnożnik szybkości
+
+  let maxRight = 0;
+  let maxLeft = container.offsetWidth - innerContainer.offsetWidth;
+
+  if (moveDistance > maxRight) {
+    moveDistance = maxRight;
+  } else if (moveDistance < maxLeft) {
+    moveDistance = maxLeft;
   }
+
+  innerContainer.style.transform = `translateX(${moveDistance}px)`;
+  currentTranslateX = moveDistance;
 });
 
-leftArrow.addEventListener('click', () => {
-  if (currentPosition > 0) {
-    currentPosition--;
-    updateCards();
-  }
-});
-
-updateCards();
-
-window.addEventListener('resize', () => {
-  updateCards();
-});

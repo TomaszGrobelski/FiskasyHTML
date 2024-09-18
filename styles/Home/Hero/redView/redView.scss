@@ -186,7 +186,6 @@
     }
 
     @media (min-width: 768px) {
-
       left: 55%;
       top: 384px;
       transform: translateX(-100%);
@@ -359,13 +358,27 @@
     }
 
     @media (min-width: 1024px) {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 6px black solid;
+      border-radius: 100%;
       top: 562px;
       transform: translateX(650%);
     }
 
     @media (min-width: 1280px) {
       transform: translateX(700%);
+    }
+    :hover {
+      color: #ff0000;
+      background: black;
+    }
+    svg {
+      rotate: 180deg;
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
     }
   }
 
@@ -375,18 +388,32 @@
     transform: translateX(-500%);
 
     @media (min-width: 768px) {
-      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       position: absolute;
       left: 50%;
       top: 632px;
       width: 70px;
       height: 70px;
+      border: 6px black solid;
+      border-radius: 100%;
       transform: translateX(-500%);
     }
 
     @media (min-width: 1280px) {
       top: 562px;
       transform: translateX(-800%);
+    }
+
+    :hover {
+      color: #ff0000;
+      background: black;
+    }
+    svg {
+      width: 70px;
+      height: 70px;
+      border-radius: 100%;
     }
   }
 

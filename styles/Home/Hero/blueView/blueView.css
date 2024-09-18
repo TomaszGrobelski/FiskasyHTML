@@ -577,7 +577,11 @@
 }
 @media (min-width: 768px) {
   .blue-view .arrowRightLarge {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px black solid;
+    border-radius: 100%;
     transform: translateX(450%);
   }
 }
@@ -591,6 +595,16 @@
   .blue-view .arrowRightLarge {
     transform: translateX(700%);
   }
+}
+.blue-view .arrowRightLarge :hover {
+  color: #00a9fe;
+  background: black;
+}
+.blue-view .arrowRightLarge svg {
+  rotate: 180deg;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
 .blue-view .arrowLeftLarge {
   display: none;
@@ -613,8 +627,16 @@
     justify-content: center;
     align-items: center;
     top: 562px;
-    color: transparent;
   }
+}
+.blue-view .arrowLeftLarge :hover {
+  color: #00a9fe;
+  background: black;
+}
+.blue-view .arrowLeftLarge svg {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
 .blue-view .blue-circle {
   position: absolute;

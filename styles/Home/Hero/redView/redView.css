@@ -353,7 +353,11 @@
 }
 @media (min-width: 1024px) {
   .red-view .right-arrow-large {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 6px black solid;
+    border-radius: 100%;
     top: 562px;
     transform: translateX(650%);
   }
@@ -363,6 +367,16 @@
     transform: translateX(700%);
   }
 }
+.red-view .right-arrow-large :hover {
+  color: #ff0000;
+  background: black;
+}
+.red-view .right-arrow-large svg {
+  rotate: 180deg;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
 .red-view .left-arrow-large {
   z-index: 40;
   display: none;
@@ -370,12 +384,16 @@
 }
 @media (min-width: 768px) {
   .red-view .left-arrow-large {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 50%;
     top: 632px;
     width: 70px;
     height: 70px;
+    border: 6px black solid;
+    border-radius: 100%;
     transform: translateX(-500%);
   }
 }
@@ -384,6 +402,15 @@
     top: 562px;
     transform: translateX(-800%);
   }
+}
+.red-view .left-arrow-large :hover {
+  color: #ff0000;
+  background: black;
+}
+.red-view .left-arrow-large svg {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
 }
 .red-view .question-box {
   position: absolute;
