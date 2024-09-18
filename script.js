@@ -14,7 +14,7 @@ document.querySelectorAll('.switch-button').forEach((button) => {
   });
 });
 
-// Toggle Menu visible/hidden
+// toggle Menu visible/hidden
 document.querySelectorAll('.menu-toggle').forEach((button) => {
   button.addEventListener('click', () => {
     const menuMobile = document.querySelector('#menu-mobile');
@@ -27,7 +27,7 @@ document.querySelectorAll('.menu-toggle').forEach((button) => {
   });
 });
 
-// Zamknięcie Menu jak za szeroki ekran:
+// zamknięcie Menu jak za szeroki ekran:
 function checkWindowSize() {
   const menuMobile = document.querySelector('#menu-mobile');
   const limitWidth = 1024;
@@ -37,71 +37,35 @@ function checkWindowSize() {
 }
 window.addEventListener('resize', checkWindowSize);
 
-//Language switch UA/GB/PL
-document.addEventListener('DOMContentLoaded', function () {
-  const buttons = document.querySelectorAll('.language-button');
+//ZMIANA JĘZYKA:
 
-  buttons.forEach((button) => {
-    button.addEventListener('click', function () {
-      buttons.forEach((btn) => btn.classList.remove('active'));
+// document.addEventListener('DOMContentLoaded', function () {
+//   const buttons = document.querySelectorAll('.language-button');
 
-      this.classList.add('active');
-    });
-  });
-});
+//   buttons.forEach((button) => {
+//     button.addEventListener('click', function () {
+//       buttons.forEach((btn) => btn.classList.remove('active'));
 
-//Karuzela zdjęć:
-// const leftArrow = document.querySelector('.left-arrow');
-// const rightArrow = document.querySelector('.right-arrow');
-// const cards = document.querySelectorAll('.discount-card');
-// const discountBox = document.querySelector('.discount-moving-box'); // The container for all cards
-// let currentPosition = 0;
-
-// function getCardWidth() {
-//   const card = cards[0];
-//   const cardStyle = window.getComputedStyle(card);
-//   const cardWidth = card.offsetWidth;
-//   const cardMargin = parseInt(cardStyle.marginRight);
-//   return cardWidth + cardMargin; // Total width including margin
-// }
-
-// function updateCards() {
-//   const cardWidth = getCardWidth();
-//   const totalTranslate = -(currentPosition * cardWidth); // Calculate the total translate value
-//   discountBox.style.transform = `translateX(${totalTranslate}px)`; // Move the entire box
-// }
-
-// rightArrow.addEventListener('click', () => {
-//   if (currentPosition < cards.length - 3) {
-//     // Ensure we don't go beyond available cards
-//     currentPosition++;
-//     updateCards(); // Update the position and animate
-//   }
+//       this.classList.add('active');
+//     });
+//   });
 // });
 
-// leftArrow.addEventListener('click', () => {
-//   if (currentPosition > 0) {
-//     // Ensure we don't go below the first card
-//     currentPosition--;
-//     updateCards(); // Update the position and animate
-//   }
-// });
 
-// updateCards(); // Initial setup
-
-// window.addEventListener('resize', () => {
-//   updateCards(); // Recalculate position on window resize
-// });
+// KARUZELA PRODUKTÓW NA PROMOCJI:
 
 let container = document.querySelector('.discount-moving-container');
 let innerContainer = document.querySelector('.discount-inner-container');
+const leftArrow = document.querySelector('.left-arrow');
+const rightArrow = document.querySelector('.right-arrow');
 
 let pressed = false;
 let startX;
 let currentTranslateX = 0;
-const scrollSpeedMultiplier = 1.5; // Mnożnik szybkości przesuwania
+const scrollSpeedMultiplier = 1.5; 
+const scrollAmount = 200;
 
-// Dla urządzeń desktopowych (mouse events)
+// Dla urządzeń desktopowych 
 container.addEventListener('mousedown', (e) => {
   pressed = true;
   startX = e.clientX - currentTranslateX;
@@ -155,7 +119,7 @@ container.addEventListener('touchmove', (e) => {
 // Funkcja przesuwania kontenera
 function moveInnerContainer(distance) {
   let maxRight = 0;
-  let maxLeft = container.offsetWidth - innerContainer.offsetWidth;
+  let maxLeft = container.offsetWidth - innerContainer.offsetWidth -30;
 
   if (distance > maxRight) {
     distance = maxRight;
@@ -166,3 +130,11 @@ function moveInnerContainer(distance) {
   innerContainer.style.transform = `translateX(${distance}px)`;
   currentTranslateX = distance;
 }
+
+leftArrow.addEventListener('click', () => {
+  moveInnerContainer(currentTranslateX + scrollAmount);
+});
+
+rightArrow.addEventListener('click', () => {
+  moveInnerContainer(currentTranslateX - scrollAmount);
+});

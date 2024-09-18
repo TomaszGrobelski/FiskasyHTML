@@ -4,22 +4,32 @@
 @media (min-width: 1280px) {
   .left-arrow {
     z-index: 200;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     left: 50%;
-    top: 170px;
+    top: 190px;
     transform: translateX(-350px);
+    border: 1px solid black;
+    border-radius: 100%;
   }
 }
 @media (min-width: 1536px) {
   .left-arrow {
-    top: 210px;
+    border: 5px solid black;
+    top: 250px;
     transform: translateX(-490px);
   }
 }
-.left-arrow__img {
-  width: 70px;
-  height: 70px;
+.left-arrow :hover {
+  color: #c4ecfc;
+  background: black;
+}
+.left-arrow svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
 }
 
 .right-arrow {
@@ -27,23 +37,38 @@
 }
 @media (min-width: 1280px) {
   .right-arrow {
-    display: block;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 200;
+    border: 1px solid black;
+    border-radius: 100%;
     left: 50%;
-    top: 170px;
+    top: 190px;
     transform: translateX(320px);
   }
 }
 @media (min-width: 1536px) {
   .right-arrow {
-    top: 210px;
+    border: 5px solid black;
+    top: 250px;
     transform: translateX(430px);
   }
 }
 .right-arrow__img {
   width: 70px;
   height: 70px;
+}
+.right-arrow :hover {
+  color: #c4ecfc;
+  background: black;
+}
+.right-arrow svg {
+  rotate: 180deg;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
 }
 
 .discount-moving-container {
@@ -56,25 +81,31 @@
   overflow-x: hidden;
   flex-wrap: nowrap;
   transition: transform 0.5s ease;
-  width: 300px;
+  width: 420px;
 }
 @media (min-width: 640px) {
   .discount-moving-container {
     width: 800px;
     min-height: 190px;
-    max-width: 436px;
+    max-width: 511px;
   }
 }
 @media (min-width: 768px) {
   .discount-moving-container {
+    width: 100%;
     min-height: 260px;
-    max-width: 526px;
+    max-width: 676px;
+  }
+}
+@media (min-width: 1024px) {
+  .discount-moving-container {
+    max-width: 556px;
   }
 }
 @media (min-width: 1536px) {
   .discount-moving-container {
     min-height: 370px;
-    max-width: 992px;
+    max-width: 830px;
   }
 }
 .discount-moving-container .discount-inner-container {
@@ -97,7 +128,6 @@
   align-items: center;
   width: 95px;
   height: 151px;
-  background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1294117647);
   border-radius: 7px;
   opacity: 1;
