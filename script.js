@@ -93,49 +93,76 @@ document.addEventListener('DOMContentLoaded', function () {
 //   updateCards(); // Recalculate position on window resize
 // });
 
-let container = document.querySelector(".discount-moving-container");
-let innerContainer = document.querySelector(".discount-inner-container");
+let container = document.querySelector('.discount-moving-container');
+let innerContainer = document.querySelector('.discount-inner-container');
 
 let pressed = false;
 let startX;
-let x;
 let currentTranslateX = 0;
-const scrollSpeedMultiplier = 1.5;  // Dodaj mnożnik szybkości
+const scrollSpeedMultiplier = 1.5; // Mnożnik szybkości przesuwania
 
-container.addEventListener("mousedown", (e) => {
+// Dla urządzeń desktopowych (mouse events)
+container.addEventListener('mousedown', (e) => {
   pressed = true;
   startX = e.clientX - currentTranslateX;
-  container.style.cursor = "grabbing";
+  container.style.cursor = 'grabbing'; // Dodanie stylu 'grabbing'
 });
 
-container.addEventListener("mouseup", () => {
-  container.style.cursor = "grab";
+container.addEventListener('mouseup', () => {
+  container.style.cursor = 'grab';
   pressed = false;
 });
 
-container.addEventListener("mouseleave", () => {
+container.addEventListener('mouseleave', () => {
   pressed = false;
-  container.style.cursor = "grab";
+  container.style.cursor = 'grab';
 });
 
-container.addEventListener("mousemove", (e) => {
+container.addEventListener('mousemove', (e) => {
   if (!pressed) return;
 
   e.preventDefault();
 
-  x = e.clientX;
-  let moveDistance = (x - startX) * scrollSpeedMultiplier; // Zastosuj mnożnik szybkości
+  let x = e.clientX;
+  let moveDistance = (x - startX) * scrollSpeedMultiplier;
 
+  moveInnerContainer(moveDistance);
+});
+
+// Dla urządzeń mobilnych (touch events)
+container.addEventListener('touchstart', (e) => {
+  pressed = true;
+  startX = e.touches[0].clientX - currentTranslateX;
+  container.style.cursor = 'grabbing'; // Działa tylko na desktopach
+});
+
+container.addEventListener('touchend', () => {
+  pressed = false;
+  container.style.cursor = 'grab'; // Działa tylko na desktopach
+});
+
+container.addEventListener('touchmove', (e) => {
+  if (!pressed) return;
+
+  e.preventDefault();
+
+  let x = e.touches[0].clientX;
+  let moveDistance = (x - startX) * scrollSpeedMultiplier;
+
+  moveInnerContainer(moveDistance);
+});
+
+// Funkcja przesuwania kontenera
+function moveInnerContainer(distance) {
   let maxRight = 0;
   let maxLeft = container.offsetWidth - innerContainer.offsetWidth;
 
-  if (moveDistance > maxRight) {
-    moveDistance = maxRight;
-  } else if (moveDistance < maxLeft) {
-    moveDistance = maxLeft;
+  if (distance > maxRight) {
+    distance = maxRight;
+  } else if (distance < maxLeft) {
+    distance = maxLeft;
   }
 
-  innerContainer.style.transform = `translateX(${moveDistance}px)`;
-  currentTranslateX = moveDistance;
-});
-
+  innerContainer.style.transform = `translateX(${distance}px)`;
+  currentTranslateX = distance;
+}
