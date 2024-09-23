@@ -11,7 +11,7 @@
     left: 50%;
     top: 190px;
     transform: translateX(-350px);
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 100%;
   }
 }
@@ -42,7 +42,7 @@
     justify-content: center;
     align-items: center;
     z-index: 200;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 100%;
     left: 50%;
     top: 190px;
@@ -126,6 +126,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   width: 95px;
   height: 151px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1294117647);
@@ -164,7 +165,6 @@
 }
 .discount-moving-container .discount-inner-container .discount-card__title {
   padding-top: 8px;
-  height: 30px;
   color: var(--unnamed-color-000000);
   text-align: center;
   font-size: 6px;
@@ -195,14 +195,58 @@
   }
 }
 .discount-moving-container .discount-inner-container .discount-card__image {
-  width: 100%;
-  height: auto;
-  max-height: 151px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 110px;
   opacity: 1;
+}
+@media (min-width: 640px) {
+  .discount-moving-container .discount-inner-container .discount-card__image {
+    width: 110px;
+    height: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .discount-moving-container .discount-inner-container .discount-card__image {
+    width: 170px;
+    height: 180px;
+  }
+}
+@media (min-width: 1024px) {
+  .discount-moving-container .discount-inner-container .discount-card__image {
+    width: 150px;
+    height: 140px;
+  }
 }
 @media (min-width: 1536px) {
   .discount-moving-container .discount-inner-container .discount-card__image {
-    max-height: 230px;
+    width: 240px;
+    height: 230px;
+  }
+}
+.discount-moving-container .discount-inner-container .discount-card__image img {
+  max-width: 90px;
+}
+@media (min-width: 640px) {
+  .discount-moving-container .discount-inner-container .discount-card__image img {
+    max-width: 110px;
+  }
+}
+@media (min-width: 768px) {
+  .discount-moving-container .discount-inner-container .discount-card__image img {
+    max-width: 170px;
+  }
+}
+@media (min-width: 1024px) {
+  .discount-moving-container .discount-inner-container .discount-card__image img {
+    max-width: 140px;
+  }
+}
+@media (min-width: 1536px) {
+  .discount-moving-container .discount-inner-container .discount-card__image img {
+    max-width: 230px;
   }
 }
 .discount-moving-container .discount-inner-container .discount-box {

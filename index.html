@@ -220,7 +220,7 @@
         </div>
 
         <!-- Blue View -->
-        <div id="blue-view" class="blue-view">
+        <div data-index="0" class="blue-view view">
           <!-- Małe zdjęcie kalkulatorów -->
           <img
             src="images/hero/ajt.png"
@@ -288,11 +288,11 @@
           </div>
 
           <!-- Przycisk w prawo/lewo -->
-          <button class="arrowRightSmall switch-button">
+          <button class="arrowRightSmall right-button">
             <img src="icons/hero/alj.png" width="28" height="28" alt="right arrow" />
           </button>
 
-          <button class="arrowRightLarge switch-button">
+          <button class="arrowRightLarge right-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
                 <path
@@ -306,7 +306,7 @@
             </svg>
           </button>
 
-          <button class="arrowLeftLarge switch-button">
+          <button class="arrowLeftLarge left-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
                 <path
@@ -373,7 +373,7 @@
         </div>
 
         <!-- Red View -->
-        <div id="red-view" class="red-view">
+        <div data-index="1" class="red-view view">
           <!-- Małe zdjęcie urządzenia -->
           <img src="images/hero/elzab.png" width="404" height="404" alt="hero image" class="hero-image-small" />
 
@@ -397,12 +397,12 @@
           </button>
 
           <!-- Strzałka w lewo mała -->
-          <button class="left-arrow-small switch-button">
+          <button class="left-arrow-small left-button">
             <img src="icons/hero/alo@2x.png" width="28" height="28" alt="left arrow" class="icon" />
           </button>
 
           <!-- Strzałka w lewo Duża -->
-          <button class="left-arrow-large switch-button">
+          <button class="left-arrow-large left-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
                 <path
@@ -417,7 +417,303 @@
           </button>
 
           <!-- Strzałka w prawo duża -->
-          <button class="right-arrow-large switch-button">
+          <button class="right-arrow-large right-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M7.94 13.06a1.5 1.5 0 0 1 0-2.12l5.656-5.658a1.5 1.5 0 1 1 2.121 2.122L11.122 12l4.596 4.596a1.5 1.5 0 1 1-2.12 2.122l-5.66-5.658Z"
+                />
+              </g>
+            </svg>
+          </button>
+
+          <!-- Describe Section -->
+          <div class="describe-section"></div>
+
+          <p class="price-section">
+            <span class="price-item">cena netto</span>
+            <span class="price-item">1990,00 zł</span>
+          </p>
+
+          <!-- Do ceny kola dashed duży -->
+          <svg width="245" height="245" class="price-animated-circle">
+            <circle cx="188" cy="188" r="180" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" />
+          </svg>
+          <!-- Do ceny kola dashed mały -->
+          <svg width="225" height="225" class="price-animated-circle-two">
+            <circle cx="112.5" cy="112.5" r="105" stroke="#000000" stroke-width="1" fill="none" stroke-dasharray="3 3" />
+          </svg>
+
+          <div class="question-box">
+            <p class="question">MASZ PYTANIE?</p>
+            <p class="send-message">WYŚLIJ WIADOMOŚĆ</p>
+          </div>
+
+          <!-- Background: -->
+          <!-- Znak myślnik (dash): - -->
+          <div class="background-dash-red">-</div>
+          <!-- X: -->
+          <div class="background-letter-x">x</div>
+
+          <!-- Czerwibe kółko w srodku -->
+          <div class="red-circle"></div>
+
+          <p class="animated-text-nine">
+            <span class="opacity-22">9</span>
+          </p>
+
+          <!-- Dashed main image small -->
+          <svg width="360" height="360" class="dashed-circle-image-small">
+            <circle cx="180" cy="180" r="177" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" opacity="1"></circle>
+          </svg>
+
+          <!-- Dashed main image Big -->
+          <svg width="658" height="658" class="dashed-circle-image-big">
+            <circle cx="329" cy="329" r="320" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10"></circle>
+          </svg>
+
+          <!-- Kwadraty do okoła: -->
+
+          <div class="animatedContainerOneRed">
+            <div class="iconBoxOne">
+              <img src="icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+              <img src="icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+              <img src="icons/hero/aak.png" alt="add icon" class="icon icon3" />
+              <img src="icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerTwoRed">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerThreeRed">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerFourBigRed">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Blue View -->
+        <div data-index="2" class="blue-view view">
+          <!-- Małe zdjęcie kalkulatorów -->
+          <img
+            src="images/hero/agv.png"
+            width="404"
+            height="404"
+            alt="hero image"
+            class="customHeroImage left-[-90px]"
+            style="transform: rotate(30deg)"
+          />
+
+          <!-- Duże zdjęcie kalkulatorów -->
+          <div class="hero-image-large-container">
+            <img src="images/hero/agv@2x.png" width="1300" height="1300" alt="hero image" class="hero-image-large" />
+          </div>
+
+          <!-- Duży telefon: czarny dashed do okola kalkulatorów  -->
+          <svg class="animated-circle" width="640" height="640">
+            <circle cx="320" cy="320" r="310" stroke="#000000" stroke-width="3" fill="none" stroke-dasharray="5 10" />
+          </svg>
+
+          <!-- Maly telefon: czarny dashed do okola kalkulatorów -->
+          <div class="dashed-circle-container"></div>
+
+          <!-- Hero Title -->
+          <h1 class="hero-title">
+            <span class="hero-title-item">DATECS WP-50</span>
+            <span class="hero-title-item">Wi-FI Online</span>
+          </h1>
+
+          <!-- Product Button -->
+          <button>
+            <p class="custom-button">
+              <span class="custom-span">ZOBACZ PRODUKT</span>
+              <span class="custom-span">W SKLEPIE</span>
+            </p>
+          </button>
+
+          <!-- Porównaj -->
+          <button>
+            <p class="compare-button">
+              <span class="custom-span"> PORÓWNAJ </span>
+            </p>
+          </button>
+
+          <!-- Cenna netto 1429 zł -->
+          <p class="price-container">
+            <span class="price-text animate">cena netto</span>
+            <span class="price-text animate">1429,00 zł</span>
+          </p>
+
+          <!-- Mały telefon, do okoła ceny -->
+          <svg class="price-circle" width="245" height="245">
+            <circle cx="122.5" cy="122.5" r="120" stroke="#FFFFFF" stroke-width="1" fill="none" stroke-dasharray="3 3" />
+          </svg>
+
+          <!-- Duży telefon, do okola ceny -->
+          <svg class="large-price-circle" width="376" height="376 " viewBox="0 0 376 376">
+            <circle cx="188" cy="188" r="180" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-dasharray="10 10" />
+          </svg>
+
+          <!-- Masz pytanie? wyślij wiadomość -->
+          <div class="question-info">
+            <p class="question-info__title">MASZ PYTANIE?</p>
+            <p class="question-info__message">WYŚLIJ WIADOMOŚĆ</p>
+          </div>
+
+          <!-- Przycisk w prawo/lewo -->
+          <button class="arrowRightSmall right-button">
+            <img src="icons/hero/alj.png" width="28" height="28" alt="right arrow" />
+          </button>
+
+          <button class="arrowRightLarge right-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M7.94 13.06a1.5 1.5 0 0 1 0-2.12l5.656-5.658a1.5 1.5 0 1 1 2.121 2.122L11.122 12l4.596 4.596a1.5 1.5 0 1 1-2.12 2.122l-5.66-5.658Z"
+                />
+              </g>
+            </svg>
+          </button>
+
+          <button class="arrowLeftLarge left-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M7.94 13.06a1.5 1.5 0 0 1 0-2.12l5.656-5.658a1.5 1.5 0 1 1 2.121 2.122L11.122 12l4.596 4.596a1.5 1.5 0 1 1-2.12 2.122l-5.66-5.658Z"
+                />
+              </g>
+            </svg>
+          </button>
+
+          <!-- Niebieski środek -->
+          <div class="blue-circle"></div>
+
+          <!-- Numer: 9 -->
+          <p class="background-number-nine">
+            <span>9</span>
+          </p>
+
+          <!-- Litera: X -->
+          <div class="background-letter-x">x</div>
+
+          <!-- Znak myślnik (dash): - -->
+          <div class="background-dash">-</div>
+
+          <!-- Kwadraty do okoła -->
+          <div class="animatedBoxOne">
+            <div class="iconBoxOne">
+              <img src="icons/hero/aag.png" alt="slash icon" class="icon icon1" />
+              <img src="icons/hero/aam.png" alt="multiplication icon" class="icon icon2" />
+              <img src="icons/hero/aak.png" alt="add icon" class="icon icon3" />
+              <img src="icons/hero/aai.png" alt="subtraction icon" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerTwo">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerThree">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+
+          <div class="animatedContainerFourBig">
+            <div class="iconBoxTwo">
+              <img src="icons/hero/aag@2x.png" alt="" class="icon icon1" />
+              <img src="icons/hero/aam@2x.png" alt="" class="icon icon2" />
+              <img src="icons/hero/aak@2x.png" alt="" class="icon icon3" />
+              <img src="icons/hero/aai@2x.png" alt="" class="icon icon4" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Red View -->
+        <div data-index="3" class="red-view view">
+          <!-- Małe zdjęcie urządzenia -->
+          <img src="images/hero/agx.png" width="404" height="404" alt="hero image" class="hero-image-small" />
+
+          <!-- Duże zdjęcie urządrzenia -->
+          <div class="hero-image-large-container">
+            <img src="images/hero/agx@2x.png" width="800" height="600" alt="hero image" class="hero-image-large" />
+          </div>
+
+          <h1 class="heading">
+            <span>ELZAB Zeta</span>
+            <span>Online</span>
+          </h1>
+
+          <p class="product-text">
+            <span class="product-text-item"> ZOBACZ PRODUKT </span>
+            <span class="product-text-item"> W SKLEPIE </span>
+          </p>
+
+          <button class="compare-button">
+            <p class="compare-text">PORÓWNAJ</p>
+          </button>
+
+          <!-- Strzałka w lewo mała -->
+          <button class="left-arrow-small left-button">
+            <img src="icons/hero/alo@2x.png" width="28" height="28" alt="left arrow" class="icon" />
+          </button>
+
+          <!-- Strzałka w lewo Duża -->
+          <button class="left-arrow-large left-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
+              <g fill="none" fill-rule="evenodd">
+                <path
+                  d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.019-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"
+                />
+                <path
+                  fill="currentColor"
+                  d="M7.94 13.06a1.5 1.5 0 0 1 0-2.12l5.656-5.658a1.5 1.5 0 1 1 2.121 2.122L11.122 12l4.596 4.596a1.5 1.5 0 1 1-2.12 2.122l-5.66-5.658Z"
+                />
+              </g>
+            </svg>
+          </button>
+
+          <!-- Strzałka w prawo duża -->
+          <button class="right-arrow-large right-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
               <g fill="none" fill-rule="evenodd">
                 <path
@@ -539,7 +835,9 @@
               <a href="/pages/product.html">
                 <div class="discount-card">
                   <p class="discount-card__title">Drukarki paragonowe</p>
-                  <img src="images/discount/ako.png" class="discount-card__image" />
+                  <div class="discount-card__image">
+                    <img src="images/discount/ako.png" />
+                  </div>
                   <div class="discount-box">
                     <span class="discount-box__price">OD</span>
                     <span class="discount-box__price">3249 zł</span>
@@ -551,7 +849,9 @@
               <a href="/pages/product.html">
                 <div class="discount-card">
                   <p class="discount-card__title">Kasoterminal POSPAY2 Online</p>
-                  <img src="images/discount/akh.png" class="discount-card__image" />
+                  <div class="discount-card__image">
+                    <img src="images/discount/testowe.jpeg" />
+                  </div>
                   <div class="discount-box">
                     <span class="discount-box__price">OD</span>
                     <span class="discount-box__price">1799 zł</span>
@@ -563,7 +863,9 @@
               <a href="/pages/product.html">
                 <div class="discount-card">
                   <p class="discount-card__title">Novitus Nano Online</p>
-                  <img src="images/discount/ajt.png" class="discount-card__image" />
+                  <div class="discount-card__image">
+                    <img src="images/discount/ajt.png" />
+                  </div>
                   <div class="discount-box">
                     <span class="discount-box__price">OD</span>
                     <span class="discount-box__price">1799 zł</span>
@@ -574,7 +876,9 @@
               <a href="/pages/product.html">
                 <div class="discount-card">
                   <p class="discount-card__title">Novitus Nano Online</p>
-                  <img src="images/discount/akn.png" class="discount-card__image" />
+                  <div class="discount-card__image">
+                    <img src="images/discount/akn.png" />
+                  </div>
                   <div class="discount-box">
                     <span class="discount-box__price">OD</span>
                     <span class="discount-box__price">1799 zł</span>
@@ -585,7 +889,9 @@
               <a href="/pages/product.html">
                 <div class="discount-card">
                   <p class="discount-card__title">Kasoterminal POSPAY2 Online</p>
-                  <img src="images/discount/akh.png" class="discount-card__image" />
+                  <div class="discount-card__image">
+                    <img src="images/discount/akh.png" />
+                  </div>
                   <div class="discount-box">
                     <span class="discount-box__price">OD</span>
                     <span class="discount-box__price">1799 zł</span>
@@ -596,7 +902,9 @@
               <a href="/pages/product.html">
                 <div class="discount-card">
                   <p class="discount-card__title">Kasoterminal POSPAY2 Online</p>
-                  <img src="images/discount/akh.png" class="discount-card__image" />
+                  <div class="discount-card__image">
+                    <img src="images/discount/akh.png" />
+                  </div>
                   <div class="discount-box">
                     <span class="discount-box__price">OD</span>
                     <span class="discount-box__price">1799 zł</span>
@@ -607,7 +915,9 @@
               <a href="/pages/product.html">
                 <div class="discount-card">
                   <p class="discount-card__title">Kasoterminal POSPAY2 Online</p>
-                  <img src="images/discount/akh.png" class="discount-card__image" />
+                  <div class="discount-card__image">
+                    <img src="images/discount/akh.png"  />
+                  </div>
                   <div class="discount-box">
                     <span class="discount-box__price">OD</span>
                     <span class="discount-box__price">1799 zł</span>
@@ -617,48 +927,6 @@
               </a>
             </div>
           </div>
-
-          <!-- <div class="discount-moving-box">
-            <div class="discount-card">
-              <p class="discount-card__title">Drukarki paragonowe</p>
-              <img src="images/discount/ako.png" class="discount-card__image" />
-              <div class="discount-box">
-                <span class="discount-box__price">OD</span>
-                <span class="discount-box__price">3249 zł</span>
-                <img src="images/discount/aky.png" class="discount-box__sign" alt="znak zniżki" />
-              </div>
-            </div>
-
-            <div class="discount-card">
-              <p class="discount-card__title">Kasoterminal POSPAY2 Online</p>
-              <img src="images/discount/akh.png" class="discount-card__image" />
-              <div class="discount-box">
-                <span class="discount-box__price">OD</span>
-                <span class="discount-box__price">1799 zł</span>
-                <img src="images/discount/aky.png" class="discount-box__sign" alt="znak zniżki" />
-              </div>
-            </div>
-
-            <div class="discount-card">
-              <p class="discount-card__title">Novitus Nano Online</p>
-              <img src="images/discount/ajt.png" class="discount-card__image" />
-              <div class="discount-box">
-                <span class="discount-box__price">OD</span>
-                <span class="discount-box__price">1799 zł</span>
-                <img src="images/discount/aky.png" class="discount-box__sign" alt="znak zniżki" />
-              </div>
-            </div>
-
-            <div class="discount-card">
-              <p class="discount-card__title">Novitus Nano Online</p>
-              <img src="images/discount/akn.png" class="discount-card__image" />
-              <div class="discount-box">
-                <span class="discount-box__price">OD</span>
-                <span class="discount-box__price">1799 zł</span>
-                <img src="images/discount/aky.png" class="discount-box__sign" alt="znak zniżki" />
-              </div>
-            </div>
-          </div> -->
 
           <button class="right-arrow">
             <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 24 24">
@@ -682,7 +950,7 @@
             <a href="/pages/product.html">
               <div class="product-card">
                 <p class="product-card__title">Metkownice</p>
-                <img src="images/products/agu.png" class="product-card__image" />
+                <img src="images/products/testowe.jpeg" class="product-card__image" />
                 <div class="price-box">
                   <span class="price-box__value">OD</span>
                   <span class="price-box__value">1299 zł</span>

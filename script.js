@@ -1,18 +1,39 @@
-// Toggle BlueView / Red View
-document.querySelectorAll('.switch-button').forEach((button) => {
-  button.addEventListener('click', () => {
-    const blueView = document.querySelector('#blue-view');
-    const redView = document.querySelector('#red-view');
 
-    if (blueView.style.display === 'block' || blueView.style.display === '') {
-      blueView.style.display = 'none';
-      redView.style.display = 'block';
-    } else {
-      blueView.style.display = 'block';
-      redView.style.display = 'none';
-    }
-  });
+// Zmiana vidoku Hero :
+const views = document.querySelectorAll('.view');
+let currentIndex = 0;
+
+views[currentIndex].classList.add('active');
+
+function showView(index) {
+  views.forEach(view => view.classList.remove('active'));
+  
+  views[index].classList.add('active');
+  
+  currentIndex = index;
+}
+
+function nextView() {
+  console.log('clicek next');
+  const nextIndex = (currentIndex + 1) % views.length; 
+  showView(nextIndex);
+}
+
+function prevView() {
+  console.log('clicek prev');
+  const prevIndex = (currentIndex - 1 + views.length) % views.length; 
+  showView(prevIndex);
+}
+
+document.querySelectorAll('.right-button').forEach(button => {
+  button.addEventListener('click', nextView);
 });
+
+document.querySelectorAll('.left-button').forEach(button => {
+  button.addEventListener('click', prevView);
+});
+
+
 
 // toggle Menu visible/hidden
 document.querySelectorAll('.menu-toggle').forEach((button) => {
@@ -51,7 +72,6 @@ window.addEventListener('resize', checkWindowSize);
 //   });
 // });
 
-
 // KARUZELA PRODUKTÓW NA PROMOCJI:
 
 let container = document.querySelector('.discount-moving-container');
@@ -62,10 +82,10 @@ const rightArrow = document.querySelector('.right-arrow');
 let pressed = false;
 let startX;
 let currentTranslateX = 0;
-const scrollSpeedMultiplier = 1.5; 
+const scrollSpeedMultiplier = 1.5;
 const scrollAmount = 200;
 
-// Dla urządzeń desktopowych 
+// Dla urządzeń desktopowych
 container.addEventListener('mousedown', (e) => {
   pressed = true;
   startX = e.clientX - currentTranslateX;
@@ -119,7 +139,7 @@ container.addEventListener('touchmove', (e) => {
 // Funkcja przesuwania kontenera
 function moveInnerContainer(distance) {
   let maxRight = 0;
-  let maxLeft = container.offsetWidth - innerContainer.offsetWidth -30;
+  let maxLeft = container.offsetWidth - innerContainer.offsetWidth - 30;
 
   if (distance > maxRight) {
     distance = maxRight;

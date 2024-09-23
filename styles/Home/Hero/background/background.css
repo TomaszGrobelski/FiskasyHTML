@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .iconBoxOne {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -436,4 +437,12 @@
     opacity: 1;
     z-index: -140;
   }
+}
+
+.view {
+  display: none; /* Ukrywa wszystkie widoki na początku */
+}
+
+.view.active {
+  display: block; /* Wyświetla tylko aktywny widok */
 }/*# sourceMappingURL=background.css.map */

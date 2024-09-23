@@ -436,3 +436,11 @@
     z-index: -140;
   }
 }
+
+.view {
+  display: none; /* Ukrywa wszystkie widoki na początku */
+}
+
+.view.active {
+  display: block; /* Wyświetla tylko aktywny widok */
+}

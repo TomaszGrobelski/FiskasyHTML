@@ -69,6 +69,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: flex-start;
       width: 125px;
       height: 173px;
       background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -76,7 +77,8 @@
       box-shadow: 0px 0px 10px #00000021;
       border-radius: 7px;
       opacity: 1;
-      padding-top: 25px;
+      padding-top: 10px;
+      gap: 10px;
 
       @media (min-width: 640px) {
         border-radius: 12px;
@@ -102,7 +104,6 @@
       &__title {
         color: var(--unnamed-color-000000);
         text-align: center;
-        // font: normal normal 800 7px/9px Gilroy;
         font-size: 7px;
         font-family: 'Gilroy-bold';
         font-weight: 800;
@@ -120,16 +121,35 @@
         }
       }
       &__image {
-        position: relative;
-        top: -20px;
-        width: 129px;
-        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: 130px;
         opacity: 1;
-        object-fit: cover;
+
         @media (min-width: 640px) {
-          top: -20px;
-          width: 258px;
-          height: 250px;
+          height: 240px;
+        }
+        img {
+          height: auto;
+          width: auto;
+          object-fit: cover;
+          max-width: 120px;
+          @media (min-width: 640px) {
+            max-width: 210px;
+            max-height: 250px;
+          }
+          @media (min-width: 768px) {
+            max-width: 200px;
+          }
+          @media (min-width: 1024px) {
+            max-width: 230px;
+          }
+          @media (min-width: 1280px) {
+            max-width: 250px;
+            max-height: 280px;
+          }
         }
       }
       .price-box {
