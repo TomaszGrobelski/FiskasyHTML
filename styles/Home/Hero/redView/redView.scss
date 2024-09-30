@@ -6,9 +6,10 @@
     position: absolute;
     right: 0px;
     top: 420px;
-    rotate: 12deg;
     width: 171px;
-    height: 162px;
+    height: auto;
+    max-width: 300px;
+    max-height: 300px;
     animation: growUpRedSmall 0.3s;
     z-index: 20;
 
@@ -36,13 +37,20 @@
 
       @media (min-width: 768px) {
         width: 400px;
+        max-height: 400px;
         display: block;
         animation: growMoveUpLeft 0.8s;
       }
       @media (min-width: 1280px) {
-        width: 522px;
+        left: 55%;
+        top: 640px;
+        width: 400px;
         display: block;
         animation: growMoveUpLeft 0.8s;
+      }
+      @media (min-width: 1560px) {
+        left: 53%;
+        top: 680px;
       }
     }
   }

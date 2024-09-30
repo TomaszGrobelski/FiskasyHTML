@@ -3,15 +3,19 @@
 
   .customHeroImage {
     position: absolute;
-    top: 280px;
-    left: -90px;
-    width: 404px;
-    height: 404px;
-    transform: rotate(30deg);
+    top: 300px;
+    left: -70px;
+    width: 250px;
+    height: auto;
+    max-width: 250px;
+    max-width: 250px;
     animation: growUpBlueSmall 0.3s;
 
     @media (min-width: 640px) {
       left: -20px;
+      width: 300px;
+      max-width: 300px;
+      max-height: 300px;
     }
 
     @media (min-width: 768px) {
@@ -24,31 +28,33 @@
     bottom: 80px;
 
     .hero-image-large {
-      position: absolute;
-      left: 50%;
-      top: 80px;
-      height: 900px;
-      width: 900px;
-      transform: translateX(-72%) rotate(20deg);
-      z-index: 10;
       display: none;
+      height: auto;
+      width: 400px;
+      max-width: 400px;
+      max-height: 400px;
 
       @media (min-width: 768px) {
-        // md breakpoint
         display: block;
+        position: absolute;
+        left: 35%;
+        top: 370px;
+        transform: translateX(-72%);
+        z-index: 10;
       }
-
       @media (min-width: 1280px) {
-        top: -20px;
-        height: 1300px;
-        width: 1300px;
+        left: 37%;
+        top: 390px;
+      }
+      @media (min-width: 1560px) {
+        left: 40%;
       }
       @keyframes moveUpRight {
         from {
-          transform: translateX(-1100px) translateY(500px) rotate(20deg);
+          transform: translateX(-1100px) translateY(500px);
         }
         to {
-          transform: translateX(-72%) translateY(0px) rotate(20deg);
+          transform: translateX(-72%) translateY(0px);
         }
       }
       animation: moveUpRight 1s;
