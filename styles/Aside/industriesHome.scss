@@ -1,0 +1,56 @@
+.industries-container {
+  display: none;
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    display: block;
+    top: 1100px;
+    left: 31px;
+  }
+  @media (min-width: 1280px) {
+    left: 40px;
+  }
+  @media (min-width: 1700px) {
+    left: 142px;
+  }
+
+  .industries-header {
+    display: flex;
+    flex-direction: column;
+    color: var(--unnamed-color-000000);
+    text-align: left;
+    font-family: 'Gilroy-bold', sans-serif;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    @media (min-width: 1280px) {
+      font-size: 30px;
+    }
+  }
+  .industries-underline {
+    position: relative;
+    top: 10px;
+    left: -142px;
+    width: 436px;
+    border: 2px solid black;
+    @media (min-width: 1280px) {
+      width: 536px;
+    }
+  }
+  .industries-list {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__item {
+      font-family: 'Gilroy-light';
+      font-size: 16px;
+      @media (min-width: 1280px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
