@@ -14,27 +14,29 @@
 }
 
 .industries-container {
+  display: none;
   position: absolute;
   top: 1300px;
-  left: -300px;
+  left: 200px;
+  padding-left: 200px;
   transform: translateX(-100%);
-  opacity: 0;
+  opacity: 1;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 @media (min-width: 1024px) {
   .industries-container {
-    transform: translateX(-100%);
-    left: 40px;
+    display: block;
+    left: 220px;
   }
 }
 @media (min-width: 1280px) {
   .industries-container {
-    left: 40px;
+    left: 220px;
   }
 }
 @media (min-width: 1700px) {
   .industries-container {
-    left: 142px;
+    left: 220px;
   }
 }
 .industries-container .industries-header {
@@ -83,6 +85,6 @@
 }
 
 .industries-container.visible {
-  transform: translateX(0);
+  transform: translateX(-380px);
   opacity: 1;
 }/*# sourceMappingURL=industries.css.map */

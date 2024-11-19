@@ -47,17 +47,15 @@
 // });
 
 // Pokazanie/howanie bocznego aside
-const showIndustriesButton = document.querySelector('.show-industries');
+// const showIndustriesButton = document.querySelector('.show-industries');
 const industriesContainer = document.querySelector('.industries-container');
 
-if (showIndustriesButton && industriesContainer) {
-  // Pokaż kontener, gdy najedziesz na przycisk
-  showIndustriesButton.addEventListener('mouseover', function () {
+if ( industriesContainer) {
+  industriesContainer.addEventListener('mouseover', function () {
     industriesContainer.classList.add('visible');
   });
 
-  // Ukryj kontener, gdy opuścisz przycisk
-  showIndustriesButton.addEventListener('mouseout', function () {
+  industriesContainer.addEventListener('mouseout', function () {
     industriesContainer.classList.remove('visible');
   });
 }
