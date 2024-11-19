@@ -1,5 +1,5 @@
 .product-info-view {
-  padding-top: 630px;
+  padding-top: 750px;
   padding-inline: 12px;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   @media (min-width: 1024px) {
     margin-left: 400px;
     max-width: 808px;
-    padding-top: 1060px;
+    padding-top: 1230px;
   }
   @media (min-width: 1280px) {
     margin-left: 450px;
@@ -19,12 +19,12 @@
   @media (min-width: 1536px) {
     margin-left: 464px;
     max-width: 50%;
-    padding-top: 1030px;
+
   }
   @media (min-width: 1636px) {
     margin-left: 570px;
     max-width: 50%;
-    padding-top: 1030px;
+
   }
 
   .info-header {
@@ -215,6 +215,7 @@
     @media (min-width: 1024px) {
       display: block;
       position: absolute;
+      z-index: -10;
       top: 2600px;
       left: -181px;
       width: 640px;

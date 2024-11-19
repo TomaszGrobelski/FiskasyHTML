@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/styles/ProductInfo/productHero.css" />
     <link rel="stylesheet" href="/styles/ProductInfo/productInfo.css" />
     <link rel="stylesheet" href="/styles/Home/Hero/social/social.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   </head>
   <body>
     <div class="main-container">
@@ -230,30 +231,35 @@
         <a href="/index.html">
           <p class="back-to-hero">< POWRÓT</p>
         </a>
+
         <div class="white-circle">
-          <img id="product-image" src="/images//hero/agu.png" alt="product image" />
+          <a href="/images/products/afr.png" data-fancybox="gallery">
+            <img id="product-image" src="/images/products/afr.png" alt="product image" />
+          </a>
         </div>
 
-        <h1 id="product-title" class="hero-title"><span>Novitus Nano II</span> <span>Online GSM24</span></h1>
+        <div class="product-info-description">
+          <h1 id="product-title" class="hero-title">Posnet Thermal XL2 Online 2" z wyświetlaczem wolnostojącym</h1>
 
-        <div class="price-box">
-          <div class="hero-price">
-            <p class="hero-price__sub-one">CENA NETTO: <span id="product-netto-price">1750</span> zł</p>
-            <p class="hero-price__sub-two">cena brutto: <span id="product-brutto-price">2152.50</span> zł</p>
-          </div>
-          <p class="hero-producer">PRODUCENT: <span id="product-producer">NOVITUS</span></p>
-
-          <p class="addition-avilabe">Dostępne również</p>
-          <div class="addition-avilabe-box">
-            <div class="addition-image-bacground">
-              <a href="/pages/product.html?id=1">
-                <img src="/images/hero/ajt.png" class="addition-image" alt="additional image" />
-              </a>
+          <div class="price-box">
+            <div class="hero-price">
+              <p class="hero-price__sub-one">CENA NETTO: <span id="product-netto-price">1750</span> zł</p>
+              <p class="hero-price__sub-two">cena brutto: <span id="product-brutto-price">2152.50</span> zł</p>
             </div>
-            <div class="addition-image-bacground">
-              <a href="/pages/product.html?id=1">
-                <img src="/images/hero/ajt.png" class="addition-image" alt="additional image" />
-              </a>
+            <p class="hero-producer">PRODUCENT: <span id="product-producer">NOVITUS</span></p>
+
+            <p class="addition-avilabe">Dostępne również</p>
+            <div class="addition-avilabe-box">
+              <div class="addition-image-bacground">
+                <a href="/pages/product.html?id=1">
+                  <img src="/images/hero/ajt.png" class="addition-image" alt="additional image" />
+                </a>
+              </div>
+              <div class="addition-image-bacground">
+                <a href="/pages/product.html?id=1">
+                  <img src="/images/hero/ajt.png" class="addition-image" alt="additional image" />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -261,16 +267,16 @@
         <!-- Hero description -->
         <div class="hero-description">
           <p>
-            <span>Nano II Online</span> to najnowsza propozycja firmy Novitus, która jest bezpośrednim następcą jednej z najpopularniejszych kas
-            fiskalnych. Model ten utrzymuje najlepsze cechy swojej poprzedniczki i nadal posiada niewielkie rozmiary, ergonomiczny kształt oraz
-            wodoodporna klawiaturę. Jest on jednak wzbogacony o nowy design i dodatkowe klawisze funkcyjne. Novitus Nano II online w standardzie łączy
-            się z CRK przy pomocy WiFi oraz poprzez port LAN.
-          </p>
-
-          <p>
-            <span>Novitus Nano II</span> jest kolejną kasą fiskalną z grupy „Online Power”, co sprawia, że dysponuje podwyższoną mocą. W jej wnętrzu
-            znajdują się 32-bitowe procesory o taktowaniu ponad 500MHz, a także pamięć operacyjna o wielkości 256 Mb. Baza towarowa kasy Nano II
-            wynosi 20 000 PLU, a system Linux gwarantuje stabilną i bezawaryjną pracę.
+            <span>Terminal Sunmi T2 Lite</span> to najnowocześniejszy model o wielkości 15,6 cala. Terminal działa na systemie Android 7.1. Urządzenia
+            Sunmi gwarantują bezpieczną i stabilną pracę w połączeniu z najnowszymi trendami technologii. Doskonale nadają się do tworzenie
+            kompletnych stanowisk kasowych. Wybierając model T2 Lite będziesz zaskoczony płynnością jego pracy. Wybrany model wyposażony jest w jeden
+            monitor. Urządzenie Sunmi T2 Lite doskonale odnajdzie się we współpracy z oprogramowaniem do zarządzania gastronomią. Jest również możliwy
+            zakup monitora w konfiguracji z opcjonalnym ekranem dla klienta, który może zawierać ten sam obraz na obu widokach. Modele są dostępne w
+            naszym sklepie internetowym. Monitor główny o wielkości 15,6 cala gwarantuje obraz Full HD z rozdzielczością 1920x1080. Doskonale pokazuje
+            nawet najbardziej skomplikowane efekty wizualne i zapewnia wymaganą ostrość. Podstawa ekranu została wykonana ze stopu aluminium, a za jej
+            projekt odpowiada David Protet – jeden z najlepszych projektantów naszych czasów. Podstawa jest niezwykle stabilna, a odcienie szarości
+            nadają jej nieszablonowy wygląd. W terminalu Sunmi T2 Lite znajduje się schowek na poszczególne porty komunikacyjne. Umożliwia on
+            uporządkowanie okablowania, dzięki czemu na stanowisku kasowym panuje ład i porządek. Urządzenie wyposażone jest w następujące porty:
           </p>
         </div>
 
@@ -550,6 +556,7 @@
       </div>
 
       <!-- Wybierz swoją branże i poznaj urządzenia -->
+      <button class="show-industries"></button>
       <aside class="industries-container">
         <h3 class="industries-header"><span>WYBIERZ SWOJĄ BRANŻE</span><span>I POZNAJ URZĄDZENIA</span></h3>
         <div class="industries-underline"></div>
@@ -856,6 +863,7 @@
 
     <script src="/js/navbar.js"></script>
     <script src="/js/search.js"></script>
-    <!-- <script src="/js/productDetail.js"></script> -->
+    <script src="/js/productDetail.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   </body>
 </html>

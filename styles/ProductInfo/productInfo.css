@@ -1,5 +1,5 @@
 .product-info-view {
-  padding-top: 630px;
+  padding-top: 750px;
   padding-inline: 12px;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,7 @@
   .product-info-view {
     margin-left: 400px;
     max-width: 808px;
-    padding-top: 1060px;
+    padding-top: 1230px;
   }
 }
 @media (min-width: 1280px) {
@@ -26,14 +26,12 @@
   .product-info-view {
     margin-left: 464px;
     max-width: 50%;
-    padding-top: 1030px;
   }
 }
 @media (min-width: 1636px) {
   .product-info-view {
     margin-left: 570px;
     max-width: 50%;
-    padding-top: 1030px;
   }
 }
 .product-info-view .info-header {
@@ -244,6 +242,7 @@
   .product-info-view .details-dashed-circle {
     display: block;
     position: absolute;
+    z-index: -10;
     top: 2600px;
     left: -181px;
     width: 640px;

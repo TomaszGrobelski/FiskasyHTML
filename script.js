@@ -14,13 +14,11 @@ function showView(index) {
 }
 
 function nextView() {
-  console.log('clicek next');
   const nextIndex = (currentIndex + 1) % views.length; 
   showView(nextIndex);
 }
 
 function prevView() {
-  console.log('clicek prev');
   const prevIndex = (currentIndex - 1 + views.length) % views.length; 
   showView(prevIndex);
 }
