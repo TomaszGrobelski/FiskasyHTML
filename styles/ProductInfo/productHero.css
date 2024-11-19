@@ -87,8 +87,14 @@
   }
 }
 .product-view .white-circle img {
-  width: 300px;
-  height: 300px;
+  width: 160px;
+  height: 160px;
+}
+@media (min-width: 768px) {
+  .product-view .white-circle img {
+    width: 300px;
+    height: 300px;
+  }
 }
 .product-view .white-circle.expand {
   width: 640px;
