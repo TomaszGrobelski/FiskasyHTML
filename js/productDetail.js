@@ -47,16 +47,19 @@
 // });
 
 // Pokazanie/howanie bocznego aside
-// const showIndustriesButton = document.querySelector('.show-industries');
+const showIndustriesButton = document.querySelector('.show-industries');
 const industriesContainer = document.querySelector('.industries-container');
+// const menuBox = document.querySelector('.industries-box');
 
-if ( industriesContainer) {
-  industriesContainer.addEventListener('mouseover', function () {
+if (showIndustriesButton && industriesContainer) {
+  showIndustriesButton.addEventListener('mouseenter', () => {
     industriesContainer.classList.add('visible');
+    showIndustriesButton.classList.add('hide');
   });
 
-  industriesContainer.addEventListener('mouseout', function () {
+  industriesContainer.addEventListener('mouseleave', () => {
     industriesContainer.classList.remove('visible');
+    showIndustriesButton.classList.remove('hide');
   });
 }
 
@@ -81,10 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
             src: fancyboxLink.href,
             type: 'image',
             opts: {
-              width: 600, 
-              height: 400, 
+              width: 600,
+              height: 400,
               autoSize: false,
-              // smallBtn: true, 
+              // smallBtn: true,
             },
           },
         ]);

@@ -1,16 +1,33 @@
 .show-industries {
   display: none;
   position: absolute;
-  left: 0;
-  top: 1150px;
+  left: -100px;
+  top: 1300px;
   width: 100px;
-  height: 2100px;
+  height: 1600px;
   z-index: 200;
 }
 @media (min-width: 1024px) {
   .show-industries {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
   }
+}
+.show-industries .industries-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  gap: 20px;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.show-industries .industries-box img {
+  transform: rotate(180deg);
 }
 
 .industries-container {
@@ -20,7 +37,7 @@
   left: 200px;
   padding-left: 200px;
   transform: translateX(-100%);
-  opacity: 1;
+  opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
 }
 @media (min-width: 1024px) {
@@ -86,5 +103,12 @@
 
 .industries-container.visible {
   transform: translateX(-380px);
+  z-index: 300;
   opacity: 1;
+}
+
+.show-industries.hide {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }/*# sourceMappingURL=industries.css.map */
