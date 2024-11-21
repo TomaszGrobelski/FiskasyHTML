@@ -99,8 +99,8 @@
 }
 @media (min-width: 1024px) {
   .product-view .white-circle img {
-    width: 355px;
-    height: 355px;
+    width: 755px;
+    height: 755px;
   }
 }
 .product-view .white-circle.expand {
