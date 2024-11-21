@@ -79,9 +79,10 @@
 
     @media (min-width: 1024px) {
       transform: translateX(-50%);
-      left: 30%;
-      width: 372px;
-      height: 372px;
+      top: 330px;
+      left: 35%;
+      width: 500px;
+      height: 500px;
     }
 
     img {
@@ -90,6 +91,10 @@
       @media (min-width: 768px) {
         width: 265px;
         height: 265px;
+      }
+      @media (min-width: 1024px) {
+        width: 355px;
+        height: 355px;
       }
     }
   }
@@ -146,10 +151,12 @@
     }
     @media (min-width: 1024px) {
       font-size: 20px;
-      top: 323px;
+      left: 35%;
+      top: 290px;
     }
     @media (min-width: 1536px) {
-      left: 36%;
+      top: 290px;
+      left: 39%;
     }
   }
 
@@ -178,8 +185,11 @@
       top: 400px;
     }
     @media (min-width: 1280px) {
-      left: 69%;
+      left: 71%;
       font-size: 35px;
+    }
+    @media (min-width: 1536px) {
+      left: 67%;
     }
 
     .hero-title {
