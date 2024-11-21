@@ -118,8 +118,8 @@
 }
 .product-view .white-circle.expand img {
   transition: width 1s ease, height 1s ease;
-  width: 530px;
-  height: 530px;
+  width: 930px;
+  height: 930px;
 }
 .product-view .white-circle.expand-small {
   width: 313px;
