@@ -41,6 +41,9 @@
     }
   }
   .product-description-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
     padding-bottom: 15px;
     list-style-type: disc disc;
     @media (min-width: 1024px) {
@@ -48,6 +51,7 @@
     }
 
     &__item {
+      display: list-item;
       font-size: 12px;
       font-family: 'Gilroy-normal';
       @media (min-width: 1024px) {
@@ -115,6 +119,7 @@
       }
 
       &__value {
+        text-align: end;
         max-width: 50%;
       }
       &__item {
