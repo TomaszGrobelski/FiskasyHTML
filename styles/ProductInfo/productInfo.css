@@ -54,8 +54,8 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  gap: 8px;
   padding-bottom: 15px;
-  list-style-type: disc disc;
 }
 @media (min-width: 1024px) {
   .product-info-view .product-description-list {
@@ -78,6 +78,7 @@
   }
 }
 .product-info-view .destiny-information {
+  text-indent: 20px;
   padding-bottom: 11px;
   padding-right: 36px;
   font-size: 12px;
