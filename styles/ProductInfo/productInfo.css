@@ -4,6 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 12px;
+  font-family: "Gilroy-normal";
 }
 @media (min-width: 768px) {
   .product-info-view {
@@ -12,6 +14,7 @@
 }
 @media (min-width: 1024px) {
   .product-info-view {
+    font-size: 16px;
     margin-left: 400px;
     max-width: 808px;
     padding-top: 1230px;
@@ -19,6 +22,7 @@
 }
 @media (min-width: 1280px) {
   .product-info-view {
+    font-size: 20px;
     margin-left: 450px;
   }
 }
@@ -34,23 +38,33 @@
     max-width: 50%;
   }
 }
-.product-info-view .info-header {
+.product-info-view h2 {
   font-size: 20px;
   font-family: "Gilroy-bold";
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 @media (min-width: 1024px) {
-  .product-info-view .info-header {
+  .product-info-view h2 {
     white-space: nowrap;
     font-size: 28px;
   }
 }
 @media (min-width: 1280px) {
-  .product-info-view .info-header {
-    font-size: 35px;
+  .product-info-view h2 {
+    font-size: 32px;
   }
 }
-.product-info-view .product-description-list {
+.product-info-view a {
+  color: #00aaff;
+  font-weight: bold;
+}
+.product-info-view p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.product-info-view ul {
+  font-size: 20px;
+  font-family: "Gilroy-bold";
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -58,22 +72,22 @@
   padding-bottom: 15px;
 }
 @media (min-width: 1024px) {
-  .product-info-view .product-description-list {
+  .product-info-view ul {
     padding-bottom: 28px;
   }
 }
-.product-info-view .product-description-list__item {
+.product-info-view ul li {
   display: list-item;
   font-size: 12px;
   font-family: "Gilroy-normal";
 }
 @media (min-width: 1024px) {
-  .product-info-view .product-description-list__item {
+  .product-info-view ul li {
     font-size: 16px;
   }
 }
 @media (min-width: 1280px) {
-  .product-info-view .product-description-list__item {
+  .product-info-view ul li {
     font-size: 20px;
   }
 }
@@ -101,7 +115,44 @@
     margin-bottom: 50px;
   }
 }
-.product-info-view .product-detail-header {
+
+.detail-info-view {
+  padding-top: 30px;
+  padding-inline: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (min-width: 768px) {
+  .detail-info-view {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .detail-info-view {
+    margin-left: 400px;
+    max-width: 808px;
+    padding-top: 30px;
+  }
+}
+@media (min-width: 1280px) {
+  .detail-info-view {
+    margin-left: 450px;
+  }
+}
+@media (min-width: 1536px) {
+  .detail-info-view {
+    margin-left: 464px;
+    max-width: 50%;
+  }
+}
+@media (min-width: 1636px) {
+  .detail-info-view {
+    margin-left: 570px;
+    max-width: 50%;
+  }
+}
+.detail-info-view .product-detail-header {
   position: relative;
   padding-bottom: 6px;
   color: var(--unnamed-color-000000);
@@ -113,12 +164,11 @@
   opacity: 1;
 }
 @media (min-width: 1024px) {
-  .product-info-view .product-detail-header {
-    font-size: 30px;
-    padding-bottom: 51px;
+  .detail-info-view .product-detail-header {
+    font-size: 32px;
   }
 }
-.product-info-view .product-detail-container {
+.detail-info-view .product-detail-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -127,7 +177,7 @@
   -webkit-backdrop-filter: blur(41px);
           backdrop-filter: blur(41px);
 }
-.product-info-view .product-detail-container .spec-item {
+.detail-info-view .product-detail-container .spec-item {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -139,18 +189,18 @@
   font-size: 11px;
 }
 @media (min-width: 1024px) {
-  .product-info-view .product-detail-container .spec-item {
+  .detail-info-view .product-detail-container .spec-item {
     font-size: 20px;
   }
 }
-.product-info-view .product-detail-container .spec-item__value {
+.detail-info-view .product-detail-container .spec-item__value {
   text-align: end;
   max-width: 50%;
 }
-.product-info-view .product-detail-container .spec-item__item {
+.detail-info-view .product-detail-container .spec-item__item {
   max-width: 50%;
 }
-.product-info-view .catalog-description {
+.detail-info-view .catalog-description {
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -167,16 +217,16 @@
   padding-inline: 32px;
 }
 @media (min-width: 640px) {
-  .product-info-view .catalog-description {
+  .detail-info-view .catalog-description {
     max-width: none;
   }
 }
 @media (min-width: 1024px) {
-  .product-info-view .catalog-description {
+  .detail-info-view .catalog-description {
     display: none;
   }
 }
-.product-info-view .details-blue-circle {
+.detail-info-view .details-blue-circle {
   position: absolute;
   left: -56px;
   top: 1120px;
@@ -189,19 +239,19 @@
   opacity: 1;
 }
 @media (min-width: 768px) {
-  .product-info-view .details-blue-circle {
+  .detail-info-view .details-blue-circle {
     top: 1700px;
   }
 }
 @media (min-width: 1024px) {
-  .product-info-view .details-blue-circle {
+  .detail-info-view .details-blue-circle {
     top: 2800px;
     left: 64px;
     width: 492px;
     height: 492px;
   }
 }
-.product-info-view .details-azure-bg {
+.detail-info-view .details-azure-bg {
   position: absolute;
   top: 1350px;
   border-radius: 37%;
@@ -213,11 +263,11 @@
   opacity: 1;
 }
 @media (min-width: 768px) {
-  .product-info-view .details-azure-bg {
+  .detail-info-view .details-azure-bg {
     display: none;
   }
 }
-.product-info-view .details-big-box {
+.detail-info-view .details-big-box {
   position: absolute;
   top: 2390px;
   left: 142px;
@@ -225,11 +275,11 @@
   height: 579px;
   z-index: -10;
 }
-.product-info-view .details-one {
+.detail-info-view .details-one {
   display: none;
 }
 @media (min-width: 1024px) {
-  .product-info-view .details-one {
+  .detail-info-view .details-one {
     display: block;
     position: absolute;
     font-size: 75px;
@@ -241,11 +291,11 @@
     height: 492px;
   }
 }
-.product-info-view .details-dashed-circle {
+.detail-info-view .details-dashed-circle {
   display: none;
 }
 @media (min-width: 1024px) {
-  .product-info-view .details-dashed-circle {
+  .detail-info-view .details-dashed-circle {
     display: block;
     position: absolute;
     z-index: -10;

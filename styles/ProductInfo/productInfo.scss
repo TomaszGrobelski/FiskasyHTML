@@ -4,16 +4,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: 12px;
+  font-family: 'Gilroy-normal';
 
   @media (min-width: 768px) {
     padding-top: 1060px;
   }
   @media (min-width: 1024px) {
+    font-size: 16px;
     margin-left: 400px;
     max-width: 808px;
     padding-top: 1230px;
   }
   @media (min-width: 1280px) {
+    font-size: 20px;
     margin-left: 450px;
   }
   @media (min-width: 1536px) {
@@ -25,20 +29,31 @@
     max-width: 50%;
   }
 
-  .info-header {
+  h2{
     font-size: 20px;
     font-family: 'Gilroy-bold';
-    padding-bottom: 20px;
-
+    margin-bottom: 20px;
     @media (min-width: 1024px) {
       white-space: nowrap;
       font-size: 28px;
     }
     @media (min-width: 1280px) {
-      font-size: 35px;
+      font-size: 32px;
     }
   }
-  .product-description-list {
+
+  a {
+    color: #00aaff;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  ul {
+    font-size: 20px;
+    font-family: 'Gilroy-bold';
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -48,7 +63,7 @@
       padding-bottom: 28px;
     }
 
-    &__item {
+    li {
       display: list-item;
       font-size: 12px;
       font-family: 'Gilroy-normal';
@@ -78,6 +93,36 @@
       margin-bottom: 50px;
     }
   }
+}
+
+// ---------------------------------------------------------------------------------------------------------------------------
+
+.detail-info-view {
+  padding-top: 30px;
+  padding-inline: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  @media (min-width: 768px) {
+    padding-top: 30px;
+  }
+  @media (min-width: 1024px) {
+    margin-left: 400px;
+    max-width: 808px;
+    padding-top: 30px;
+  }
+  @media (min-width: 1280px) {
+    margin-left: 450px;
+  }
+  @media (min-width: 1536px) {
+    margin-left: 464px;
+    max-width: 50%;
+  }
+  @media (min-width: 1636px) {
+    margin-left: 570px;
+    max-width: 50%;
+  }
 
   .product-detail-header {
     position: relative;
@@ -90,8 +135,8 @@
     color: #000000;
     opacity: 1;
     @media (min-width: 1024px) {
-      font-size: 30px;
-      padding-bottom: 51px;
+      font-size: 32px;
+      // padding-bottom: 51px;
     }
   }
 
