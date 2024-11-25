@@ -31,30 +31,34 @@
 .blue-view .hero-image-large-container .hero-image-large {
   display: none;
   height: auto;
-  width: 400px;
-  max-width: 400px;
-  max-height: 400px;
+  top: 340px;
+  width: 600px;
+  max-width: 600px;
+  max-height: 600px;
   animation: moveUpRight 1s;
 }
 @media (min-width: 768px) {
   .blue-view .hero-image-large-container .hero-image-large {
     display: block;
     position: absolute;
-    left: 35%;
-    top: 370px;
+    left: 37%;
+    top: 310px;
     transform: translateX(-72%);
     z-index: 10;
   }
 }
 @media (min-width: 1280px) {
   .blue-view .hero-image-large-container .hero-image-large {
-    left: 37%;
-    top: 390px;
+    width: 750px;
+    max-width: 750px;
+    max-height: 750px;
+    left: 40%;
+    top: 230px;
   }
 }
 @media (min-width: 1560px) {
   .blue-view .hero-image-large-container .hero-image-large {
-    left: 40%;
+    left: 45%;
   }
 }
 @keyframes moveUpRight {
