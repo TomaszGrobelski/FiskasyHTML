@@ -304,6 +304,7 @@
         flex-direction: column;
         align-items: center;
         gap: 22px;
+        list-style: none;
 
         &__item {
           font-size: 30px;
@@ -322,6 +323,7 @@
         flex-direction: column;
         align-items: center;
         gap: 26px;
+        list-style: none;
       }
 
       .contact-box {
@@ -428,6 +430,7 @@
           flex-direction: column;
           align-items: center;
           gap: 13px;
+          list-style: none;
         }
       }
     }

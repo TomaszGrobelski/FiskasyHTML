@@ -299,6 +299,7 @@
   flex-direction: column;
   align-items: center;
   gap: 22px;
+  list-style: none;
 }
 .navbar .menu-mobile__box .nav-list__item {
   font-size: 30px;
@@ -315,6 +316,7 @@
   flex-direction: column;
   align-items: center;
   gap: 26px;
+  list-style: none;
 }
 .navbar .menu-mobile__box .contact-box {
   padding-top: 39px;
@@ -408,4 +410,5 @@
   flex-direction: column;
   align-items: center;
   gap: 13px;
+  list-style: none;
 }/*# sourceMappingURL=navBar.css.map */
