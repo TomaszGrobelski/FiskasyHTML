@@ -405,7 +405,52 @@
       }
     }
   }
+  .home-and-back {
+    display: none;
+    font-family: 'Gilroy-bold', sans-serif;
+    z-index: 100;
 
+    @media (min-width: 1024px) {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      left: 0px;
+      top: 150px;
+      font-size: 18px;
+      color: black;
+    }
+    @media (min-width: 1280px) {
+      left: 10px;
+      font-size: 24px;
+      color: black;
+    }
+
+    @media (min-width: 1536px) {
+      left: 60px;
+    }
+    @media (min-width: 1700px) {
+      left: 142px;
+    }
+
+    .home-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .subsection {
+        opacity: 0.6;
+      }
+    }
+    .back-button {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 22px;
+      img {
+        rotate: 180deg;
+      }
+    }
+  }
   .question-info {
     position: absolute;
     top: 707px;
